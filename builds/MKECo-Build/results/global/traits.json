@@ -1,0 +1,2850 @@
+{
+  "generated_by": {
+    "program": "augur",
+    "version": "6.4.3"
+  },
+  "models": {
+    "country_exposure": {
+      "alphabet": [
+        "China",
+        "USA",
+        "?"
+      ],
+      "equilibrium_probabilities": [
+        0.029401735743813003,
+        0.970598264256187
+      ],
+      "rate": 56.11138914121093,
+      "transition_matrix": [
+        [
+          0.0,
+          17.520944909562914
+        ],
+        [
+          17.520944909562914,
+          0.0
+        ]
+      ]
+    },
+    "region_exposure": {
+      "alphabet": [
+        "",
+        "North America",
+        "?"
+      ],
+      "equilibrium_probabilities": [
+        0.029401735743813003,
+        0.970598264256187
+      ],
+      "rate": 56.11138914121093,
+      "transition_matrix": [
+        [
+          0.0,
+          17.520944909562914
+        ],
+        [
+          17.520944909562914,
+          0.0
+        ]
+      ]
+    }
+  },
+  "nodes": {
+    "NODE_0000000": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.46915027525378483,
+        "USA": 0.5308497247462152
+      },
+      "country_exposure_entropy": 0.6912425600235617,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.46915027525378483,
+        "North America": 0.5308497247462152
+      },
+      "region_exposure_entropy": 0.6912425600235617
+    },
+    "NODE_0000003": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.08137978722864916,
+        "USA": 0.9186202127713508
+      },
+      "country_exposure_entropy": 0.28212642480925876,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.08137978722864916,
+        "North America": 0.9186202127713508
+      },
+      "region_exposure_entropy": 0.28212642480925876
+    },
+    "NODE_0000004": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01003212885077418,
+        "USA": 0.9899678711492259
+      },
+      "country_exposure_entropy": 0.05614911819348558,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01003212885077418,
+        "North America": 0.9899678711492259
+      },
+      "region_exposure_entropy": 0.05614911819348558
+    },
+    "NODE_0000005": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.02821295231200192,
+        "USA": 0.9717870476879981
+      },
+      "country_exposure_entropy": 0.12847425374680524,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.02821295231200192,
+        "North America": 0.9717870476879981
+      },
+      "region_exposure_entropy": 0.12847425374680524
+    },
+    "NODE_0000006": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.015184113172187123,
+        "USA": 0.984815886827813
+      },
+      "country_exposure_entropy": 0.07865180527822542,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.015184113172187123,
+        "North America": 0.984815886827813
+      },
+      "region_exposure_entropy": 0.07865180527822542
+    },
+    "NODE_0000007": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.3532962888555816,
+        "USA": 0.6467037111444184
+      },
+      "country_exposure_entropy": 0.6494633251486905,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.3532962888555816,
+        "North America": 0.6467037111444184
+      },
+      "region_exposure_entropy": 0.6494633251486905
+    },
+    "NODE_0000008": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.05148668467741042,
+        "USA": 0.9485133153225894
+      },
+      "country_exposure_entropy": 0.2028696453188905,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.05148668467741042,
+        "North America": 0.9485133153225894
+      },
+      "region_exposure_entropy": 0.2028696453188905
+    },
+    "NODE_0000011": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.016975130691994217,
+        "USA": 0.9830248693080057
+      },
+      "country_exposure_entropy": 0.08602096388713511,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.016975130691994217,
+        "North America": 0.9830248693080057
+      },
+      "region_exposure_entropy": 0.08602096388713511
+    },
+    "NODE_0000012": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.024008372672654803,
+        "USA": 0.9759916273273451
+      },
+      "country_exposure_entropy": 0.11325352539098094,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.024008372672654803,
+        "North America": 0.9759916273273451
+      },
+      "region_exposure_entropy": 0.11325352539098094
+    },
+    "NODE_0000013": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01165679648109226,
+        "USA": 0.9883432035189077
+      },
+      "country_exposure_entropy": 0.06348308501408795,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01165679648109226,
+        "North America": 0.9883432035189077
+      },
+      "region_exposure_entropy": 0.06348308501408795
+    },
+    "NODE_0000014": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009088120222770757,
+        "USA": 0.9909118797772293
+      },
+      "country_exposure_entropy": 0.05176801669006544,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009088120222770757,
+        "North America": 0.9909118797772293
+      },
+      "region_exposure_entropy": 0.05176801669006544
+    },
+    "NODE_0000015": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01257266837912236,
+        "USA": 0.9874273316208777
+      },
+      "country_exposure_entropy": 0.06751418756036537,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01257266837912236,
+        "North America": 0.9874273316208777
+      },
+      "region_exposure_entropy": 0.06751418756036537
+    },
+    "NODE_0000016": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009532680319865445,
+        "USA": 0.9904673196801347
+      },
+      "country_exposure_entropy": 0.05384294056643718,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009532680319865445,
+        "North America": 0.9904673196801347
+      },
+      "region_exposure_entropy": 0.05384294056643718
+    },
+    "NODE_0000017": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009532680319865445,
+        "USA": 0.9904673196801347
+      },
+      "country_exposure_entropy": 0.05384294056643718,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009532680319865445,
+        "North America": 0.9904673196801347
+      },
+      "region_exposure_entropy": 0.05384294056643718
+    },
+    "NODE_0000018": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01584065327493769,
+        "USA": 0.9841593467250623
+      },
+      "country_exposure_entropy": 0.08137681261132088,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01584065327493769,
+        "North America": 0.9841593467250623
+      },
+      "region_exposure_entropy": 0.08137681261132088
+    },
+    "NODE_0000019": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.011445821293560919,
+        "USA": 0.988554178706439
+      },
+      "country_exposure_entropy": 0.06254438216703101,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.011445821293560919,
+        "North America": 0.988554178706439
+      },
+      "region_exposure_entropy": 0.06254438216703101
+    },
+    "NODE_0000021": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009317166623027165,
+        "USA": 0.9906828333769728
+      },
+      "country_exposure_entropy": 0.052839735119664326,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009317166623027165,
+        "North America": 0.9906828333769728
+      },
+      "region_exposure_entropy": 0.052839735119664326
+    },
+    "NODE_0000022": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01690137427287503,
+        "USA": 0.9830986257271249
+      },
+      "country_exposure_entropy": 0.08572143182630734,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01690137427287503,
+        "North America": 0.9830986257271249
+      },
+      "region_exposure_entropy": 0.08572143182630734
+    },
+    "NODE_0000023": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.015360496208208466,
+        "USA": 0.9846395037917915
+      },
+      "country_exposure_entropy": 0.07938667515461943,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.015360496208208466,
+        "North America": 0.9846395037917915
+      },
+      "region_exposure_entropy": 0.07938667515461943
+    },
+    "NODE_0000024": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009504484320928638,
+        "USA": 0.9904955156790715
+      },
+      "country_exposure_entropy": 0.0537119716866703,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009504484320928638,
+        "North America": 0.9904955156790715
+      },
+      "region_exposure_entropy": 0.0537119716866703
+    },
+    "NODE_0000025": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01006586276253522,
+        "USA": 0.9899341372374648
+      },
+      "country_exposure_entropy": 0.05630396302888947,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01006586276253522,
+        "North America": 0.9899341372374648
+      },
+      "region_exposure_entropy": 0.05630396302888947
+    },
+    "NODE_0000026": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.006352840904160914,
+        "USA": 0.9936471590958391
+      },
+      "country_exposure_entropy": 0.03847070814796279,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.006352840904160914,
+        "North America": 0.9936471590958391
+      },
+      "region_exposure_entropy": 0.03847070814796279
+    },
+    "NODE_0000027": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01006586276253522,
+        "USA": 0.9899341372374648
+      },
+      "country_exposure_entropy": 0.05630396302888947,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01006586276253522,
+        "North America": 0.9899341372374648
+      },
+      "region_exposure_entropy": 0.05630396302888947
+    },
+    "NODE_0000028": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.015994453599170674,
+        "USA": 0.9840055464008294
+      },
+      "country_exposure_entropy": 0.08201112991660822,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.015994453599170674,
+        "North America": 0.9840055464008294
+      },
+      "region_exposure_entropy": 0.08201112991660822
+    },
+    "NODE_0000029": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010187109471795817,
+        "USA": 0.9898128905282042
+      },
+      "country_exposure_entropy": 0.056859567437028136,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010187109471795817,
+        "North America": 0.9898128905282042
+      },
+      "region_exposure_entropy": 0.056859567437028136
+    },
+    "NODE_0000030": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.008343115178329533,
+        "USA": 0.9916568848216704
+      },
+      "country_exposure_entropy": 0.04824102163593788,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.008343115178329533,
+        "North America": 0.9916568848216704
+      },
+      "region_exposure_entropy": 0.04824102163593788
+    },
+    "NODE_0000031": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.012425241186825278,
+        "USA": 0.9875747588131747
+      },
+      "country_exposure_entropy": 0.06686999879306135,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.012425241186825278,
+        "North America": 0.9875747588131747
+      },
+      "region_exposure_entropy": 0.06686999879306135
+    },
+    "NODE_0000034": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.0102482163507022,
+        "USA": 0.9897517836492978
+      },
+      "country_exposure_entropy": 0.05713903172234954,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.0102482163507022,
+        "North America": 0.9897517836492978
+      },
+      "region_exposure_entropy": 0.05713903172234954
+    },
+    "NODE_0000035": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010276444742299677,
+        "USA": 0.9897235552577004
+      },
+      "country_exposure_entropy": 0.05726800612233124,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010276444742299677,
+        "North America": 0.9897235552577004
+      },
+      "region_exposure_entropy": 0.05726800612233124
+    },
+    "NODE_0000036": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.004127169632651699,
+        "USA": 0.9958728303673483
+      },
+      "country_exposure_entropy": 0.02677747689485846,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.004127169632651699,
+        "North America": 0.9958728303673483
+      },
+      "region_exposure_entropy": 0.02677747689485846
+    },
+    "NODE_0000037": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.011611020708198383,
+        "USA": 0.9883889792918017
+      },
+      "country_exposure_entropy": 0.06327974308813383,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.011611020708198383,
+        "North America": 0.9883889792918017
+      },
+      "region_exposure_entropy": 0.06327974308813383
+    },
+    "NODE_0000038": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01143548536764945,
+        "USA": 0.9885645146323505
+      },
+      "country_exposure_entropy": 0.06249829349180694,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01143548536764945,
+        "North America": 0.9885645146323505
+      },
+      "region_exposure_entropy": 0.06249829349180694
+    },
+    "NODE_0000039": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009315189838748296,
+        "USA": 0.9906848101612518
+      },
+      "country_exposure_entropy": 0.052830510173241495,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009315189838748296,
+        "North America": 0.9906848101612518
+      },
+      "region_exposure_entropy": 0.052830510173241495
+    },
+    "NODE_0000041": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010685771224536783,
+        "USA": 0.9893142287754632
+      },
+      "country_exposure_entropy": 0.059129503444451954,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010685771224536783,
+        "North America": 0.9893142287754632
+      },
+      "region_exposure_entropy": 0.059129503444451954
+    },
+    "NODE_0000042": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009171804220038863,
+        "USA": 0.9908281957799611
+      },
+      "country_exposure_entropy": 0.052160245704704844,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009171804220038863,
+        "North America": 0.9908281957799611
+      },
+      "region_exposure_entropy": 0.052160245704704844
+    },
+    "NODE_0000044": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.008290684954594339,
+        "USA": 0.9917093150454056
+      },
+      "country_exposure_entropy": 0.04799034667222914,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.008290684954594339,
+        "North America": 0.9917093150454056
+      },
+      "region_exposure_entropy": 0.04799034667222914
+    },
+    "NODE_0000045": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.011330794447461637,
+        "USA": 0.9886692055525385
+      },
+      "country_exposure_entropy": 0.06203093468604977,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.011330794447461637,
+        "North America": 0.9886692055525385
+      },
+      "region_exposure_entropy": 0.06203093468604977
+    },
+    "NODE_0000046": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009295167310825764,
+        "USA": 0.9907048326891742
+      },
+      "country_exposure_entropy": 0.05273704830363173,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009295167310825764,
+        "North America": 0.9907048326891742
+      },
+      "region_exposure_entropy": 0.05273704830363173
+    },
+    "NODE_0000047": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.4445300610933429,
+        "USA": 0.555469938906657
+      },
+      "country_exposure_entropy": 0.6869806665549245,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.4445300610933429,
+        "North America": 0.555469938906657
+      },
+      "region_exposure_entropy": 0.6869806665549245
+    },
+    "NODE_0000048": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.011147365315578877,
+        "USA": 0.9888526346844211
+      },
+      "country_exposure_entropy": 0.06120971023144155,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.011147365315578877,
+        "North America": 0.9888526346844211
+      },
+      "region_exposure_entropy": 0.06120971023144155
+    },
+    "NODE_0000050": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009643939909929372,
+        "USA": 0.9903560600900706
+      },
+      "country_exposure_entropy": 0.05435891600022594,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009643939909929372,
+        "North America": 0.9903560600900706
+      },
+      "region_exposure_entropy": 0.05435891600022594
+    },
+    "NODE_0000051": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999700638617083
+      },
+      "country_exposure_entropy": 0.00034176380134898844,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999700638617083
+      },
+      "region_exposure_entropy": 0.00034176380134898844
+    },
+    "NODE_0000052": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.008764097236882111,
+        "USA": 0.9912359027631179
+      },
+      "country_exposure_entropy": 0.050241912670897004,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.008764097236882111,
+        "North America": 0.9912359027631179
+      },
+      "region_exposure_entropy": 0.050241912670897004
+    },
+    "NODE_0000054": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.012964844327058496,
+        "USA": 0.9870351556729414
+      },
+      "country_exposure_entropy": 0.06921934596363091,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.012964844327058496,
+        "North America": 0.9870351556729414
+      },
+      "region_exposure_entropy": 0.06921934596363091
+    },
+    "NODE_0000059": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.004427063692575804,
+        "USA": 0.9955729363074242
+      },
+      "country_exposure_entropy": 0.028412017919326606,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.004427063692575804,
+        "North America": 0.9955729363074242
+      },
+      "region_exposure_entropy": 0.028412017919326606
+    },
+    "NODE_0000060": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.015545060291331526,
+        "USA": 0.9844549397086684
+      },
+      "country_exposure_entropy": 0.08015342799614202,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.015545060291331526,
+        "North America": 0.9844549397086684
+      },
+      "region_exposure_entropy": 0.08015342799614202
+    },
+    "NODE_0000061": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.012246832493363023,
+        "USA": 0.9877531675066369
+      },
+      "country_exposure_entropy": 0.06608806445561208,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.012246832493363023,
+        "North America": 0.9877531675066369
+      },
+      "region_exposure_entropy": 0.06608806445561208
+    },
+    "NODE_0000062": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.011579048285097853,
+        "USA": 0.9884209517149021
+      },
+      "country_exposure_entropy": 0.06313760917387623,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.011579048285097853,
+        "North America": 0.9884209517149021
+      },
+      "region_exposure_entropy": 0.06313760917387623
+    },
+    "NODE_0000063": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009342646780745692,
+        "USA": 0.9906573532192542
+      },
+      "country_exposure_entropy": 0.0529586040525398,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009342646780745692,
+        "North America": 0.9906573532192542
+      },
+      "region_exposure_entropy": 0.0529586040525398
+    },
+    "NODE_0000064": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01232377056948139,
+        "USA": 0.9876762294305187
+      },
+      "country_exposure_entropy": 0.06642559117795292,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01232377056948139,
+        "North America": 0.9876762294305187
+      },
+      "region_exposure_entropy": 0.06642559117795292
+    },
+    "NODE_0000065": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009485077687904117,
+        "USA": 0.9905149223120959
+      },
+      "country_exposure_entropy": 0.053621779883094786,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009485077687904117,
+        "North America": 0.9905149223120959
+      },
+      "region_exposure_entropy": 0.053621779883094786
+    },
+    "NODE_0000066": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01232377056948139,
+        "USA": 0.9876762294305187
+      },
+      "country_exposure_entropy": 0.06642559117795292,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01232377056948139,
+        "North America": 0.9876762294305187
+      },
+      "region_exposure_entropy": 0.06642559117795292
+    },
+    "NODE_0000067": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009485077687904117,
+        "USA": 0.9905149223120959
+      },
+      "country_exposure_entropy": 0.053621779883094786,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009485077687904117,
+        "North America": 0.9905149223120959
+      },
+      "region_exposure_entropy": 0.053621779883094786
+    },
+    "NODE_0000068": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.014981089691785911,
+        "USA": 0.9850189103082141
+      },
+      "country_exposure_entropy": 0.07780336538868887,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.014981089691785911,
+        "North America": 0.9850189103082141
+      },
+      "region_exposure_entropy": 0.07780336538868887
+    },
+    "NODE_0000069": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.016112438918575535,
+        "USA": 0.9838875610814245
+      },
+      "country_exposure_entropy": 0.08249671622988085,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.016112438918575535,
+        "North America": 0.9838875610814245
+      },
+      "region_exposure_entropy": 0.08249671622988085
+    },
+    "NODE_0000070": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.012451881644056592,
+        "USA": 0.9875481183559434
+      },
+      "country_exposure_entropy": 0.06698653580721747,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.012451881644056592,
+        "North America": 0.9875481183559434
+      },
+      "region_exposure_entropy": 0.06698653580721747
+    },
+    "NODE_0000071": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009509579407473163,
+        "USA": 0.9904904205925269
+      },
+      "country_exposure_entropy": 0.0537356443303102,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009509579407473163,
+        "North America": 0.9904904205925269
+      },
+      "region_exposure_entropy": 0.0537356443303102
+    },
+    "NODE_0000072": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.012451881644056592,
+        "USA": 0.9875481183559434
+      },
+      "country_exposure_entropy": 0.06698653580721747,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.012451881644056592,
+        "North America": 0.9875481183559434
+      },
+      "region_exposure_entropy": 0.06698653580721747
+    },
+    "NODE_0000073": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009509579407473163,
+        "USA": 0.9904904205925269
+      },
+      "country_exposure_entropy": 0.0537356443303102,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009509579407473163,
+        "North America": 0.9904904205925269
+      },
+      "region_exposure_entropy": 0.0537356443303102
+    },
+    "NODE_0000074": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.020368902415550085,
+        "USA": 0.9796310975844499
+      },
+      "country_exposure_entropy": 0.09947136424725313,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.020368902415550085,
+        "North America": 0.9796310975844499
+      },
+      "region_exposure_entropy": 0.09947136424725313
+    },
+    "NODE_0000075": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.02031222610826361,
+        "USA": 0.9796877738917363
+      },
+      "country_exposure_entropy": 0.09925176689648206,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.02031222610826361,
+        "North America": 0.9796877738917363
+      },
+      "region_exposure_entropy": 0.09925176689648206
+    },
+    "NODE_0000076": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01626193599468987,
+        "USA": 0.9837380640053102
+      },
+      "country_exposure_entropy": 0.08311073348664251,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01626193599468987,
+        "North America": 0.9837380640053102
+      },
+      "region_exposure_entropy": 0.08311073348664251
+    },
+    "NODE_0000077": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010238266474938596,
+        "USA": 0.9897617335250615
+      },
+      "country_exposure_entropy": 0.05709355242087025,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010238266474938596,
+        "North America": 0.9897617335250615
+      },
+      "region_exposure_entropy": 0.05709355242087025
+    },
+    "NODE_0000078": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010238266474938596,
+        "USA": 0.9897617335250615
+      },
+      "country_exposure_entropy": 0.05709355242087025,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010238266474938596,
+        "North America": 0.9897617335250615
+      },
+      "region_exposure_entropy": 0.05709355242087025
+    },
+    "NODE_0000079": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.019332706595606226,
+        "USA": 0.9806672934043937
+      },
+      "country_exposure_entropy": 0.09543064220419764,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.019332706595606226,
+        "North America": 0.9806672934043937
+      },
+      "region_exposure_entropy": 0.09543064220419764
+    },
+    "NODE_0000080": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.016003062873558342,
+        "USA": 0.9839969371264418
+      },
+      "country_exposure_entropy": 0.08204659251702116,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.016003062873558342,
+        "North America": 0.9839969371264418
+      },
+      "region_exposure_entropy": 0.08204659251702116
+    },
+    "NODE_0000081": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010188756027547834,
+        "USA": 0.9898112439724521
+      },
+      "country_exposure_entropy": 0.05686710258845709,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010188756027547834,
+        "North America": 0.9898112439724521
+      },
+      "region_exposure_entropy": 0.05686710258845709
+    },
+    "NODE_0000082": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010188756027547834,
+        "USA": 0.9898112439724521
+      },
+      "country_exposure_entropy": 0.05686710258845709,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010188756027547834,
+        "North America": 0.9898112439724521
+      },
+      "region_exposure_entropy": 0.05686710258845709
+    },
+    "NODE_0000083": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.016003062873558342,
+        "USA": 0.9839969371264418
+      },
+      "country_exposure_entropy": 0.08204659251702116,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.016003062873558342,
+        "North America": 0.9839969371264418
+      },
+      "region_exposure_entropy": 0.08204659251702116
+    },
+    "NODE_0000084": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010188756027547834,
+        "USA": 0.9898112439724521
+      },
+      "country_exposure_entropy": 0.05686710258845709,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010188756027547834,
+        "North America": 0.9898112439724521
+      },
+      "region_exposure_entropy": 0.05686710258845709
+    },
+    "NODE_0000085": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010188756027547834,
+        "USA": 0.9898112439724521
+      },
+      "country_exposure_entropy": 0.05686710258845709,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010188756027547834,
+        "North America": 0.9898112439724521
+      },
+      "region_exposure_entropy": 0.05686710258845709
+    },
+    "NODE_0000086": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.020932113949182412,
+        "USA": 0.9790678860508175
+      },
+      "country_exposure_entropy": 0.1016448987198285,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.020932113949182412,
+        "North America": 0.9790678860508175
+      },
+      "region_exposure_entropy": 0.1016448987198285
+    },
+    "NODE_0000087": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.019520082613206702,
+        "USA": 0.9804799173867934
+      },
+      "country_exposure_entropy": 0.09616543892468082,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.019520082613206702,
+        "North America": 0.9804799173867934
+      },
+      "region_exposure_entropy": 0.09616543892468082
+    },
+    "NODE_0000088": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.016052583698692124,
+        "USA": 0.9839474163013079
+      },
+      "country_exposure_entropy": 0.0822504832163935,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.016052583698692124,
+        "North America": 0.9839474163013079
+      },
+      "region_exposure_entropy": 0.0822504832163935
+    },
+    "NODE_0000089": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010198227069565705,
+        "USA": 0.9898017729304343
+      },
+      "country_exposure_entropy": 0.05691043980444633,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010198227069565705,
+        "North America": 0.9898017729304343
+      },
+      "region_exposure_entropy": 0.05691043980444633
+    },
+    "NODE_0000090": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010198227069565705,
+        "USA": 0.9898017729304343
+      },
+      "country_exposure_entropy": 0.05691043980444633,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010198227069565705,
+        "North America": 0.9898017729304343
+      },
+      "region_exposure_entropy": 0.05691043980444633
+    },
+    "NODE_0000091": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.016052583698692124,
+        "USA": 0.9839474163013079
+      },
+      "country_exposure_entropy": 0.0822504832163935,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.016052583698692124,
+        "North America": 0.9839474163013079
+      },
+      "region_exposure_entropy": 0.0822504832163935
+    },
+    "NODE_0000092": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010198227069565705,
+        "USA": 0.9898017729304343
+      },
+      "country_exposure_entropy": 0.05691043980444633,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010198227069565705,
+        "North America": 0.9898017729304343
+      },
+      "region_exposure_entropy": 0.05691043980444633
+    },
+    "NODE_0000093": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010198227069565705,
+        "USA": 0.9898017729304343
+      },
+      "country_exposure_entropy": 0.05691043980444633,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010198227069565705,
+        "North America": 0.9898017729304343
+      },
+      "region_exposure_entropy": 0.05691043980444633
+    },
+    "NODE_0000094": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.018338821468812126,
+        "USA": 0.9816611785311878
+      },
+      "country_exposure_entropy": 0.09150171645108135,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.018338821468812126,
+        "North America": 0.9816611785311878
+      },
+      "region_exposure_entropy": 0.09150171645108135
+    },
+    "NODE_0000095": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010635478547608412,
+        "USA": 0.9893645214523915
+      },
+      "country_exposure_entropy": 0.05890165341144642,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010635478547608412,
+        "North America": 0.9893645214523915
+      },
+      "region_exposure_entropy": 0.05890165341144642
+    },
+    "NODE_0000096": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.01717763214957768,
+        "USA": 0.9828223678504223
+      },
+      "country_exposure_entropy": 0.08684167009033861,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.01717763214957768,
+        "North America": 0.9828223678504223
+      },
+      "region_exposure_entropy": 0.08684167009033861
+    },
+    "NODE_0000097": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010413396770831529,
+        "USA": 0.9895866032291685
+      },
+      "country_exposure_entropy": 0.05789262626437022,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010413396770831529,
+        "North America": 0.9895866032291685
+      },
+      "region_exposure_entropy": 0.05789262626437022
+    },
+    "NODE_0000098": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.015433507248677852,
+        "USA": 0.9845664927513222
+      },
+      "country_exposure_entropy": 0.07969025992719762,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.015433507248677852,
+        "North America": 0.9845664927513222
+      },
+      "region_exposure_entropy": 0.07969025992719762
+    },
+    "NODE_0000099": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010079826395616567,
+        "USA": 0.9899201736043833
+      },
+      "country_exposure_entropy": 0.05636802522126402,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010079826395616567,
+        "North America": 0.9899201736043833
+      },
+      "region_exposure_entropy": 0.05636802522126402
+    },
+    "NODE_0000100": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.010079826395616567,
+        "USA": 0.9899201736043833
+      },
+      "country_exposure_entropy": 0.05636802522126402,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.010079826395616567,
+        "North America": 0.9899201736043833
+      },
+      "region_exposure_entropy": 0.05636802522126402
+    },
+    "NODE_0000108": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.007133836121473417,
+        "USA": 0.9928661638785266
+      },
+      "country_exposure_entropy": 0.04237021212134979,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.007133836121473417,
+        "North America": 0.9928661638785266
+      },
+      "region_exposure_entropy": 0.04237021212134979
+    },
+    "NODE_0000117": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.008554011468784522,
+        "USA": 0.9914459885312156
+      },
+      "country_exposure_entropy": 0.04924600580917474,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.008554011468784522,
+        "North America": 0.9914459885312156
+      },
+      "region_exposure_entropy": 0.04924600580917474
+    },
+    "NODE_0000118": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.005521443208228319,
+        "USA": 0.9944785567917717
+      },
+      "country_exposure_entropy": 0.03421279564479034,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.005521443208228319,
+        "North America": 0.9944785567917717
+      },
+      "region_exposure_entropy": 0.03421279564479034
+    },
+    "NODE_0000122": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.013154406554670352,
+        "USA": 0.9868455934453297
+      },
+      "country_exposure_entropy": 0.0700392202198665,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.013154406554670352,
+        "North America": 0.9868455934453297
+      },
+      "region_exposure_entropy": 0.0700392202198665
+    },
+    "NODE_0000124": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "China": 0.009643939909929372,
+        "USA": 0.9903560600900706
+      },
+      "country_exposure_entropy": 0.05435891600022594,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "": 0.009643939909929372,
+        "North America": 0.9903560600900706
+      },
+      "region_exposure_entropy": 0.05435891600022594
+    },
+    "USA/WI-UW-156/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-157/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-158/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-159/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-160/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-161/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-162/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-165/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-166/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-168/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-170/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-171/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-172/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-173/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-176/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-177/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-178/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-179/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-181/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-182/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-183/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-184/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-185/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-186/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-187/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-188/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-189/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-190/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-191/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-192/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-195/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-196/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-197/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-200/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-205/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-207/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-208/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-209/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-210/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-211/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-212/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-213/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-215/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-216/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-217/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-218/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-219/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-221/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-222/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-223/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-225/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-226/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-227/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-228/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-229/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-230/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-231/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-232/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-233/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-234/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-235/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-236/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-237/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-238/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-240/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-241/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-242/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-245/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-246/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-248/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-270/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-272/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-273/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-274/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-275/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-276/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-277/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-278/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-279/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-280/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-285/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-288/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-289/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-290/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-291/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-293/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-296/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-299/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-301/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-302/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-303/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-304/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-305/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-306/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-308/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-309/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-310/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-313/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-316/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-319/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-320/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-321/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-322/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-323/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-324/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-325/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-328/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-329/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-330/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-331/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-332/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-333/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-334/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-335/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-336/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-337/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-338/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-339/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-340/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-341/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_exposure_entropy": -9.99866855976916e-13,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 0.9999999999999999
+      },
+      "region_exposure_entropy": -9.99866855976916e-13
+    },
+    "USA/WI-UW-342/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-343/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-344/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-345/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "USA/WI-UW-346/2020": {
+      "country_exposure": "USA",
+      "country_exposure_confidence": {
+        "USA": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "North America",
+      "region_exposure_confidence": {
+        "North America": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "Wuhan-Hu-1/2019": {
+      "country_exposure": "China",
+      "country_exposure_confidence": {
+        "China": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "",
+      "region_exposure_confidence": {
+        "": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    },
+    "Wuhan/WH01/2019": {
+      "country_exposure": "China",
+      "country_exposure_confidence": {
+        "China": 1.0
+      },
+      "country_exposure_entropy": -1.000088900581841e-12,
+      "region_exposure": "",
+      "region_exposure_confidence": {
+        "": 1.0
+      },
+      "region_exposure_entropy": -1.000088900581841e-12
+    }
+  }
+}

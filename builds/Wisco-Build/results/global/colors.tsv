@@ -1,0 +1,44 @@
+division	Hubei	#4C90C0
+division	Wisconsin	#AEBD50
+
+location	Wuhan	#5E1D9D
+location	Stoughton	#4C24AF
+location	Belleville	#4334BF
+location	Marshall	#3F47C9
+location	Cottage Grove	#3E5BD0
+location	Cross Plains	#416ECE
+location	DeForest	#4580CA
+location	Madison	#4B8FC1
+location	Monona	#529BB5
+location	Mount Horeb	#5BA5A7
+location	Sun Prarie	#65AD98
+location	Fitchburg	#6FB388
+location	Waunakee	#7CB879
+location	Middleton	#89BB6B
+location	Brooklyn	#97BD5F
+location	Cudahy	#A5BE55
+location	Wauwatosa	#B4BD4C
+location	Greenfield	#C1BA47
+location	Milwaukee	#CDB642
+location	Brown Deer	#D8AE3E
+location	River Hills	#DFA43B
+location	Bayside	#E59638
+location	Oak Creek	#E68434
+location	Franklin	#E67030
+location	Whitefish Bay	#E2582C
+location	South Milwaukee	#DF4027
+location	Glendale	#DB2823
+
+country	China	#4C90C0
+country	USA	#AEBD50
+
+recency	Older	#416DCE
+recency	One month ago	#59A3AA
+recency	One week ago	#84BA6F
+recency	3-7 days ago	#BBBC49
+recency	1-2 days ago	#E29D39
+recency	New	#E1502A
+
+region	Asia	#4C90C0
+region	North America	#AEBD50
+

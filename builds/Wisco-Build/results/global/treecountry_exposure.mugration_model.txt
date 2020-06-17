@@ -1,0 +1,21 @@
+Map from character to field name
+A:	China
+B:	USA
+C:	?
+
+
+Substitution rate (mu): 23.685334
+
+Equilibrium frequencies (pi_i):
+  A: 0.0128
+  B: 0.9872
+
+Symmetrized rates from j->i (W_ij):
+	A	B
+  A	0	39.635
+  B	39.635	0
+
+Actual rates from j->i (Q_ij):
+	A	B
+  A	0	0.5065
+  B	39.1285	0

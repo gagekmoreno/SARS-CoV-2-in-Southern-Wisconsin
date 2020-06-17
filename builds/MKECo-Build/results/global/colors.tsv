@@ -1,0 +1,30 @@
+division	Hubei	#4C90C0
+division	Wisconsin	#AEBD50
+
+location	Wuhan	#4B26B1
+location	Cudahy	#3F4BCA
+location	Wauwatosa	#4273CE
+location	Greenfield	#4D93BE
+location	Milwaukee	#5EA9A1
+location	Brown Deer	#75B581
+location	River Hills	#90BC65
+location	Bayside	#AEBD50
+location	Oak Creek	#CAB843
+location	Franklin	#DEA73B
+location	Whitefish Bay	#E68735
+location	South Milwaukee	#E25A2C
+location	Glendale	#DB2823
+
+country	China	#4C90C0
+country	USA	#AEBD50
+
+recency	Older	#416DCE
+recency	One month ago	#59A3AA
+recency	One week ago	#84BA6F
+recency	3-7 days ago	#BBBC49
+recency	1-2 days ago	#E29D39
+recency	New	#E1502A
+
+region	Asia	#4C90C0
+region	North America	#AEBD50
+
