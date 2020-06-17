@@ -1,0 +1,64 @@
+#!/bin/sh
+
+outputdir=$1
+regioncode=$2
+
+cd $outputdir
+
+### Trim global FASTA to only CDS ###
+cutadapt -g AGATCTGTTCTCTAAACGAACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGTCGTTGACAGGACACGAGTAACTCGTCTATCTTCTGCAGGCTGCTTACGGTTTCGTCCGTGTTGCAGCCGATCATCAGCACATCTAGGTTTTGTCCGGGTGTGACCGAAAGGTAAG -o 5trim_global.fasta ./global.fasta
+
+cutadapt -a CAATCTTTAATCAGTGTGTAACATTAGGGAGGACTTGAAAGAGCCACCACATTTTCACCGAGGCCACGCGGAGTACGATCGAGTGTACAGTGAACAATGCTAGGGAGAGCTGCCTATATGGAAGAGCCCTAATGTGTAAAATTAATTTTAGTAGTGCTATCC -o CDS_global.fasta ./5trim_global.fasta
+
+### Replace spaces in sequence names and sequences ###
+sed '/^>/ s/\s /_/g' ./CDS_global.fasta > corrected_CDS_global.fasta
+
+sed 's/ //g' ./corrected_CDS_global.fasta > final_CDS_global.fasta
+
+### Filter sequences by length and Ns ###
+cutadapt -l 29406 -m 29406 --max-n 294 -o filtered_CDS_global.fasta ./final_CDS_global.fasta
+
+### Extract names of sequences with accurate collection dates in Excel ###
+sed -n '/>/p' final_CDS_global.fasta > names1.txt
+sed -n '/2019-..-..$/p; /2020-..-..$/p' names1.txt > names2.txt
+sed 's/>//g' names2.txt > names3.txt
+
+### Subset sequences only for those with good dates ###
+seqtk subseq ./filtered_CDS_global.fasta ./names3.txt > dates_filtered_CDS_global.fasta
+
+### Filter sequences of interest ###
+~/Bioinformatics/filter_fasta_by_list_of_headers.py ./dates_filtered_CDS_global.fasta ./names_${regioncode}.txt > global_${regioncode}_filtered.fasta
+
+### Randomly downsample global sequences to speed up tree generation ###
+sed -n '/>/p' global_${regioncode}_filtered.fasta > global_${regioncode}_filtered_names.txt
+
+RSCRIPT downsample_global_tree.R outputdir regioncode
+
+### generate downsampled fasta with sequences from area of interest ###
+sed 's/>//g' downsampled_global_names.txt > downsampled_global_names_2.txt
+cat ./downsampled_global_names_2.txt ./names_${regioncode}.txt > downsampled_${regioncode}_names.txt
+
+seqtk subseq ./dates_filtered_CDS_global.fasta ./downsampled_${regioncode}_names.txt > CDS_downsampled_global_${regioncode}.fasta
+
+### Mafft align sequences ###
+mafft --thread 8 CDS_downsampled_global_${regioncode}.fasta > mafft_CDS_downsampled_global_${regioncode}
+
+### Generate maximum likelihood tree ###
+iqtree -s ./dates_filtered_CDS_global.fasta -m HKY+F+I+G4 -nt AUTO
+
+### Remove outlier tips; further downsample in a time-stratified manner but retain closest cophenetic tips ###
+RSCRIPT Exog_seq_selection.R outputdir regioncode
+
+### Subset sequences ###
+seqtk subseq ./filtered_CDS_global.fasta ./timestrat_closest_names.txt > timestrat_closest_global_${regioncode}.fasta
+
+### Replace / and | in sequence names ###
+sed 's/\//_/g' timestrat_closest_global_${regioncode}.fasta > timestrat_closest_global_${regioncode}_labelcorrected1.fasta
+sed 's/\|/_/g' timestrat_closest_global_${regioncode}_labelcorrected1.fasta > timestrat_closest_global_${regioncode}_labelcorrected2.fasta
+
+### Append Il and exog tags ###
+seqtk subseq ./timestrat_closest_global_${regioncode}_labelcorrected2.fasta ./names_${regioncode}.txt > timestrat_closest_${regioncode}_labelcorrected.fasta
+~/Bioinformatics/filter_fasta_by_list_of_headers.py ./timestrat_closest_global_${regioncode}_labelcorrected2.fasta ./names_${regioncode}.txt > timestrat_closest_global_labelcorrected.fasta
+
+sed '/^>/ s/$/_Il/' timestrat_closest_GMA_labelcorrected.fasta > timestrat_closest_GMA_Il.fasta
+sed '/^>/ s/$/_exog/' timestrat_closest_global_labelcorrected.fasta > timestrat_closest_global_exog.fasta

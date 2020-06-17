@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="MILWAUKEE_PHYDYN"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_hCoV-19_Australia_NSW151_2020_EPI_ISL_427721_2020-03-19_exog" spec="Sequence" taxon="hCoV-19_Australia_NSW151_2020_EPI_ISL_427721_2020-03-19_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Australia_VIC138_2020_EPI_ISL_419834_2020-02-23_exog" spec="Sequence" taxon="hCoV-19_Australia_VIC138_2020_EPI_ISL_419834_2020-02-23_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Australia_VIC166_2020_EPI_ISL_419863_2020-03-18_exog" spec="Sequence" taxon="hCoV-19_Australia_VIC166_2020_EPI_ISL_419863_2020-03-18_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Australia_VIC31_2020_EPI_ISL_419750_2020-03-10_exog" spec="Sequence" taxon="hCoV-19_Australia_VIC31_2020_EPI_ISL_419750_2020-03-10_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Australia_VIC849_2020_EPI_ISL_427109_2020-04-04_exog" spec="Sequence" taxon="hCoV-19_Australia_VIC849_2020_EPI_ISL_427109_2020-04-04_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Australia_VIC86_2020_EPI_ISL_419796_2020-03-15_exog" spec="Sequence" taxon="hCoV-19_Australia_VIC86_2020_EPI_ISL_419796_2020-03-15_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Austria_CeMM0157_2020_EPI_ISL_438003_2020-03-04_exog" spec="Sequence" taxon="hCoV-19_Austria_CeMM0157_2020_EPI_ISL_438003_2020-03-04_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Beijing_BJ556_2020_EPI_ISL_430733_2020-02-04_exog" spec="Sequence" taxon="hCoV-19_Beijing_BJ556_2020_EPI_ISL_430733_2020-02-04_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Belgium_030959_2020_EPI_ISL_420320_2020-03-09_exog" spec="Sequence" taxon="hCoV-19_Belgium_030959_2020_EPI_ISL_420320_2020-03-09_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Belgium_ULG-6638_2020_EPI_ISL_417017_2020-03-14_exog" spec="Sequence" taxon="hCoV-19_Belgium_ULG-6638_2020_EPI_ISL_417017_2020-03-14_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_China_WH-09_2020_EPI_ISL_411957_2020-01-08_exog" spec="Sequence" taxon="hCoV-19_China_WH-09_2020_EPI_ISL_411957_2020-01-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Colombia_GVI-97349_2020_EPI_ISL_447797_2020-04-04_exog" spec="Sequence" taxon="hCoV-19_Colombia_GVI-97349_2020_EPI_ISL_447797_2020-04-04_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_CzechRepublic_2741_2020_EPI_ISL_422636_2020-03-08_exog" spec="Sequence" taxon="hCoV-19_CzechRepublic_2741_2020_EPI_ISL_422636_2020-03-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_CzechRepublic_Seq5_2020_EPI_ISL_426358_2020-03-19_exog" spec="Sequence" taxon="hCoV-19_CzechRepublic_Seq5_2020_EPI_ISL_426358_2020-03-19_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Denmark_ALAB-SSI-1126_2020_EPI_ISL_436962_2020-04-02_exog" spec="Sequence" taxon="hCoV-19_Denmark_ALAB-SSI-1126_2020_EPI_ISL_436962_2020-04-02_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Denmark_ALAB-SSI195_2020_EPI_ISL_429396_2020-03-09_exog" spec="Sequence" taxon="hCoV-19_Denmark_ALAB-SSI195_2020_EPI_ISL_429396_2020-03-09_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_200690300_2020_EPI_ISL_414042_2020-02-08_exog" spec="Sequence" taxon="hCoV-19_England_200690300_2020_EPI_ISL_414042_2020-02-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_20109097506_2020_EPI_ISL_417293_2020-03-08_exog" spec="Sequence" taxon="hCoV-19_England_20109097506_2020_EPI_ISL_417293_2020-03-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_20132004804_2020_EPI_ISL_423717_2020-03-23_exog" spec="Sequence" taxon="hCoV-19_England_20132004804_2020_EPI_ISL_423717_2020-03-23_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_201360170_2020_EPI_ISL_421769_2020-03-24_exog" spec="Sequence" taxon="hCoV-19_England_201360170_2020_EPI_ISL_421769_2020-03-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_CAMB-79943_2020_EPI_ISL_444393_2020-04-20_exog" spec="Sequence" taxon="hCoV-19_England_CAMB-79943_2020_EPI_ISL_444393_2020-04-20_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_CAMB-7ADA0_2020_EPI_ISL_433875_2020-04-08_exog" spec="Sequence" taxon="hCoV-19_England_CAMB-7ADA0_2020_EPI_ISL_433875_2020-04-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_CAMB-82BD8_2020_EPI_ISL_438669_2020-04-24_exog" spec="Sequence" taxon="hCoV-19_England_CAMB-82BD8_2020_EPI_ISL_438669_2020-04-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_LIVE-9BA84_2020_EPI_ISL_440897_2020-04-21_exog" spec="Sequence" taxon="hCoV-19_England_LIVE-9BA84_2020_EPI_ISL_440897_2020-04-21_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_LOND-D3B41_2020_EPI_ISL_449630_2020-04-04_exog" spec="Sequence" taxon="hCoV-19_England_LOND-D3B41_2020_EPI_ISL_449630_2020-04-04_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_LOND-D45E8_2020_EPI_ISL_444139_2020-04-08_exog" spec="Sequence" taxon="hCoV-19_England_LOND-D45E8_2020_EPI_ISL_444139_2020-04-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_LOND-D4C4D_2020_EPI_ISL_449667_2020-04-14_exog" spec="Sequence" taxon="hCoV-19_England_LOND-D4C4D_2020_EPI_ISL_449667_2020-04-14_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_LOND-D5E55_2020_EPI_ISL_444251_2020-04-19_exog" spec="Sequence" taxon="hCoV-19_England_LOND-D5E55_2020_EPI_ISL_444251_2020-04-19_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_NORW-E6E8E_2020_EPI_ISL_448985_2020-04-18_exog" spec="Sequence" taxon="hCoV-19_England_NORW-E6E8E_2020_EPI_ISL_448985_2020-04-18_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_NOTT-10F12B_2020_EPI_ISL_432967_2020-03-31_exog" spec="Sequence" taxon="hCoV-19_England_NOTT-10F12B_2020_EPI_ISL_432967_2020-03-31_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_England_SHEF-BFF21_2020_EPI_ISL_418309_2020-03-25_exog" spec="Sequence" taxon="hCoV-19_England_SHEF-BFF21_2020_EPI_ISL_418309_2020-03-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Foshan_20SF210_2020_EPI_ISL_406535_2020-01-22_exog" spec="Sequence" taxon="hCoV-19_Foshan_20SF210_2020_EPI_ISL_406535_2020-01-22_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_France_IDF0515_2020_EPI_ISL_408430_2020-01-29_exog" spec="Sequence" taxon="hCoV-19_France_IDF0515_2020_EPI_ISL_408430_2020-01-29_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_France_IDF3745_2020_EPI_ISL_428363_2020-03-26_exog" spec="Sequence" taxon="hCoV-19_France_IDF3745_2020_EPI_ISL_428363_2020-03-26_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Germany_NRW-26_2020_EPI_ISL_419543_2020-03-15_exog" spec="Sequence" taxon="hCoV-19_Germany_NRW-26_2020_EPI_ISL_419543_2020-03-15_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Guangdong_20SF025_2020_EPI_ISL_403935_2020-01-15_exog" spec="Sequence" taxon="hCoV-19_Guangdong_20SF025_2020_EPI_ISL_403935_2020-01-15_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Guangdong_20SF028_2020_EPI_ISL_403936_2020-01-17_exog" spec="Sequence" taxon="hCoV-19_Guangdong_20SF028_2020_EPI_ISL_403936_2020-01-17_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Guangdong_GD2020246-P0028_2020_EPI_ISL_413864_2020-02-09_exog" spec="Sequence" taxon="hCoV-19_Guangdong_GD2020246-P0028_2020_EPI_ISL_413864_2020-02-09_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Guangzhou_GZMU0047_2020_EPI_ISL_414690_2020-02-25_exog" spec="Sequence" taxon="hCoV-19_Guangzhou_GZMU0047_2020_EPI_ISL_414690_2020-02-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Hangzhou_HZCDC0091_2020_EPI_ISL_421228_2020-01-21_exog" spec="Sequence" taxon="hCoV-19_Hangzhou_HZCDC0091_2020_EPI_ISL_421228_2020-01-21_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Hangzhou_ZJU-05_2020_EPI_ISL_415711_2020-01-22_exog" spec="Sequence" taxon="hCoV-19_Hangzhou_ZJU-05_2020_EPI_ISL_415711_2020-01-22_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_HongKong_HKU-903a_2020_EPI_ISL_434565_2020-01-24_exog" spec="Sequence" taxon="hCoV-19_HongKong_HKU-903a_2020_EPI_ISL_434565_2020-01-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_HongKong_VM20002507_2020_EPI_ISL_414528_2020-02-10_exog" spec="Sequence" taxon="hCoV-19_HongKong_VM20002507_2020_EPI_ISL_414528_2020-02-10_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Iceland_451_2020_EPI_ISL_424475_2020-03-20_exog" spec="Sequence" taxon="hCoV-19_Iceland_451_2020_EPI_ISL_424475_2020-03-20_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Iceland_561_2020_EPI_ISL_424581_2020-03-28_exog" spec="Sequence" taxon="hCoV-19_Iceland_561_2020_EPI_ISL_424581_2020-03-28_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Iceland_66_2020_EPI_ISL_417857_2020-03-07_exog" spec="Sequence" taxon="hCoV-19_Iceland_66_2020_EPI_ISL_417857_2020-03-07_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Italy_INMI1-isl_2020_EPI_ISL_410545_2020-01-29_exog" spec="Sequence" taxon="hCoV-19_Italy_INMI1-isl_2020_EPI_ISL_410545_2020-01-29_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Japan_DP0133_2020_EPI_ISL_416576_2020-02-15_exog" spec="Sequence" taxon="hCoV-19_Japan_DP0133_2020_EPI_ISL_416576_2020-02-15_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Japan_DP0803_2020_EPI_ISL_416630_2020-02-17_exog" spec="Sequence" taxon="hCoV-19_Japan_DP0803_2020_EPI_ISL_416630_2020-02-17_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Japan_DP0804_2020_EPI_ISL_416631_2020-02-17_exog" spec="Sequence" taxon="hCoV-19_Japan_DP0804_2020_EPI_ISL_416631_2020-02-17_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Jian_JX129_2020_EPI_ISL_421253_2020-01-26_exog" spec="Sequence" taxon="hCoV-19_Jian_JX129_2020_EPI_ISL_421253_2020-01-26_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Jordan_SR-048_2020_EPI_ISL_430006_2020-03-23_exog" spec="Sequence" taxon="hCoV-19_Jordan_SR-048_2020_EPI_ISL_430006_2020-03-23_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Kazakhstan_NCB-5_2020_EPI_ISL_435048_2020-04-21_exog" spec="Sequence" taxon="hCoV-19_Kazakhstan_NCB-5_2020_EPI_ISL_435048_2020-04-21_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Luxembourg_LNS2335124_2020_EPI_ISL_445066_2020-04-24_exog" spec="Sequence" taxon="hCoV-19_Luxembourg_LNS2335124_2020_EPI_ISL_445066_2020-04-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Luxembourg_LNS4295690_2020_EPI_ISL_428959_2020-04-01_exog" spec="Sequence" taxon="hCoV-19_Luxembourg_LNS4295690_2020_EPI_ISL_428959_2020-04-01_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Nanchang_JX176_2020_EPI_ISL_421261_2020-01-29_exog" spec="Sequence" taxon="hCoV-19_Nanchang_JX176_2020_EPI_ISL_421261_2020-01-29_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Nepal_61_2020_EPI_ISL_410301_2020-01-13_exog" spec="Sequence" taxon="hCoV-19_Nepal_61_2020_EPI_ISL_410301_2020-01-13_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Pingxiang_JX5_2020_EPI_ISL_421252_2020-01-11_exog" spec="Sequence" taxon="hCoV-19_Pingxiang_JX5_2020_EPI_ISL_421252_2020-01-11_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Portugal_PT0056_2020_EPI_ISL_421459_2020-03-20_exog" spec="Sequence" taxon="hCoV-19_Portugal_PT0056_2020_EPI_ISL_421459_2020-03-20_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Russia_StPetersburg-RII4649S_2020_EPI_ISL_427321_2020-04-05_exog" spec="Sequence" taxon="hCoV-19_Russia_StPetersburg-RII4649S_2020_EPI_ISL_427321_2020-04-05_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Russia_StPetersburg-RII4728S_2020_EPI_ISL_427335_2020-04-07_exog" spec="Sequence" taxon="hCoV-19_Russia_StPetersburg-RII4728S_2020_EPI_ISL_427335_2020-04-07_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Russia_StPetersburg-RII8409S_2020_EPI_ISL_450282_2020-04-22_exog" spec="Sequence" taxon="hCoV-19_Russia_StPetersburg-RII8409S_2020_EPI_ISL_450282_2020-04-22_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_SaudiArabia_KAUST-Jeddah68_2020_EPI_ISL_437756_2020-04-01_exog" spec="Sequence" taxon="hCoV-19_SaudiArabia_KAUST-Jeddah68_2020_EPI_ISL_437756_2020-04-01_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_SaudiArabia_KAUST-Madinah47_2020_EPI_ISL_443172_2020-03-29_exog" spec="Sequence" taxon="hCoV-19_SaudiArabia_KAUST-Madinah47_2020_EPI_ISL_443172_2020-03-29_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_CVR1345_2020_EPI_ISL_433548_2020-03-31_exog" spec="Sequence" taxon="hCoV-19_Scotland_CVR1345_2020_EPI_ISL_433548_2020-03-31_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_CVR20_2020_EPI_ISL_425730_2020-03-13_exog" spec="Sequence" taxon="hCoV-19_Scotland_CVR20_2020_EPI_ISL_425730_2020-03-13_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_CVR3157_2020_EPI_ISL_449193_2020-04-22_exog" spec="Sequence" taxon="hCoV-19_Scotland_CVR3157_2020_EPI_ISL_449193_2020-04-22_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_EDB2077_2020_EPI_ISL_433176_2020-04-19_exog" spec="Sequence" taxon="hCoV-19_Scotland_EDB2077_2020_EPI_ISL_433176_2020-04-19_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_EDB2114_2020_EPI_ISL_439159_2020-04-20_exog" spec="Sequence" taxon="hCoV-19_Scotland_EDB2114_2020_EPI_ISL_439159_2020-04-20_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_EDB2606_2020_EPI_ISL_439239_2020-04-25_exog" spec="Sequence" taxon="hCoV-19_Scotland_EDB2606_2020_EPI_ISL_439239_2020-04-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_EDB2609_2020_EPI_ISL_439242_2020-04-25_exog" spec="Sequence" taxon="hCoV-19_Scotland_EDB2609_2020_EPI_ISL_439242_2020-04-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Scotland_EDB4365_2020_EPI_ISL_449298_2020-04-24_exog" spec="Sequence" taxon="hCoV-19_Scotland_EDB4365_2020_EPI_ISL_449298_2020-04-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Shanghai_SH0069_2020_EPI_ISL_416372_2020-02-01_exog" spec="Sequence" taxon="hCoV-19_Shanghai_SH0069_2020_EPI_ISL_416372_2020-02-01_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Shenzhen_SZTH-002_2020_EPI_ISL_406593_2020-01-13_exog" spec="Sequence" taxon="hCoV-19_Shenzhen_SZTH-002_2020_EPI_ISL_406593_2020-01-13_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Sichuan_IVDC-SC-001_2020_EPI_ISL_408484_2020-01-15_exog" spec="Sequence" taxon="hCoV-19_Sichuan_IVDC-SC-001_2020_EPI_ISL_408484_2020-01-15_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Singapore_35_2020_EPI_ISL_422428_2020-02-06_exog" spec="Sequence" taxon="hCoV-19_Singapore_35_2020_EPI_ISL_422428_2020-02-06_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Singapore_65_2020_EPI_ISL_428844_2020-04-08_exog" spec="Sequence" taxon="hCoV-19_Singapore_65_2020_EPI_ISL_428844_2020-04-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_SouthKorea_KUMC01_2020_EPI_ISL_413017_2020-02-06_exog" spec="Sequence" taxon="hCoV-19_SouthKorea_KUMC01_2020_EPI_ISL_413017_2020-02-06_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Sweden_20-07480_2020_EPI_ISL_434673_2020-04-16_exog" spec="Sequence" taxon="hCoV-19_Sweden_20-07480_2020_EPI_ISL_434673_2020-04-16_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Switzerland_GE4135_2020_EPI_ISL_415705_2020-03-06_exog" spec="Sequence" taxon="hCoV-19_Switzerland_GE4135_2020_EPI_ISL_415705_2020-03-06_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Thailand_74_2020_EPI_ISL_403963_2020-01-13_exog" spec="Sequence" taxon="hCoV-19_Thailand_74_2020_EPI_ISL_403963_2020-01-13_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CA-CDPH-UC2_2020_EPI_ISL_413558_2020-02-27_exog" spec="Sequence" taxon="hCoV-19_USA_CA-CDPH-UC2_2020_EPI_ISL_413558_2020-02-27_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CA-CZB-1021_2020_EPI_ISL_436662_2020-04-11_exog" spec="Sequence" taxon="hCoV-19_USA_CA-CZB-1021_2020_EPI_ISL_436662_2020-04-11_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CA-CZB-1212_2020_EPI_ISL_450461_2020-03-25_exog" spec="Sequence" taxon="hCoV-19_USA_CA-CZB-1212_2020_EPI_ISL_450461_2020-03-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CruiseA-10_2020_EPI_ISL_413615_2020-02-17_exog" spec="Sequence" taxon="hCoV-19_USA_CruiseA-10_2020_EPI_ISL_413615_2020-02-17_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CruiseA-26_2020_EPI_ISL_414485_2020-02-24_exog" spec="Sequence" taxon="hCoV-19_USA_CruiseA-26_2020_EPI_ISL_414485_2020-02-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CruiseA-3_2020_EPI_ISL_413608_2020-02-18_exog" spec="Sequence" taxon="hCoV-19_USA_CruiseA-3_2020_EPI_ISL_413608_2020-02-18_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_CruiseA-5_2020_EPI_ISL_413610_2020-02-21_exog" spec="Sequence" taxon="hCoV-19_USA_CruiseA-5_2020_EPI_ISL_413610_2020-02-21_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_MD-HP00037_2020_EPI_ISL_434587_2020-03-24_exog" spec="Sequence" taxon="hCoV-19_USA_MD-HP00037_2020_EPI_ISL_434587_2020-03-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_MN67-MDH67_2020_EPI_ISL_419395_2020-03-14_exog" spec="Sequence" taxon="hCoV-19_USA_MN67-MDH67_2020_EPI_ISL_419395_2020-03-14_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-NYUMC322_2020_EPI_ISL_430349_2020-03-30_exog" spec="Sequence" taxon="hCoV-19_USA_NY-NYUMC322_2020_EPI_ISL_430349_2020-03-30_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-NYUMC467_2020_EPI_ISL_435532_2020-04-16_exog" spec="Sequence" taxon="hCoV-19_USA_NY-NYUMC467_2020_EPI_ISL_435532_2020-04-16_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-NYUMC478_2020_EPI_ISL_435543_2020-04-22_exog" spec="Sequence" taxon="hCoV-19_USA_NY-NYUMC478_2020_EPI_ISL_435543_2020-04-22_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-NYUMC482_2020_EPI_ISL_435547_2020-04-24_exog" spec="Sequence" taxon="hCoV-19_USA_NY-NYUMC482_2020_EPI_ISL_435547_2020-04-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-NYUMC565_2020_EPI_ISL_444682_2020-03-30_exog" spec="Sequence" taxon="hCoV-19_USA_NY-NYUMC565_2020_EPI_ISL_444682_2020-03-30_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-WCMP9B09P_2020_EPI_ISL_427549_2020-03-14_exog" spec="Sequence" taxon="hCoV-19_USA_NY-WCMP9B09P_2020_EPI_ISL_427549_2020-03-14_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_NY-Wadsworth-10528-01_2020_EPI_ISL_426026_2020-03-03_exog" spec="Sequence" taxon="hCoV-19_USA_NY-Wadsworth-10528-01_2020_EPI_ISL_426026_2020-03-03_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_VA-DCLS-0110_2020_EPI_ISL_434602_2020-04-08_exog" spec="Sequence" taxon="hCoV-19_USA_VA-DCLS-0110_2020_EPI_ISL_434602_2020-04-08_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-S115_2020_EPI_ISL_417168_2020-02-29_exog" spec="Sequence" taxon="hCoV-19_USA_WA-S115_2020_EPI_ISL_417168_2020-02-29_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-S20_2020_EPI_ISL_417073_2020-03-02_exog" spec="Sequence" taxon="hCoV-19_USA_WA-S20_2020_EPI_ISL_417073_2020-03-02_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-S44_2020_EPI_ISL_417097_2020-02-28_exog" spec="Sequence" taxon="hCoV-19_USA_WA-S44_2020_EPI_ISL_417097_2020-02-28_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-S595_2020_EPI_ISL_438148_2020-04-12_exog" spec="Sequence" taxon="hCoV-19_USA_WA-S595_2020_EPI_ISL_438148_2020-04-12_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-S825_2020_EPI_ISL_449995_2020-04-16_exog" spec="Sequence" taxon="hCoV-19_USA_WA-S825_2020_EPI_ISL_449995_2020-04-16_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-UW-2087_2020_EPI_ISL_426083_2020-03-25_exog" spec="Sequence" taxon="hCoV-19_USA_WA-UW-2087_2020_EPI_ISL_426083_2020-03-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-UW-2180_2020_EPI_ISL_426106_2020-03-24_exog" spec="Sequence" taxon="hCoV-19_USA_WA-UW-2180_2020_EPI_ISL_426106_2020-03-24_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-UW227_2020_EPI_ISL_417376_2020-03-15_exog" spec="Sequence" taxon="hCoV-19_USA_WA-UW227_2020_EPI_ISL_417376_2020-03-15_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-UW355_2020_EPI_ISL_418922_2020-03-16_exog" spec="Sequence" taxon="hCoV-19_USA_WA-UW355_2020_EPI_ISL_418922_2020-03-16_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA-UW365_2020_EPI_ISL_418932_2020-03-16_exog" spec="Sequence" taxon="hCoV-19_USA_WA-UW365_2020_EPI_ISL_418932_2020-03-16_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WA1-A12_2020_EPI_ISL_407214_2020-01-25_exog" spec="Sequence" taxon="hCoV-19_USA_WA1-A12_2020_EPI_ISL_407214_2020-01-25_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-GMF-01591_2020_EPI_ISL_435399_2020-04-23_exog" spec="Sequence" taxon="hCoV-19_USA_WI-GMF-01591_2020_EPI_ISL_435399_2020-04-23_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-156_2020_EPI_ISL_428252_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-156_2020_EPI_ISL_428252_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-157_2020_EPI_ISL_428253_2020-03-15_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-157_2020_EPI_ISL_428253_2020-03-15_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-158_2020_EPI_ISL_428254_2020-03-15_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-158_2020_EPI_ISL_428254_2020-03-15_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-159_2020_EPI_ISL_428255_2020-03-15_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-159_2020_EPI_ISL_428255_2020-03-15_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-160_2020_EPI_ISL_428256_2020-03-15_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-160_2020_EPI_ISL_428256_2020-03-15_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-161_2020_EPI_ISL_428257_2020-03-29_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-161_2020_EPI_ISL_428257_2020-03-29_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-162_2020_EPI_ISL_428258_2020-03-29_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-162_2020_EPI_ISL_428258_2020-03-29_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-165_2020_EPI_ISL_428261_2020-03-17_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-165_2020_EPI_ISL_428261_2020-03-17_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-166_2020_EPI_ISL_428262_2020-03-17_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-166_2020_EPI_ISL_428262_2020-03-17_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-167_2020_EPI_ISL_428263_2020-03-18_exog" spec="Sequence" taxon="hCoV-19_USA_WI-UW-167_2020_EPI_ISL_428263_2020-03-18_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-168_2020_EPI_ISL_428264_2020-03-19_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-168_2020_EPI_ISL_428264_2020-03-19_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-170_2020_EPI_ISL_428266_2020-03-19_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-170_2020_EPI_ISL_428266_2020-03-19_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-171_2020_EPI_ISL_428267_2020-03-19_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-171_2020_EPI_ISL_428267_2020-03-19_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-172_2020_EPI_ISL_428268_2020-03-19_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-172_2020_EPI_ISL_428268_2020-03-19_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-173_2020_EPI_ISL_428269_2020-03-20_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-173_2020_EPI_ISL_428269_2020-03-20_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-176_2020_EPI_ISL_428272_2020-03-20_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-176_2020_EPI_ISL_428272_2020-03-20_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-177_2020_EPI_ISL_428273_2020-03-20_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-177_2020_EPI_ISL_428273_2020-03-20_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-178_2020_EPI_ISL_428274_2020-03-20_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-178_2020_EPI_ISL_428274_2020-03-20_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-179_2020_EPI_ISL_428275_2020-03-21_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-179_2020_EPI_ISL_428275_2020-03-21_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-181_2020_EPI_ISL_428277_2020-03-22_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-181_2020_EPI_ISL_428277_2020-03-22_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-182_2020_EPI_ISL_428278_2020-03-22_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-182_2020_EPI_ISL_428278_2020-03-22_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-183_2020_EPI_ISL_428279_2020-03-22_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-183_2020_EPI_ISL_428279_2020-03-22_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-184_2020_EPI_ISL_428280_2020-03-22_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-184_2020_EPI_ISL_428280_2020-03-22_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-185_2020_EPI_ISL_428281_2020-03-22_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-185_2020_EPI_ISL_428281_2020-03-22_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-186_2020_EPI_ISL_428282_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-186_2020_EPI_ISL_428282_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-187_2020_EPI_ISL_428283_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-187_2020_EPI_ISL_428283_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-188_2020_EPI_ISL_428284_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-188_2020_EPI_ISL_428284_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-189_2020_EPI_ISL_428285_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-189_2020_EPI_ISL_428285_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-190_2020_EPI_ISL_428286_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-190_2020_EPI_ISL_428286_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-191_2020_EPI_ISL_428287_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-191_2020_EPI_ISL_428287_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-192_2020_EPI_ISL_428288_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-192_2020_EPI_ISL_428288_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-195_2020_EPI_ISL_428291_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-195_2020_EPI_ISL_428291_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-196_2020_EPI_ISL_428292_2020-03-21_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-196_2020_EPI_ISL_428292_2020-03-21_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-197_2020_EPI_ISL_428293_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-197_2020_EPI_ISL_428293_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-200_2020_EPI_ISL_428296_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-200_2020_EPI_ISL_428296_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-205_2020_EPI_ISL_428301_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-205_2020_EPI_ISL_428301_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-207_2020_EPI_ISL_428303_2020-03-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-207_2020_EPI_ISL_428303_2020-03-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-208_2020_EPI_ISL_428304_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-208_2020_EPI_ISL_428304_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-209_2020_EPI_ISL_428305_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-209_2020_EPI_ISL_428305_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-210_2020_EPI_ISL_428306_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-210_2020_EPI_ISL_428306_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-211_2020_EPI_ISL_428307_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-211_2020_EPI_ISL_428307_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-212_2020_EPI_ISL_428308_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-212_2020_EPI_ISL_428308_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-213_2020_EPI_ISL_428309_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-213_2020_EPI_ISL_428309_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-215_2020_EPI_ISL_428311_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-215_2020_EPI_ISL_428311_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-216_2020_EPI_ISL_428312_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-216_2020_EPI_ISL_428312_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-217_2020_EPI_ISL_428313_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-217_2020_EPI_ISL_428313_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-218_2020_EPI_ISL_428314_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-218_2020_EPI_ISL_428314_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-219_2020_EPI_ISL_428315_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-219_2020_EPI_ISL_428315_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-221_2020_EPI_ISL_428317_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-221_2020_EPI_ISL_428317_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-222_2020_EPI_ISL_428318_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-222_2020_EPI_ISL_428318_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-223_2020_EPI_ISL_428319_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-223_2020_EPI_ISL_428319_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-225_2020_EPI_ISL_428321_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-225_2020_EPI_ISL_428321_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-226_2020_EPI_ISL_428322_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-226_2020_EPI_ISL_428322_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-227_2020_EPI_ISL_428323_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-227_2020_EPI_ISL_428323_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-228_2020_EPI_ISL_428324_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-228_2020_EPI_ISL_428324_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-229_2020_EPI_ISL_428325_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-229_2020_EPI_ISL_428325_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-230_2020_EPI_ISL_428326_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-230_2020_EPI_ISL_428326_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-231_2020_EPI_ISL_428327_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-231_2020_EPI_ISL_428327_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-232_2020_EPI_ISL_428328_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-232_2020_EPI_ISL_428328_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-233_2020_EPI_ISL_428329_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-233_2020_EPI_ISL_428329_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-234_2020_EPI_ISL_428330_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-234_2020_EPI_ISL_428330_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-235_2020_EPI_ISL_428331_2020-03-28_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-235_2020_EPI_ISL_428331_2020-03-28_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-236_2020_EPI_ISL_428332_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-236_2020_EPI_ISL_428332_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-237_2020_EPI_ISL_428333_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-237_2020_EPI_ISL_428333_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-238_2020_EPI_ISL_428334_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-238_2020_EPI_ISL_428334_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-240_2020_EPI_ISL_428336_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-240_2020_EPI_ISL_428336_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-241_2020_EPI_ISL_428337_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-241_2020_EPI_ISL_428337_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-242_2020_EPI_ISL_428338_2020-03-28_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-242_2020_EPI_ISL_428338_2020-03-28_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-245_2020_EPI_ISL_428341_2020-03-28_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-245_2020_EPI_ISL_428341_2020-03-28_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-248_2020_EPI_ISL_428344_2020-03-28_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-248_2020_EPI_ISL_428344_2020-03-28_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-272_2020_EPI_ISL_436566_2020-03-27_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-272_2020_EPI_ISL_436566_2020-03-27_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-273_2020_EPI_ISL_436567_2020-03-31_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-273_2020_EPI_ISL_436567_2020-03-31_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-274_2020_EPI_ISL_436568_2020-03-31_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-274_2020_EPI_ISL_436568_2020-03-31_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-275_2020_EPI_ISL_436569_2020-04-01_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-275_2020_EPI_ISL_436569_2020-04-01_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-276_2020_EPI_ISL_436570_2020-04-01_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-276_2020_EPI_ISL_436570_2020-04-01_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-277_2020_EPI_ISL_436571_2020-04-02_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-277_2020_EPI_ISL_436571_2020-04-02_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-278_2020_EPI_ISL_436572_2020-04-03_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-278_2020_EPI_ISL_436572_2020-04-03_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-279_2020_EPI_ISL_436573_2020-04-03_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-279_2020_EPI_ISL_436573_2020-04-03_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-280_2020_EPI_ISL_436574_2020-04-03_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-280_2020_EPI_ISL_436574_2020-04-03_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-281_2020_EPI_ISL_436575_2020-04-06_exog" spec="Sequence" taxon="hCoV-19_USA_WI-UW-281_2020_EPI_ISL_436575_2020-04-06_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-283_2020_EPI_ISL_436577_2020-04-06_exog" spec="Sequence" taxon="hCoV-19_USA_WI-UW-283_2020_EPI_ISL_436577_2020-04-06_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-285_2020_EPI_ISL_436579_2020-04-06_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-285_2020_EPI_ISL_436579_2020-04-06_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-286_2020_EPI_ISL_436580_2020-04-06_exog" spec="Sequence" taxon="hCoV-19_USA_WI-UW-286_2020_EPI_ISL_436580_2020-04-06_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-288_2020_EPI_ISL_436582_2020-04-08_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-288_2020_EPI_ISL_436582_2020-04-08_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-289_2020_EPI_ISL_436583_2020-04-08_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-289_2020_EPI_ISL_436583_2020-04-08_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-290_2020_EPI_ISL_436584_2020-04-08_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-290_2020_EPI_ISL_436584_2020-04-08_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-291_2020_EPI_ISL_436585_2020-04-08_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-291_2020_EPI_ISL_436585_2020-04-08_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-293_2020_EPI_ISL_436587_2020-04-09_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-293_2020_EPI_ISL_436587_2020-04-09_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-296_2020_EPI_ISL_436590_2020-04-09_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-296_2020_EPI_ISL_436590_2020-04-09_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-299_2020_EPI_ISL_436593_2020-04-13_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-299_2020_EPI_ISL_436593_2020-04-13_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-301_2020_EPI_ISL_436595_2020-04-13_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-301_2020_EPI_ISL_436595_2020-04-13_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-302_2020_EPI_ISL_436596_2020-04-13_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-302_2020_EPI_ISL_436596_2020-04-13_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-303_2020_EPI_ISL_436597_2020-04-13_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-303_2020_EPI_ISL_436597_2020-04-13_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-304_2020_EPI_ISL_436598_2020-04-13_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-304_2020_EPI_ISL_436598_2020-04-13_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-305_2020_EPI_ISL_436599_2020-04-14_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-305_2020_EPI_ISL_436599_2020-04-14_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-306_2020_EPI_ISL_436600_2020-04-14_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-306_2020_EPI_ISL_436600_2020-04-14_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-308_2020_EPI_ISL_436602_2020-04-16_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-308_2020_EPI_ISL_436602_2020-04-16_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-309_2020_EPI_ISL_436603_2020-04-16_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-309_2020_EPI_ISL_436603_2020-04-16_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-310_2020_EPI_ISL_436604_2020-04-15_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-310_2020_EPI_ISL_436604_2020-04-15_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-313_2020_EPI_ISL_436607_2020-04-16_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-313_2020_EPI_ISL_436607_2020-04-16_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-316_2020_EPI_ISL_436610_2020-04-18_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-316_2020_EPI_ISL_436610_2020-04-18_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-319_2020_EPI_ISL_436613_2020-04-21_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-319_2020_EPI_ISL_436613_2020-04-21_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-320_2020_EPI_ISL_436614_2020-04-21_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-320_2020_EPI_ISL_436614_2020-04-21_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-321_2020_EPI_ISL_436615_2020-04-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-321_2020_EPI_ISL_436615_2020-04-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-322_2020_EPI_ISL_436616_2020-04-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-322_2020_EPI_ISL_436616_2020-04-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-323_2020_EPI_ISL_436617_2020-04-23_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-323_2020_EPI_ISL_436617_2020-04-23_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-324_2020_EPI_ISL_436618_2020-04-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-324_2020_EPI_ISL_436618_2020-04-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-325_2020_EPI_ISL_436619_2020-04-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-325_2020_EPI_ISL_436619_2020-04-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-329_2020_EPI_ISL_436623_2020-04-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-329_2020_EPI_ISL_436623_2020-04-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-333_2020_EPI_ISL_436627_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-333_2020_EPI_ISL_436627_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-334_2020_EPI_ISL_436628_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-334_2020_EPI_ISL_436628_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-335_2020_EPI_ISL_436629_2020-03-24_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-335_2020_EPI_ISL_436629_2020-03-24_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-336_2020_EPI_ISL_436630_2020-03-25_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-336_2020_EPI_ISL_436630_2020-03-25_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-337_2020_EPI_ISL_436631_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-337_2020_EPI_ISL_436631_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-338_2020_EPI_ISL_436632_2020-03-26_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-338_2020_EPI_ISL_436632_2020-03-26_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-340_2020_EPI_ISL_436634_2020-04-01_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-340_2020_EPI_ISL_436634_2020-04-01_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-341_2020_EPI_ISL_436635_2020-04-02_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-341_2020_EPI_ISL_436635_2020-04-02_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-342_2020_EPI_ISL_436636_2020-04-04_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-342_2020_EPI_ISL_436636_2020-04-04_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-343_2020_EPI_ISL_436637_2020-04-05_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-343_2020_EPI_ISL_436637_2020-04-05_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-344_2020_EPI_ISL_436638_2020-04-06_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-344_2020_EPI_ISL_436638_2020-04-06_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_USA_WI-UW-346_2020_EPI_ISL_436640_2020-04-21_Il" spec="Sequence" taxon="hCoV-19_USA_WI-UW-346_2020_EPI_ISL_436640_2020-04-21_Il" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wales_PHWC-2621D_2020_EPI_ISL_422038_2020-03-26_exog" spec="Sequence" taxon="hCoV-19_Wales_PHWC-2621D_2020_EPI_ISL_422038_2020-03-26_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wales_PHWC-2A57A_2020_EPI_ISL_445585_2020-04-07_exog" spec="Sequence" taxon="hCoV-19_Wales_PHWC-2A57A_2020_EPI_ISL_445585_2020-04-07_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wales_PHWC-2A871_2020_EPI_ISL_445628_2020-04-07_exog" spec="Sequence" taxon="hCoV-19_Wales_PHWC-2A871_2020_EPI_ISL_445628_2020-04-07_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wales_PHWC-2B3BB_2020_EPI_ISL_445702_2020-04-11_exog" spec="Sequence" taxon="hCoV-19_Wales_PHWC-2B3BB_2020_EPI_ISL_445702_2020-04-11_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wales_PHWC-31859_2020_EPI_ISL_446497_2020-04-10_exog" spec="Sequence" taxon="hCoV-19_Wales_PHWC-31859_2020_EPI_ISL_446497_2020-04-10_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wales_PHWC-32427_2020_EPI_ISL_446647_2020-04-10_exog" spec="Sequence" taxon="hCoV-19_Wales_PHWC-32427_2020_EPI_ISL_446647_2020-04-10_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan-Hu-1_2019_EPI_ISL_402125_2019-12-31_exog" spec="Sequence" taxon="hCoV-19_Wuhan-Hu-1_2019_EPI_ISL_402125_2019-12-31_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_HBCDC-HB-02_2020_EPI_ISL_412978_2020-01-17_exog" spec="Sequence" taxon="hCoV-19_Wuhan_HBCDC-HB-02_2020_EPI_ISL_412978_2020-01-17_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_IPBCAMS-WH-02_2019_EPI_ISL_403931_2019-12-30_exog" spec="Sequence" taxon="hCoV-19_Wuhan_IPBCAMS-WH-02_2019_EPI_ISL_403931_2019-12-30_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_IVDC-HB-04_2020_EPI_ISL_402120_2020-01-01_exog" spec="Sequence" taxon="hCoV-19_Wuhan_IVDC-HB-04_2020_EPI_ISL_402120_2020-01-01_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_WH01_2019_EPI_ISL_406798_2019-12-26_exog" spec="Sequence" taxon="hCoV-19_Wuhan_WH01_2019_EPI_ISL_406798_2019-12-26_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_WH03_2020_EPI_ISL_406800_2020-01-01_exog" spec="Sequence" taxon="hCoV-19_Wuhan_WH03_2020_EPI_ISL_406800_2020-01-01_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_WH04_2020_EPI_ISL_406801_2020-01-05_exog" spec="Sequence" taxon="hCoV-19_Wuhan_WH04_2020_EPI_ISL_406801_2020-01-05_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_WHU02_2020_EPI_ISL_406717_2020-01-02_exog" spec="Sequence" taxon="hCoV-19_Wuhan_WHU02_2020_EPI_ISL_406717_2020-01-02_exog" totalcount="4" value="NNNNN"/>
+                        <sequence id="seq_hCoV-19_Wuhan_WIV02_2019_EPI_ISL_402127_2019-12-30_exog" spec="Sequence" taxon="hCoV-19_Wuhan_WIV02_2019_EPI_ISL_402127_2019-12-30_exog" totalcount="4" value="NNNNN"/>
+                    </data>
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="NNNNN" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:MILWAUKEE_PHYDYN" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:MILWAUKEE_PHYDYN" spec="beast.evolution.tree.TraitSet" traitname="date" value="hCoV-19_Wuhan-Hu-1_2019_EPI_ISL_402125_2019-12-31_exog=12/31/19,hCoV-19_USA_CruiseA-5_2020_EPI_ISL_413610_2020-02-21_exog=2/21/20,hCoV-19_USA_CruiseA-3_2020_EPI_ISL_413608_2020-02-18_exog=2/18/20,hCoV-19_Wuhan_IPBCAMS-WH-02_2019_EPI_ISL_403931_2019-12-30_exog=12/30/19,hCoV-19_Thailand_74_2020_EPI_ISL_403963_2020-01-13_exog=1/13/20,hCoV-19_Scotland_CVR20_2020_EPI_ISL_425730_2020-03-13_exog=3/13/20,hCoV-19_Hangzhou_ZJU-05_2020_EPI_ISL_415711_2020-01-22_exog=1/22/20,hCoV-19_Wuhan_WH03_2020_EPI_ISL_406800_2020-01-01_exog=1/1/20,hCoV-19_Wuhan_WHU02_2020_EPI_ISL_406717_2020-01-02_exog=1/2/20,hCoV-19_China_WH-09_2020_EPI_ISL_411957_2020-01-08_exog=1/8/20,hCoV-19_Hangzhou_HZCDC0091_2020_EPI_ISL_421228_2020-01-21_exog=1/21/20,hCoV-19_USA_WI-UW-340_2020_EPI_ISL_436634_2020-04-01_Il=4/1/20,hCoV-19_USA_WI-UW-342_2020_EPI_ISL_436636_2020-04-04_Il=4/4/20,hCoV-19_USA_WI-UW-272_2020_EPI_ISL_436566_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-168_2020_EPI_ISL_428264_2020-03-19_Il=3/19/20,hCoV-19_USA_WI-UW-170_2020_EPI_ISL_428266_2020-03-19_Il=3/19/20,hCoV-19_USA_WI-UW-171_2020_EPI_ISL_428267_2020-03-19_Il=3/19/20,hCoV-19_USA_WI-UW-173_2020_EPI_ISL_428269_2020-03-20_Il=3/20/20,hCoV-19_USA_WI-UW-181_2020_EPI_ISL_428277_2020-03-22_Il=3/22/20,hCoV-19_USA_WI-UW-182_2020_EPI_ISL_428278_2020-03-22_Il=3/22/20,hCoV-19_USA_WI-UW-185_2020_EPI_ISL_428281_2020-03-22_Il=3/22/20,hCoV-19_USA_WI-UW-186_2020_EPI_ISL_428282_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-187_2020_EPI_ISL_428283_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-192_2020_EPI_ISL_428288_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-196_2020_EPI_ISL_428292_2020-03-21_Il=3/21/20,hCoV-19_USA_WI-UW-197_2020_EPI_ISL_428293_2020-03-24_Il=3/24/20,hCoV-19_USA_WI-UW-157_2020_EPI_ISL_428253_2020-03-15_Il=3/15/20,hCoV-19_USA_WI-UW-225_2020_EPI_ISL_428321_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-232_2020_EPI_ISL_428328_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-233_2020_EPI_ISL_428329_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-238_2020_EPI_ISL_428334_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-240_2020_EPI_ISL_428336_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-208_2020_EPI_ISL_428304_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-215_2020_EPI_ISL_428311_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-219_2020_EPI_ISL_428315_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-222_2020_EPI_ISL_428318_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-223_2020_EPI_ISL_428319_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-217_2020_EPI_ISL_428313_2020-03-25_Il=3/25/20,hCoV-19_Guangdong_20SF028_2020_EPI_ISL_403936_2020-01-17_exog=1/17/20,hCoV-19_Foshan_20SF210_2020_EPI_ISL_406535_2020-01-22_exog=1/22/20,hCoV-19_Pingxiang_JX5_2020_EPI_ISL_421252_2020-01-11_exog=1/11/20,hCoV-19_Nepal_61_2020_EPI_ISL_410301_2020-01-13_exog=1/13/20,hCoV-19_USA_WI-UW-333_2020_EPI_ISL_436627_2020-03-24_Il=3/24/20,hCoV-19_USA_WI-UW-334_2020_EPI_ISL_436628_2020-03-24_Il=3/24/20,hCoV-19_USA_WI-UW-346_2020_EPI_ISL_436640_2020-04-21_Il=4/21/20,hCoV-19_USA_WI-UW-172_2020_EPI_ISL_428268_2020-03-19_Il=3/19/20,hCoV-19_USA_WI-UW-162_2020_EPI_ISL_428258_2020-03-29_Il=3/29/20,hCoV-19_USA_WI-UW-229_2020_EPI_ISL_428325_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-231_2020_EPI_ISL_428327_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-234_2020_EPI_ISL_428330_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-236_2020_EPI_ISL_428332_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-209_2020_EPI_ISL_428305_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-210_2020_EPI_ISL_428306_2020-03-24_Il=3/24/20,hCoV-19_USA_WI-UW-211_2020_EPI_ISL_428307_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-213_2020_EPI_ISL_428309_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-221_2020_EPI_ISL_428317_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-343_2020_EPI_ISL_436637_2020-04-05_Il=4/5/20,hCoV-19_USA_WI-UW-178_2020_EPI_ISL_428274_2020-03-20_Il=3/20/20,hCoV-19_USA_WI-UW-216_2020_EPI_ISL_428312_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-179_2020_EPI_ISL_428275_2020-03-21_Il=3/21/20,hCoV-19_Singapore_35_2020_EPI_ISL_422428_2020-02-06_exog=2/6/20,hCoV-19_USA_CruiseA-10_2020_EPI_ISL_413615_2020-02-17_exog=2/17/20,hCoV-19_USA_WI-UW-241_2020_EPI_ISL_428337_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-212_2020_EPI_ISL_428308_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-290_2020_EPI_ISL_436584_2020-04-08_Il=4/8/20,hCoV-19_USA_WI-UW-303_2020_EPI_ISL_436597_2020-04-13_Il=4/13/20,hCoV-19_USA_WI-UW-191_2020_EPI_ISL_428287_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-237_2020_EPI_ISL_428333_2020-03-27_Il=3/27/20,hCoV-19_USA_WI-UW-177_2020_EPI_ISL_428273_2020-03-20_Il=3/20/20,hCoV-19_Japan_DP0803_2020_EPI_ISL_416630_2020-02-17_exog=2/17/20,hCoV-19_Japan_DP0804_2020_EPI_ISL_416631_2020-02-17_exog=2/17/20,hCoV-19_Japan_DP0133_2020_EPI_ISL_416576_2020-02-15_exog=2/15/20,hCoV-19_USA_WI-UW-183_2020_EPI_ISL_428279_2020-03-22_Il=3/22/20,hCoV-19_USA_WI-UW-274_2020_EPI_ISL_436568_2020-03-31_Il=3/31/20,hCoV-19_USA_CA-CZB-1212_2020_EPI_ISL_450461_2020-03-25_exog=3/25/20,hCoV-19_HongKong_HKU-903a_2020_EPI_ISL_434565_2020-01-24_exog=1/24/20,hCoV-19_France_IDF0515_2020_EPI_ISL_408430_2020-01-29_exog=1/29/20,hCoV-19_HongKong_VM20002507_2020_EPI_ISL_414528_2020-02-10_exog=2/10/20,hCoV-19_Italy_INMI1-isl_2020_EPI_ISL_410545_2020-01-29_exog=1/29/20,hCoV-19_USA_WI-UW-283_2020_EPI_ISL_436577_2020-04-06_exog=4/6/20,hCoV-19_USA_WI-UW-293_2020_EPI_ISL_436587_2020-04-09_Il=4/9/20,hCoV-19_USA_WI-UW-227_2020_EPI_ISL_428323_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-207_2020_EPI_ISL_428303_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-325_2020_EPI_ISL_436619_2020-04-24_Il=4/24/20,hCoV-19_USA_CA-CZB-1021_2020_EPI_ISL_436662_2020-04-11_exog=4/11/20,hCoV-19_Guangdong_GD2020246-P0028_2020_EPI_ISL_413864_2020-02-09_exog=2/9/20,hCoV-19_Wuhan_IVDC-HB-04_2020_EPI_ISL_402120_2020-01-01_exog=1/1/20,hCoV-19_Wuhan_WIV02_2019_EPI_ISL_402127_2019-12-30_exog=12/30/19,hCoV-19_Scotland_EDB2609_2020_EPI_ISL_439242_2020-04-25_exog=4/25/20,hCoV-19_USA_CA-CDPH-UC2_2020_EPI_ISL_413558_2020-02-27_exog=2/27/20,hCoV-19_USA_WI-UW-161_2020_EPI_ISL_428257_2020-03-29_Il=3/29/20,hCoV-19_USA_WI-UW-228_2020_EPI_ISL_428324_2020-03-26_Il=3/26/20,hCoV-19_Wuhan_WH01_2019_EPI_ISL_406798_2019-12-26_exog=12/26/19,hCoV-19_England_SHEF-BFF21_2020_EPI_ISL_418309_2020-03-25_exog=3/25/20,hCoV-19_USA_CruiseA-26_2020_EPI_ISL_414485_2020-02-24_exog=2/24/20,hCoV-19_Jian_JX129_2020_EPI_ISL_421253_2020-01-26_exog=1/26/20,hCoV-19_Guangzhou_GZMU0047_2020_EPI_ISL_414690_2020-02-25_exog=2/25/20,hCoV-19_Wuhan_WH04_2020_EPI_ISL_406801_2020-01-05_exog=1/5/20,hCoV-19_Guangdong_20SF025_2020_EPI_ISL_403935_2020-01-15_exog=1/15/20,hCoV-19_Shenzhen_SZTH-002_2020_EPI_ISL_406593_2020-01-13_exog=1/13/20,hCoV-19_Australia_VIC138_2020_EPI_ISL_419834_2020-02-23_exog=2/23/20,hCoV-19_USA_WA1-A12_2020_EPI_ISL_407214_2020-01-25_exog=1/25/20,hCoV-19_Beijing_BJ556_2020_EPI_ISL_430733_2020-02-04_exog=2/4/20,hCoV-19_USA_WA-S825_2020_EPI_ISL_449995_2020-04-16_exog=4/16/20,hCoV-19_USA_WA-S115_2020_EPI_ISL_417168_2020-02-29_exog=2/29/20,hCoV-19_USA_WA-S44_2020_EPI_ISL_417097_2020-02-28_exog=2/28/20,hCoV-19_USA_WI-UW-167_2020_EPI_ISL_428263_2020-03-18_exog=3/18/20,hCoV-19_USA_WA-S20_2020_EPI_ISL_417073_2020-03-02_exog=3/2/20,hCoV-19_Wuhan_HBCDC-HB-02_2020_EPI_ISL_412978_2020-01-17_exog=1/17/20,hCoV-19_Shanghai_SH0069_2020_EPI_ISL_416372_2020-02-01_exog=2/1/20,hCoV-19_USA_WA-S595_2020_EPI_ISL_438148_2020-04-12_exog=4/12/20,hCoV-19_USA_WA-UW355_2020_EPI_ISL_418922_2020-03-16_exog=3/16/20,hCoV-19_Nanchang_JX176_2020_EPI_ISL_421261_2020-01-29_exog=1/29/20,hCoV-19_Sichuan_IVDC-SC-001_2020_EPI_ISL_408484_2020-01-15_exog=1/15/20,hCoV-19_Australia_VIC86_2020_EPI_ISL_419796_2020-03-15_exog=3/15/20,hCoV-19_USA_WI-UW-166_2020_EPI_ISL_428262_2020-03-17_Il=3/17/20,hCoV-19_USA_WI-UW-189_2020_EPI_ISL_428285_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-218_2020_EPI_ISL_428314_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-245_2020_EPI_ISL_428341_2020-03-28_Il=3/28/20,hCoV-19_USA_WI-UW-235_2020_EPI_ISL_428331_2020-03-28_Il=3/28/20,hCoV-19_USA_NY-NYUMC565_2020_EPI_ISL_444682_2020-03-30_exog=3/30/20,hCoV-19_USA_WI-UW-184_2020_EPI_ISL_428280_2020-03-22_Il=3/22/20,hCoV-19_Luxembourg_LNS4295690_2020_EPI_ISL_428959_2020-04-01_exog=4/1/20,hCoV-19_USA_WI-UW-281_2020_EPI_ISL_436575_2020-04-06_exog=4/6/20,hCoV-19_USA_WI-UW-305_2020_EPI_ISL_436599_2020-04-14_Il=4/14/20,hCoV-19_USA_WI-UW-306_2020_EPI_ISL_436600_2020-04-14_Il=4/14/20,hCoV-19_USA_WI-UW-278_2020_EPI_ISL_436572_2020-04-03_Il=4/3/20,hCoV-19_USA_WI-UW-279_2020_EPI_ISL_436573_2020-04-03_Il=4/3/20,hCoV-19_USA_WI-UW-289_2020_EPI_ISL_436583_2020-04-08_Il=4/8/20,hCoV-19_USA_WI-UW-291_2020_EPI_ISL_436585_2020-04-08_Il=4/8/20,hCoV-19_USA_WI-UW-299_2020_EPI_ISL_436593_2020-04-13_Il=4/13/20,hCoV-19_USA_WI-UW-286_2020_EPI_ISL_436580_2020-04-06_exog=4/6/20,hCoV-19_USA_WI-UW-310_2020_EPI_ISL_436604_2020-04-15_Il=4/15/20,hCoV-19_USA_WI-UW-301_2020_EPI_ISL_436595_2020-04-13_Il=4/13/20,hCoV-19_USA_WI-UW-302_2020_EPI_ISL_436596_2020-04-13_Il=4/13/20,hCoV-19_Wales_PHWC-31859_2020_EPI_ISL_446497_2020-04-10_exog=4/10/20,hCoV-19_Scotland_EDB2606_2020_EPI_ISL_439239_2020-04-25_exog=4/25/20,hCoV-19_Belgium_ULG-6638_2020_EPI_ISL_417017_2020-03-14_exog=3/14/20,hCoV-19_England_CAMB-79943_2020_EPI_ISL_444393_2020-04-20_exog=4/20/20,hCoV-19_SouthKorea_KUMC01_2020_EPI_ISL_413017_2020-02-06_exog=2/6/20,hCoV-19_Kazakhstan_NCB-5_2020_EPI_ISL_435048_2020-04-21_exog=4/21/20,hCoV-19_USA_WI-UW-344_2020_EPI_ISL_436638_2020-04-06_Il=4/6/20,hCoV-19_England_LOND-D3B41_2020_EPI_ISL_449630_2020-04-04_exog=4/4/20,hCoV-19_England_LOND-D4C4D_2020_EPI_ISL_449667_2020-04-14_exog=4/14/20,hCoV-19_SaudiArabia_KAUST-Jeddah68_2020_EPI_ISL_437756_2020-04-01_exog=4/1/20,hCoV-19_England_201360170_2020_EPI_ISL_421769_2020-03-24_exog=3/24/20,hCoV-19_Austria_CeMM0157_2020_EPI_ISL_438003_2020-03-04_exog=3/4/20,hCoV-19_Russia_StPetersburg-RII4728S_2020_EPI_ISL_427335_2020-04-07_exog=4/7/20,hCoV-19_Russia_StPetersburg-RII8409S_2020_EPI_ISL_450282_2020-04-22_exog=4/22/20,hCoV-19_England_20109097506_2020_EPI_ISL_417293_2020-03-08_exog=3/8/20,hCoV-19_Wales_PHWC-2A871_2020_EPI_ISL_445628_2020-04-07_exog=4/7/20,hCoV-19_Sweden_20-07480_2020_EPI_ISL_434673_2020-04-16_exog=4/16/20,hCoV-19_England_CAMB-7ADA0_2020_EPI_ISL_433875_2020-04-08_exog=4/8/20,hCoV-19_Belgium_030959_2020_EPI_ISL_420320_2020-03-09_exog=3/9/20,hCoV-19_CzechRepublic_Seq5_2020_EPI_ISL_426358_2020-03-19_exog=3/19/20,hCoV-19_England_LIVE-9BA84_2020_EPI_ISL_440897_2020-04-21_exog=4/21/20,hCoV-19_USA_NY-NYUMC478_2020_EPI_ISL_435543_2020-04-22_exog=4/22/20,hCoV-19_England_NORW-E6E8E_2020_EPI_ISL_448985_2020-04-18_exog=4/18/20,hCoV-19_Scotland_EDB2077_2020_EPI_ISL_433176_2020-04-19_exog=4/19/20,hCoV-19_England_NOTT-10F12B_2020_EPI_ISL_432967_2020-03-31_exog=3/31/20,hCoV-19_Wales_PHWC-2A57A_2020_EPI_ISL_445585_2020-04-07_exog=4/7/20,hCoV-19_USA_WI-UW-336_2020_EPI_ISL_436630_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-156_2020_EPI_ISL_428252_2020-03-25_Il=3/25/20,hCoV-19_England_CAMB-82BD8_2020_EPI_ISL_438669_2020-04-24_exog=4/24/20,hCoV-19_Wales_PHWC-2621D_2020_EPI_ISL_422038_2020-03-26_exog=3/26/20,hCoV-19_Wales_PHWC-32427_2020_EPI_ISL_446647_2020-04-10_exog=4/10/20,hCoV-19_Switzerland_GE4135_2020_EPI_ISL_415705_2020-03-06_exog=3/6/20,hCoV-19_Wales_PHWC-2B3BB_2020_EPI_ISL_445702_2020-04-11_exog=4/11/20,hCoV-19_USA_WA-UW-2180_2020_EPI_ISL_426106_2020-03-24_exog=3/24/20,hCoV-19_England_20132004804_2020_EPI_ISL_423717_2020-03-23_exog=3/23/20,hCoV-19_USA_MN67-MDH67_2020_EPI_ISL_419395_2020-03-14_exog=3/14/20,hCoV-19_England_LOND-D45E8_2020_EPI_ISL_444139_2020-04-08_exog=4/8/20,hCoV-19_Scotland_CVR1345_2020_EPI_ISL_433548_2020-03-31_exog=3/31/20,hCoV-19_Australia_VIC166_2020_EPI_ISL_419863_2020-03-18_exog=3/18/20,hCoV-19_Luxembourg_LNS2335124_2020_EPI_ISL_445066_2020-04-24_exog=4/24/20,hCoV-19_USA_WI-UW-321_2020_EPI_ISL_436615_2020-04-23_Il=4/23/20,hCoV-19_USA_WI-UW-165_2020_EPI_ISL_428261_2020-03-17_Il=3/17/20,hCoV-19_USA_WI-UW-248_2020_EPI_ISL_428344_2020-03-28_Il=3/28/20,hCoV-19_USA_WI-UW-176_2020_EPI_ISL_428272_2020-03-20_Il=3/20/20,hCoV-19_USA_WI-UW-195_2020_EPI_ISL_428291_2020-03-24_Il=3/24/20,hCoV-19_USA_WI-UW-158_2020_EPI_ISL_428254_2020-03-15_Il=3/15/20,hCoV-19_USA_WI-UW-160_2020_EPI_ISL_428256_2020-03-15_Il=3/15/20,hCoV-19_USA_WI-UW-159_2020_EPI_ISL_428255_2020-03-15_Il=3/15/20,hCoV-19_USA_WI-UW-319_2020_EPI_ISL_436613_2020-04-21_Il=4/21/20,hCoV-19_USA_NY-Wadsworth-10528-01_2020_EPI_ISL_426026_2020-03-03_exog=3/3/20,hCoV-19_USA_WA-UW-2087_2020_EPI_ISL_426083_2020-03-25_exog=3/25/20,hCoV-19_Australia_VIC849_2020_EPI_ISL_427109_2020-04-04_exog=4/4/20,hCoV-19_Iceland_66_2020_EPI_ISL_417857_2020-03-07_exog=3/7/20,hCoV-19_USA_NY-WCMP9B09P_2020_EPI_ISL_427549_2020-03-14_exog=3/14/20,hCoV-19_Australia_VIC31_2020_EPI_ISL_419750_2020-03-10_exog=3/10/20,hCoV-19_Germany_NRW-26_2020_EPI_ISL_419543_2020-03-15_exog=3/15/20,hCoV-19_Denmark_ALAB-SSI195_2020_EPI_ISL_429396_2020-03-09_exog=3/9/20,hCoV-19_Denmark_ALAB-SSI-1126_2020_EPI_ISL_436962_2020-04-02_exog=4/2/20,hCoV-19_USA_WI-UW-200_2020_EPI_ISL_428296_2020-03-24_Il=3/24/20,hCoV-19_USA_MD-HP00037_2020_EPI_ISL_434587_2020-03-24_exog=3/24/20,hCoV-19_USA_WI-UW-335_2020_EPI_ISL_436629_2020-03-24_Il=3/24/20,hCoV-19_USA_WI-UW-338_2020_EPI_ISL_436632_2020-03-26_Il=3/26/20,hCoV-19_USA_NY-NYUMC467_2020_EPI_ISL_435532_2020-04-16_exog=4/16/20,hCoV-19_Jordan_SR-048_2020_EPI_ISL_430006_2020-03-23_exog=3/23/20,hCoV-19_USA_WA-UW227_2020_EPI_ISL_417376_2020-03-15_exog=3/15/20,hCoV-19_England_LOND-D5E55_2020_EPI_ISL_444251_2020-04-19_exog=4/19/20,hCoV-19_USA_WI-UW-337_2020_EPI_ISL_436631_2020-03-26_Il=3/26/20,hCoV-19_USA_WA-UW365_2020_EPI_ISL_418932_2020-03-16_exog=3/16/20,hCoV-19_USA_WI-UW-190_2020_EPI_ISL_428286_2020-03-23_Il=3/23/20,hCoV-19_SaudiArabia_KAUST-Madinah47_2020_EPI_ISL_443172_2020-03-29_exog=3/29/20,hCoV-19_USA_WI-UW-323_2020_EPI_ISL_436617_2020-04-23_Il=4/23/20,hCoV-19_USA_WI-UW-188_2020_EPI_ISL_428284_2020-03-23_Il=3/23/20,hCoV-19_USA_WI-UW-230_2020_EPI_ISL_428326_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-242_2020_EPI_ISL_428338_2020-03-28_Il=3/28/20,hCoV-19_USA_WI-UW-309_2020_EPI_ISL_436603_2020-04-16_Il=4/16/20,hCoV-19_USA_WI-UW-341_2020_EPI_ISL_436635_2020-04-02_Il=4/2/20,hCoV-19_USA_WI-UW-226_2020_EPI_ISL_428322_2020-03-26_Il=3/26/20,hCoV-19_USA_WI-UW-205_2020_EPI_ISL_428301_2020-03-25_Il=3/25/20,hCoV-19_USA_WI-UW-273_2020_EPI_ISL_436567_2020-03-31_Il=3/31/20,hCoV-19_USA_WI-UW-275_2020_EPI_ISL_436569_2020-04-01_Il=4/1/20,hCoV-19_USA_WI-UW-276_2020_EPI_ISL_436570_2020-04-01_Il=4/1/20,hCoV-19_USA_WI-UW-277_2020_EPI_ISL_436571_2020-04-02_Il=4/2/20,hCoV-19_USA_WI-UW-285_2020_EPI_ISL_436579_2020-04-06_Il=4/6/20,hCoV-19_USA_WI-UW-296_2020_EPI_ISL_436590_2020-04-09_Il=4/9/20,hCoV-19_USA_WI-UW-288_2020_EPI_ISL_436582_2020-04-08_Il=4/8/20,hCoV-19_Colombia_GVI-97349_2020_EPI_ISL_447797_2020-04-04_exog=4/4/20,hCoV-19_USA_NY-NYUMC322_2020_EPI_ISL_430349_2020-03-30_exog=3/30/20,hCoV-19_USA_WI-UW-304_2020_EPI_ISL_436598_2020-04-13_Il=4/13/20,hCoV-19_CzechRepublic_2741_2020_EPI_ISL_422636_2020-03-08_exog=3/8/20,hCoV-19_USA_WI-UW-308_2020_EPI_ISL_436602_2020-04-16_Il=4/16/20,hCoV-19_USA_WI-UW-316_2020_EPI_ISL_436610_2020-04-18_Il=4/18/20,hCoV-19_USA_WI-UW-313_2020_EPI_ISL_436607_2020-04-16_Il=4/16/20,hCoV-19_USA_WI-UW-322_2020_EPI_ISL_436616_2020-04-23_Il=4/23/20,hCoV-19_USA_WI-UW-324_2020_EPI_ISL_436618_2020-04-24_Il=4/24/20,hCoV-19_France_IDF3745_2020_EPI_ISL_428363_2020-03-26_exog=3/26/20,hCoV-19_Iceland_451_2020_EPI_ISL_424475_2020-03-20_exog=3/20/20,hCoV-19_Scotland_CVR3157_2020_EPI_ISL_449193_2020-04-22_exog=4/22/20,hCoV-19_Scotland_EDB2114_2020_EPI_ISL_439159_2020-04-20_exog=4/20/20,hCoV-19_USA_WI-UW-320_2020_EPI_ISL_436614_2020-04-21_Il=4/21/20,hCoV-19_USA_WI-UW-280_2020_EPI_ISL_436574_2020-04-03_Il=4/3/20,hCoV-19_USA_WI-UW-329_2020_EPI_ISL_436623_2020-04-25_Il=4/25/20,hCoV-19_Scotland_EDB4365_2020_EPI_ISL_449298_2020-04-24_exog=4/24/20,hCoV-19_Singapore_65_2020_EPI_ISL_428844_2020-04-08_exog=4/8/20,hCoV-19_USA_VA-DCLS-0110_2020_EPI_ISL_434602_2020-04-08_exog=4/8/20,hCoV-19_USA_WI-GMF-01591_2020_EPI_ISL_435399_2020-04-23_exog=4/23/20,hCoV-19_Iceland_561_2020_EPI_ISL_424581_2020-03-28_exog=3/28/20,hCoV-19_England_200690300_2020_EPI_ISL_414042_2020-02-08_exog=2/8/20,hCoV-19_Portugal_PT0056_2020_EPI_ISL_421459_2020-03-20_exog=3/20/20,hCoV-19_Australia_NSW151_2020_EPI_ISL_427721_2020-03-19_exog=3/19/20,hCoV-19_Russia_StPetersburg-RII4649S_2020_EPI_ISL_427321_2020-04-05_exog=4/5/20,hCoV-19_USA_NY-NYUMC482_2020_EPI_ISL_435547_2020-04-24_exog=4/24/20">
+                <taxa id="TaxonSet.MILWAUKEE_PHYDYN" spec="TaxonSet">
+                    <alignment idref="MILWAUKEE_PHYDYN"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.MILWAUKEE_PHYDYN"/>
+        </tree>
+        <!-- Initial values -->
+        <parameter id="clockRate.c:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="1.0E-4" name="stateNode" upper="0.002">0.001</parameter>
+        <parameter id="kappa.s:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="gammaShape.s:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="seir.R0.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="0.0" name="stateNode">2</parameter>
+		<parameter id="seir.a.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="0.0" upper="2.0" name="stateNode">1</parameter>
+        <parameter id="seir.exogGrowthRate.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" name="stateNode">36.5</parameter>
+        <parameter id="seir.exog.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="0.0" upper="2.5" name="stateNode">1</parameter>
+        <parameter id="seir.importRate.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="0.0" upper="2.0" name="stateNode" >1.0</parameter>
+        <parameter id="seir.E.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="freqParameter.s:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+
+    <!-- Maximum likelihood starting tree from IQTree -->
+    <init id="NewickTree.t:MILWAUKEE_PHYDYN" spec="beast.util.TreeParser" estimate="false" initial="@Tree.t:MILWAUKEE_PHYDYN" newick="NEWICK_MAXIMUM_LIKELIHOOD_TREE"/>
+	
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="PhydynSEIR.t:MILWAUKEE_PHYDYN" spec="phydyn.distribution.STreeLikelihoodODE" equations="QL" useStateName='true' forgiveAgtY='1.0' minP="0.01">
+                <popmodel id="pdseirmodel.t:MILWAUKEE_PHYDYN" spec="phydyn.model.PopModelODE">
+
+                    <!-- SEIR MODEL (assume dynamics begin on SIR_T0) -->
+                    <!-- WI Safer At Home start = 2020.230137 -->
+					<!-- Assume 25% reduction in importation based on Imperial College mobility study -->
+  				    <!-- WI epidemic start = 2020.156164 -->
+  				    <!-- Serial interval = 4 days, incubation period = 5 days, so start SEIR model at 2020.156164 -->
+                    <matrixeq id="MatrixEquation.0" spec="phydyn.model.MatrixEquation" destination="Il" origin="E" type="migration">
+                      if ( t > 2020.156164 ) then (gamma0*E*(1-p_h)) else 0.0
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.1" spec="phydyn.model.MatrixEquation" destination="Ih" origin="E" type="migration">
+                      if ( t > 2020.156164 ) then (gamma0*E*p_h) else 0.0
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.2" spec="phydyn.model.MatrixEquation" destination="E" origin="Il" type="birth">
+                      (beta*Il*S / N)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.3" spec="phydyn.model.MatrixEquation" destination="E" origin="Ih" type="birth">
+                      (beta*Ih*tau * S / N)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.4" spec="phydyn.model.MatrixEquation" origin="Il" type="death">
+                      if ( t > 2020.156164 ) then (gamma1*Il) else 0.0
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.5" spec="phydyn.model.MatrixEquation" origin="Ih" type="death">
+                      if ( t > 2020.156164 ) then (gamma1*Ih) else 0.0
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.6" spec="phydyn.model.MatrixEquation" origin="R" type="nondeme">
+                      if ( t > 2020.156164 ) then (gamma1*(Il + Ih)) else 0.0
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.7" spec="phydyn.model.MatrixEquation" origin="S" type="nondeme">
+                      (-beta*(Ih*tau+Il) * S / N)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.8" spec="phydyn.model.MatrixEquation" origin="infections" type="nondeme">
+                      (beta*(Ih*tau+Il) * S / N)
+                    </matrixeq>
+                    <!-- cumulative number of people who have become infectious -->
+                    <matrixeq id="MatrixEquation.81" spec="phydyn.model.MatrixEquation" origin="infectious" type="nondeme">
+                      gamma0*E
+                    </matrixeq>
+
+                    <!-- Import/Export of cases -->
+                    <matrixeq id="MatrixEquation.9" spec="phydyn.model.MatrixEquation" destination="Il" origin="exog" type="migration">
+                      if ( t > 2020.230137 )
+                      then (0.075*importRate*Il) else
+                      (0.1*importRate*Il)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.10" spec="phydyn.model.MatrixEquation" destination="exog" origin="Il" type="migration">
+                      if ( t > 2020.230137)
+                      then (0.075*importRate*Il) else
+                      (0.1*importRate*Il)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.11" spec="phydyn.model.MatrixEquation" destination="Ih" origin="exog" type="migration">
+                      if ( t > 2020.230137 )
+                      then (0.75*importRate*Ih) else
+                      (0.1*importRate*Ih)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.12" spec="phydyn.model.MatrixEquation" destination="exog" origin="Ih" type="migration">
+                      if ( t > 2020.230137 )
+                      then (0.075*importRate*Ih) else
+                      (0.1*importRate*Ih)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.13" spec="phydyn.model.MatrixEquation" destination="E" origin="exog" type="migration">
+                      if ( t > 2020.230137 )
+                      then (0.075*importRate*E) else
+                      (0.1*importRate*E)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.14" spec="phydyn.model.MatrixEquation" destination="exog" origin="E" type="migration">
+                      if ( t > 2020.230137 )
+                      then (0.075*importRate*E) else
+                      (0.1*importRate*E)
+                    </matrixeq>
+
+                    <!-- Growth of exog -->
+                    <matrixeq id="MatrixEquation.15" spec="phydyn.model.MatrixEquation" destination="exog" origin="exog" type="birth">
+                      (betaExog * exog)
+                    </matrixeq>
+                    <matrixeq id="MatrixEquation.16" spec="phydyn.model.MatrixEquation" origin="exog" type="death">
+                      (gammaExog * exog)
+                    </matrixeq>
+
+                  <definition id="Definition.0" spec="phydyn.model.Definition" value=" N = S + Il + Ih + E + R  "/>
+
+				  <definition id="Definition.1" spec="phydyn.model.Definition"
+                      value=" beta = if (t > 2020.230137) then max(0.0, a*(R0*gamma1)/((1-p_h)+tau*p_h)) else
+                                     if (t > 2020.156164) then max(0.0, (R0*gamma1)/((1-p_h)+tau*p_h)) else 0.0 "/>
+                  <definition id="Definition.2" spec="phydyn.model.Definition" value=" betaExog =  gammaExog + exogGrowthRate "/>
+
+                    <popParams id="initValues" spec="phydyn.model.TrajectoryParameters" integrationSteps="200">
+                        <!-- Fixed parameters -->
+                        <!-- start of simulation -->
+                        <parameter id="seir.t0.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="t0">2019.7</parameter>
+                        <!-- Size of susceptible population -->
+                        <initialValue id="seir.S.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="S">
+                            <parameter id="seir.S.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="pvalue">950000</parameter>
+                        </initialValue>
+                        <!-- Initial number of I_low individuals (effectively 0) -->
+                        <initialValue id="seir.Il.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="Il">
+                            <parameter id="seir.Il.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="pvalue">1.0E-8</parameter>
+                        </initialValue>
+                        <!-- Initial number of I_high individuals (effectively 0) -->
+                        <initialValue id="seir.Ih.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="Ih">
+                            <parameter id="seir.Ih.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="pvalue">1.0E-8</parameter>
+                        </initialValue>
+                        <!-- Initial number of recovered individuals (0) -->
+                        <initialValue id="seir.R.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="R">
+                            <parameter id="seir.R.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="pvalue">0.0</parameter>
+                        </initialValue>
+
+                        <!-- Initial number of infections -->
+                        <initialValue id="seir.infections.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="infections">
+                            <parameter id="seir.infections.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="pvalue">0.0</parameter>
+                        </initialValue>
+                        <initialValue id="seir.infectious.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="infectious">
+                            <parameter id="seir.infectious.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="pvalue">0.0</parameter>
+                        </initialValue>
+
+                        <!-- Estimated parameters -->
+                        <!-- Initial number of exposed -->
+                        <initialValue id="seir.E.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="E" pvalue="@seir.E.t:MILWAUKEE_PHYDYN"/>
+                        <!-- Initial size of exog -->
+                        <initialValue id="seir.exog.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="exog" pvalue="@seir.exog.t:MILWAUKEE_PHYDYN"/>
+
+
+                    </popParams>
+                    <modelParams id="rates" spec="phydyn.model.ModelParameters">
+                        <!-- Fixed parameters -->
+                        <!-- LATENT period -->
+                        <param id="seir.gamma0.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="gamma0">
+                            <parameter id="seir.gamma0.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="pvalue">121.6666667</parameter>
+                        </param>
+                        <!-- Duration of infectiousness -->
+                        <param id="seir.gamma1.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="gamma1">
+                            <parameter id="seir.gamma1.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="pvalue">66.36363636</parameter>
+                        </param>
+                        <!-- Duration of being infected for exog (E + Il/Ih) -->
+                        <param id="seir.gammaExog.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="gammaExog">
+                            <parameter id="seir.gammaExog.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="pvalue">42.94117647</parameter>
+                        </param>
+                        <!-- Proportion of I_high -->
+                        <param id="seir.p_h.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" names="p_h">
+                            <parameter id="seir.p_h.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="values">0.05</parameter>
+                        </param>
+                        <param id="seir.tau.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" names="tau">
+                            <parameter id="seir.tau.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="values">107.666666</parameter>
+                        </param>
+
+                        <!-- Fitted parameters -->
+                        <!-- R0 -->
+                        <param id="seir.R0.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="R0" pvalue="@seir.R0.t:MILWAUKEE_PHYDYN"/>
+                        <param id="seir.a.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="NNNNN" pvalue="@seir.a.t:MILWAUKEE_PHYDYN"/>
+
+                        <!-- Growth of exog -->
+                        <param id="seir.exogGrowthRate.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="exogGrowthRate" pvalue="@seir.exogGrowthRate.t:MILWAUKEE_PHYDYN"/>
+                        <!-- Per capita import rate between exog and E/Il/Ih -->
+                        <param id="seir.importRate.pv.t:MILWAUKEE_PHYDYN" spec="phydyn.model.ParamValue" pname="importRate" pvalue="@seir.importRate.t:MILWAUKEE_PHYDYN"/>
+                    </modelParams>
+                </popmodel>
+
+                <parameter id="seir.Ne.t:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="Ne">0.1</parameter>
+                <treeIntervals id="STreeIntervals.t:MILWAUKEE_PHYDYN" spec="STreeIntervals" tree="@Tree.t:MILWAUKEE_PHYDYN"/>
+            </distribution>
+            <prior id="ClockPrior.c:MILWAUKEE_PHYDYN" name="distribution" x="@clockRate.c:MILWAUKEE_PHYDYN">
+                <Uniform id="Uniform.8" name="distr" lower="5.0E-4" upper="0.005"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:MILWAUKEE_PHYDYN" name="distribution" x="@freqParameter.s:MILWAUKEE_PHYDYN">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="KappaPrior.s:MILWAUKEE_PHYDYN" name="distribution" x="@kappa.s:MILWAUKEE_PHYDYN">
+                <LogNormal id="LogNormalDistributionModel.01" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="GammaShapePrior.s:MILWAUKEE_PHYDYN" name="distribution" x="@gammaShape.s:MILWAUKEE_PHYDYN">
+              <Exponential id="Exponential.0" name="distr">
+                  <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+              </Exponential>
+            </prior>
+
+            <prior id="seir.E.prior.t:MILWAUKEE_PHYDYN" name="distribution" x="@seir.E.t:MILWAUKEE_PHYDYN">
+                <Exponential id="Exponential.2" name="distr">
+                    <parameter id="RealParameter.20" spec="parameter.RealParameter" lower="0.0" name="mean" >1.0</parameter>
+                </Exponential>
+            </prior>
+
+            <prior id="seir.R0.prior.t:MILWAUKEE_PHYDYN" name="distribution" x="@seir.R0.t:MILWAUKEE_PHYDYN">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.18" spec="parameter.RealParameter" estimate="false" name="M">0.9</parameter>
+                    <parameter id="RealParameter.28" spec="parameter.RealParameter" estimate="false" name="S">0.9</parameter>
+                </LogNormal>
+            </prior>
+			
+            <prior id="seir.a.prior.t:MILWAUKEE_PHYDYN" name="distribution" x="@seir.a.t:MILWAUKEE_PHYDYN">
+                <Uniform id="Uniform.0" name="distr"/>
+            </prior>
+
+            <prior id="seir.exog.prior.t:MILWAUKEE_PHYDYN" name="distribution" x="@seir.exog.t:MILWAUKEE_PHYDYN">
+                <Exponential id="Exponential.25" name="distr">
+                    <parameter id="RealParameter.30" spec="parameter.RealParameter" name="mean">10</parameter>
+                </Exponential>
+            </prior>
+
+            <prior id="seir.exogGrowthRate.prior.t:MILWAUKEE_PHYDYN" name="distribution" x="@seir.exogGrowthRate.t:MILWAUKEE_PHYDYN">
+                <LogNormal id="LogNormalDistributionModel.6" name="distr">
+                    <parameter id="RealParameter.15" spec="parameter.RealParameter" lower="0.0" name="M" upper="0.0">3.6</parameter>
+                    <parameter id="RealParameter.16" spec="parameter.RealParameter" lower="0.0" name="S" upper="0.0">0.25</parameter>
+                </LogNormal>
+            </prior>
+
+            <prior id="seir.importRate.prior.t:MILWAUKEE_PHYDYN" name="distribution" x="@seir.importRate.t:MILWAUKEE_PHYDYN">
+              <Exponential id="Exponential.26" name="distr">
+                  <parameter id="RealParameter.26" spec="parameter.RealParameter" name="mean" >10</parameter>
+              </Exponential>
+            </prior>
+        </distribution>
+
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.MILWAUKEE_PHYDYN" spec="ThreadedTreeLikelihood" data="@MILWAUKEE_PHYDYN" tree="@Tree.t:MILWAUKEE_PHYDYN">
+                <siteModel id="SiteModel.s:MILWAUKEE_PHYDYN" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:MILWAUKEE_PHYDYN">
+                    <parameter id="mutationRate.s:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:MILWAUKEE_PHYDYN" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:MILWAUKEE_PHYDYN" spec="HKY" kappa="@kappa.s:MILWAUKEE_PHYDYN">
+                        <frequencies id="estimatedFreqs.s:MILWAUKEE_PHYDYN" spec="Frequencies" frequencies="@freqParameter.s:MILWAUKEE_PHYDYN"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:MILWAUKEE_PHYDYN" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:MILWAUKEE_PHYDYN"/>
+            </distribution>
+
+        </distribution>
+    </distribution>
+
+    <!-- Substitution model operators -->
+    <operator id="StrictClockRateScaler.c:MILWAUKEE_PHYDYN" spec="ScaleOperator" parameter="@clockRate.c:MILWAUKEE_PHYDYN" scaleFactor="0.75" weight="3.0"/>
+    <operator id="strictClockUpDownOperator.c:MILWAUKEE_PHYDYN" spec="UpDownOperator" scaleFactor="0.86" weight="3.0">
+        <up idref="clockRate.c:MILWAUKEE_PHYDYN"/>
+        <down idref="Tree.t:MILWAUKEE_PHYDYN"/>
+    </operator>
+    <operator id="KappaScaler.s:MILWAUKEE_PHYDYN" spec="ScaleOperator" parameter="@kappa.s:MILWAUKEE_PHYDYN" scaleFactor="0.5" weight="0.05"/>
+    <operator id="gammaShapeScaler.s:MILWAUKEE_PHYDYN" spec="ScaleOperator" parameter="@gammaShape.s:MILWAUKEE_PHYDYN" scaleFactor="0.5" weight="0.05"/>
+    <operator id="FrequenciesExchanger.s:MILWAUKEE_PHYDYN" spec="DeltaExchangeOperator" delta="0.01" weight="0.2">
+        <parameter idref="freqParameter.s:MILWAUKEE_PHYDYN"/>
+    </operator>
+
+    <!-- SEIR model operators -->
+    <operator id="PhydynSEIRTreeScaler.t:MILWAUKEE_PHYDYN" spec="ScaleOperator" scaleFactor="0.86" tree="@Tree.t:MILWAUKEE_PHYDYN" weight="3.0"/>
+    <operator id="PhydynSEIRTreeRootScaler.t:MILWAUKEE_PHYDYN" spec="ScaleOperator" rootOnly="true" scaleFactor="0.76" tree="@Tree.t:MILWAUKEE_PHYDYN" weight="3.0"/>
+    <operator id="PhydynSEIRUniformOperator.t:MILWAUKEE_PHYDYN" spec="Uniform" tree="@Tree.t:MILWAUKEE_PHYDYN" weight="30.0"/>
+    <operator id="PhydynSEIRSubtreeSlide.t:MILWAUKEE_PHYDYN" spec="SubtreeSlide" tree="@Tree.t:MILWAUKEE_PHYDYN" size="0.232" weight="15.0"/>
+    <operator id="PhydynSEIRNarrow.t:MILWAUKEE_PHYDYN" spec="Exchange" tree="@Tree.t:MILWAUKEE_PHYDYN" weight="15.0"/>
+    <operator id="PhydynSEIRWide.t:MILWAUKEE_PHYDYN" spec="Exchange" isNarrow="false" tree="@Tree.t:MILWAUKEE_PHYDYN" weight="3.0"/>
+    <operator id="PhydynSEIRWilsonBalding.t:MILWAUKEE_PHYDYN" spec="WilsonBalding" tree="@Tree.t:MILWAUKEE_PHYDYN" weight="3.0"/>
+
+    <!-- Epi parameter operators -->
+	<operator id="seir.E.operator.t:MILWAUKEE_PHYDYN" spec="RealRandomWalkOperator" parameter="@seir.E.t:MILWAUKEE_PHYDYN" useGaussian="true" weight="3.0" windowSize="10"/>
+	<operator id="seir.R0.operator.t:MILWAUKEE_PHYDYN" spec="RealRandomWalkOperator" parameter="@seir.R0.t:MILWAUKEE_PHYDYN" useGaussian="true" weight="3.0" windowSize="0.5"/>
+	<operator id="seir.R0andEoperator.t:MILWAUKEE_PHYDYN" spec="UpDownOperator" optimise="true" scaleFactor="0.75" weight="6.0">
+	    <up idref="seir.R0.t:MILWAUKEE_PHYDYN"/>
+	    <down idref="seir.E.t:MILWAUKEE_PHYDYN"/>
+	</operator>
+	<operator id="seir.a.operator.t:MILWAUKEE_PHYDYN" spec="RealRandomWalkOperator" parameter="@seir.a.t:MILWAUKEE_PHYDYN" useGaussian="true" weight="1.0" windowSize="0.169"/>
+	<operator id="seir.exog.operator.t:MILWAUKEE_PHYDYN" spec="ScaleOperator" parameter="@seir.exog.t:MILWAUKEE_PHYDYN" scaleFactor="0.5" weight="3.0"/>
+	<operator id="seir.exogGrowthRate.operator.t:MILWAUKEE_PHYDYN" spec="ScaleOperator" parameter="@seir.exogGrowthRate.t:MILWAUKEE_PHYDYN" scaleFactor="0.9" weight="5.0"/>
+	<operator id="seir.importRate.operator.t:MILWAUKEE_PHYDYN" spec="RealRandomWalkOperator" parameter="@seir.importRate.t:MILWAUKEE_PHYDYN" useGaussian="true" weight="2.0" windowSize="0.19"/>
+
+
+    <!-- Epi parameter operators -->
+	
+    
+	<logger id="tracelog" spec="Logger" fileName="MILWAUKEE_PHYDYN.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="NNNNN">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.MILWAUKEE_PHYDYN"/>
+        <log id="TreeHeight.t:MILWAUKEE_PHYDYN" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:MILWAUKEE_PHYDYN"/>
+        <log idref="clockRate.c:MILWAUKEE_PHYDYN"/>
+        <log idref="kappa.s:MILWAUKEE_PHYDYN"/>
+        <log idref="gammaShape.s:MILWAUKEE_PHYDYN"/>
+        <log idref="PhydynSEIR.t:MILWAUKEE_PHYDYN"/>
+        <log idref="seir.R0.t:MILWAUKEE_PHYDYN"/>
+		<log idref="seir.a.t:MILWAUKEE_PHYDYN"/>
+        <log idref="seir.exog.t:MILWAUKEE_PHYDYN"/>
+        <log idref="seir.exogGrowthRate.t:MILWAUKEE_PHYDYN"/>
+        <log idref="seir.importRate.t:MILWAUKEE_PHYDYN"/>
+        <log idref="seir.E.t:MILWAUKEE_PHYDYN"/>
+        <log idref="seir.S.t:MILWAUKEE_PHYDYN"/>
+        <log idref="freqParameter.s:MILWAUKEE_PHYDYN"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="10000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="PhydynSEIR.t:MILWAUKEE_PHYDYN"/>
+    </logger>
+
+    <logger id="treelog.t:MILWAUKEE_PHYDYN" spec="Logger" fileName="$(tree).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:MILWAUKEE_PHYDYN" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:MILWAUKEE_PHYDYN"/>
+    </logger>
+
+    <logger id="popTrajLog" spec="Logger" fileName="seir.MILWAUKEE_PHYDYN.traj" logEvery="1000">
+        <log id="trajectoryLogger" spec="phydyn.loggers.TrajectoryLogger" pointFrequency="1" popModel="@pdseirmodel.t:MILWAUKEE_PHYDYN"/>
+    </logger>
+
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+
+</run>
+
+</beast>
