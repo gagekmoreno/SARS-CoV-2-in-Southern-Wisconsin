@@ -1,0 +1,13 @@
+#Summary
+#Generated on	Tue Jun 16 13:11:33 CDT 2020
+#Version	5
+chroms	1
+bases	45903
+defined	29903
+undefined	16000
+contigs	1
+scaffolds	1
+interpad	300
+source	/Users/katbraun/Documents/research/kat_braun/projects/SARS-CoV-2/SARSCoV2_in_Wisconsin/code/ref.fa
+bytes	30414
+last modified	1589386393118
