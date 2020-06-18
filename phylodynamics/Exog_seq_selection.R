@@ -1,3 +1,8 @@
+#### Import variables ####
+args<-commandArgs()
+outdir<-args[6]
+regionname<-args[7]
+
 #### Load required packages and install if not already installed ####
 requiredPackages = c('ape','treedater','splitstackshape','lubridate','stringr')
 for(p in requiredPackages){
@@ -5,10 +10,9 @@ for(p in requiredPackages){
   library(p,character.only = TRUE)
 }
 
-
 #### read iqtree-generated maximum-likelihood tree ####
-tree<-read.tree(file = "PATH/TO/TREEFILE.treefile")
-
+filename<-paste0(outdir,"dates_filtered_CDS_global.tree",sep="/")
+tree<-read.tree(file = filename)
 
 #### extract tip dates ####
 tips<-as.data.frame(tree$tip.label)
@@ -100,4 +104,7 @@ timestrat_closest$tip<-gsub("/EPI/ISL/", "|EPI_ISL_", timestrat_closest$tip)
 timestrat_closest$tip<-gsub("/2020-", "|2020-", timestrat_closest$tip)
 timestrat_closest$tip<-gsub("/2019-", "|2019-", timestrat_closest$tip)
 timestrat_closest_unique<-as.data.frame(unique(timestrat_closest$tip))
-write.table(timestrat_closest_unique, file = "PATH/TO/timestrat_closest_names.txt", row.names=FALSE, col.names=FALSE, quote=FALSE)
+
+#### Write names of exogenous sequences ####
+output1<-paste0(outdir,"timestrat_closest_names.txt",sep="/")
+write.table(timestrat_closest_unique, file = output1, row.names=FALSE, col.names=FALSE, quote=FALSE)
