@@ -1,0 +1,86 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	colors
+	1	combine_samples
+	1	diagnostic
+	1	export
+	1	filter
+	1	finalize
+	1	incorporate_travel_history
+	1	legacy_clades
+	1	mask
+	1	pangolin
+	1	partition_sequences
+	1	recency
+	1	refilter
+	1	refine
+	1	rename_legacy_clades
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	24
+
+[Wed Jun 10 16:14:50 2020]
+Job 24: 
+        Filtering to
+          - excluding strains in config/exclude.txt
+        
+
+
+        augur filter             --sequences data/sequences.fasta             --metadata data/metadata.tsv             --include config/include.txt             --exclude config/exclude.txt             --exclude-where division='USA' date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-05-XX' date='2020-06-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04' date='2020-05' date='2020-06'            --min-length 27000             --output results/filtered.fasta 2>&1 | tee logs/filtered.txt
+        
+[Wed Jun 10 16:15:26 2020]
+Finished job 24.
+1 of 24 steps (4%) done
+
+[Wed Jun 10 16:15:26 2020]
+checkpoint partition_sequences:
+    input: results/filtered.fasta
+    output: results/split_sequences/
+    log: logs/partition_sequences.txt
+    jobid: 23
+Downstream jobs will be updated after completion.
+
+
+        /usr/bin/python3.6 scripts/partition-sequences.py             --sequences results/filtered.fasta             --sequences-per-group 150             --output-dir results/split_sequences/ 2>&1 | tee logs/partition_sequences.txt
+        
+Updating job 21 (aggregate_alignments).
+[Wed Jun 10 16:15:29 2020]
+Finished job 23.
+2 of 26 steps (8%) done
+
+[Wed Jun 10 16:15:29 2020]
+Job 27: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  0
+        
+
+
+        augur align             --sequences results/split_sequences/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 1             --remove-reference 2>&1 | tee logs/align_0.txt
+        
+[Wed Jun 10 16:15:33 2020]
+Error in rule align:
+    jobid: 27
+    output: results/split_alignments/0.fasta
+    log: logs/align_0.txt (check log file(s) for error message)
+    shell:
+        
+        augur align             --sequences results/split_sequences/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 1             --remove-reference 2>&1 | tee logs/align_0.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job align since they might be corrupted:
+results/split_alignments/0.fasta
+Terminating processes on user request, this might take some time.
+Complete log: /nextstrain/build/.snakemake/log/2020-06-10T161449.931898.snakemake.log

@@ -1,0 +1,703 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	colors
+	1	export
+	1	fix_colorings
+	1	incorporate_travel_history
+	1	mask
+	1	partition_sequences
+	1	refine
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	16
+
+[Wed Jun 10 23:50:50 2020]
+checkpoint partition_sequences:
+    input: results/filtered.fasta
+    output: results/split_sequences/pre/
+    jobid: 18
+Downstream jobs will be updated after completion.
+
+
+        python3 scripts/partition-sequences.py             --sequences results/filtered.fasta             --sequences-per-group 150             --output-dir results/split_sequences/pre/
+        
+Updating job 17 (aggregate_alignments).
+[Wed Jun 10 23:50:56 2020]
+Finished job 18.
+1 of 58 steps (2%) done
+
+[Wed Jun 10 23:50:56 2020]
+Job 7: Constructing colors file
+
+
+        python3 scripts/assign-colors.py             --ordering config/ordering.tsv             --color-schemes config/color_schemes.tsv             --output config/colors.tsv             --metadata results/metadata_adjusted.tsv
+        
+[Wed Jun 10 23:51:01 2020]
+Finished job 7.
+2 of 58 steps (3%) done
+
+[Wed Jun 10 23:51:01 2020]
+Job 48: 
+        partitions_intermediate: Copying sequence fastas
+        14
+        
+
+cp results/split_sequences/pre/14.fasta results/split_sequences/post/14.fasta
+[Wed Jun 10 23:51:02 2020]
+Finished job 48.
+3 of 58 steps (5%) done
+
+[Wed Jun 10 23:51:02 2020]
+Job 27: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  14
+        
+
+
+        augur align             --sequences results/split_sequences/post/14.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/14.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:52:03 2020]
+Finished job 27.
+4 of 58 steps (7%) done
+
+[Wed Jun 10 23:52:03 2020]
+Job 45: 
+        partitions_intermediate: Copying sequence fastas
+        11
+        
+
+cp results/split_sequences/pre/11.fasta results/split_sequences/post/11.fasta
+[Wed Jun 10 23:52:03 2020]
+Finished job 45.
+5 of 58 steps (9%) done
+
+[Wed Jun 10 23:52:03 2020]
+Job 24: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  11
+        
+
+
+        augur align             --sequences results/split_sequences/post/11.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/11.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:52:59 2020]
+Finished job 24.
+6 of 58 steps (10%) done
+
+[Wed Jun 10 23:52:59 2020]
+Job 58: 
+        partitions_intermediate: Copying sequence fastas
+        5
+        
+
+cp results/split_sequences/pre/5.fasta results/split_sequences/post/5.fasta
+[Wed Jun 10 23:53:00 2020]
+Finished job 58.
+7 of 58 steps (12%) done
+
+[Wed Jun 10 23:53:00 2020]
+Job 37: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  5
+        
+
+
+        augur align             --sequences results/split_sequences/post/5.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/5.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:53:56 2020]
+Finished job 37.
+8 of 58 steps (14%) done
+
+[Wed Jun 10 23:53:56 2020]
+Job 50: 
+        partitions_intermediate: Copying sequence fastas
+        16
+        
+
+cp results/split_sequences/pre/16.fasta results/split_sequences/post/16.fasta
+[Wed Jun 10 23:53:57 2020]
+Finished job 50.
+9 of 58 steps (16%) done
+
+[Wed Jun 10 23:53:57 2020]
+Job 29: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  16
+        
+
+
+        augur align             --sequences results/split_sequences/post/16.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/16.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:54:55 2020]
+Finished job 29.
+10 of 58 steps (17%) done
+
+[Wed Jun 10 23:54:55 2020]
+Job 60: 
+        partitions_intermediate: Copying sequence fastas
+        7
+        
+
+cp results/split_sequences/pre/7.fasta results/split_sequences/post/7.fasta
+[Wed Jun 10 23:54:56 2020]
+Finished job 60.
+11 of 58 steps (19%) done
+
+[Wed Jun 10 23:54:56 2020]
+Job 39: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  7
+        
+
+
+        augur align             --sequences results/split_sequences/post/7.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/7.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:55:54 2020]
+Finished job 39.
+12 of 58 steps (21%) done
+
+[Wed Jun 10 23:55:54 2020]
+Job 46: 
+        partitions_intermediate: Copying sequence fastas
+        12
+        
+
+cp results/split_sequences/pre/12.fasta results/split_sequences/post/12.fasta
+[Wed Jun 10 23:55:55 2020]
+Finished job 46.
+13 of 58 steps (22%) done
+
+[Wed Jun 10 23:55:55 2020]
+Job 25: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  12
+        
+
+
+        augur align             --sequences results/split_sequences/post/12.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/12.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:56:52 2020]
+Finished job 25.
+14 of 58 steps (24%) done
+
+[Wed Jun 10 23:56:52 2020]
+Job 57: 
+        partitions_intermediate: Copying sequence fastas
+        4
+        
+
+cp results/split_sequences/pre/4.fasta results/split_sequences/post/4.fasta
+[Wed Jun 10 23:56:53 2020]
+Finished job 57.
+15 of 58 steps (26%) done
+
+[Wed Jun 10 23:56:53 2020]
+Job 36: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  4
+        
+
+
+        augur align             --sequences results/split_sequences/post/4.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/4.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:57:49 2020]
+Finished job 36.
+16 of 58 steps (28%) done
+
+[Wed Jun 10 23:57:49 2020]
+Job 59: 
+        partitions_intermediate: Copying sequence fastas
+        6
+        
+
+cp results/split_sequences/pre/6.fasta results/split_sequences/post/6.fasta
+[Wed Jun 10 23:57:50 2020]
+Finished job 59.
+17 of 58 steps (29%) done
+
+[Wed Jun 10 23:57:50 2020]
+Job 38: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  6
+        
+
+
+        augur align             --sequences results/split_sequences/post/6.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/6.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:58:51 2020]
+Finished job 38.
+18 of 58 steps (31%) done
+
+[Wed Jun 10 23:58:51 2020]
+Job 47: 
+        partitions_intermediate: Copying sequence fastas
+        13
+        
+
+cp results/split_sequences/pre/13.fasta results/split_sequences/post/13.fasta
+[Wed Jun 10 23:58:52 2020]
+Finished job 47.
+19 of 58 steps (33%) done
+
+[Wed Jun 10 23:58:52 2020]
+Job 26: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  13
+        
+
+
+        augur align             --sequences results/split_sequences/post/13.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/13.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Wed Jun 10 23:59:49 2020]
+Finished job 26.
+20 of 58 steps (34%) done
+
+[Wed Jun 10 23:59:49 2020]
+Job 49: 
+        partitions_intermediate: Copying sequence fastas
+        15
+        
+
+cp results/split_sequences/pre/15.fasta results/split_sequences/post/15.fasta
+[Wed Jun 10 23:59:49 2020]
+Finished job 49.
+21 of 58 steps (36%) done
+
+[Wed Jun 10 23:59:49 2020]
+Job 28: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  15
+        
+
+
+        augur align             --sequences results/split_sequences/post/15.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/15.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:00:47 2020]
+Finished job 28.
+22 of 58 steps (38%) done
+
+[Thu Jun 11 00:00:47 2020]
+Job 54: 
+        partitions_intermediate: Copying sequence fastas
+        2
+        
+
+cp results/split_sequences/pre/2.fasta results/split_sequences/post/2.fasta
+[Thu Jun 11 00:00:47 2020]
+Finished job 54.
+23 of 58 steps (40%) done
+
+[Thu Jun 11 00:00:47 2020]
+Job 33: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  2
+        
+
+
+        augur align             --sequences results/split_sequences/post/2.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/2.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:01:36 2020]
+Finished job 33.
+24 of 58 steps (41%) done
+
+[Thu Jun 11 00:01:36 2020]
+Job 61: 
+        partitions_intermediate: Copying sequence fastas
+        8
+        
+
+cp results/split_sequences/pre/8.fasta results/split_sequences/post/8.fasta
+[Thu Jun 11 00:01:37 2020]
+Finished job 61.
+25 of 58 steps (43%) done
+
+[Thu Jun 11 00:01:37 2020]
+Job 40: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  8
+        
+
+
+        augur align             --sequences results/split_sequences/post/8.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/8.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:02:34 2020]
+Finished job 40.
+26 of 58 steps (45%) done
+
+[Thu Jun 11 00:02:34 2020]
+Job 51: 
+        partitions_intermediate: Copying sequence fastas
+        17
+        
+
+cp results/split_sequences/pre/17.fasta results/split_sequences/post/17.fasta
+[Thu Jun 11 00:02:35 2020]
+Finished job 51.
+27 of 58 steps (47%) done
+
+[Thu Jun 11 00:02:35 2020]
+Job 30: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  17
+        
+
+
+        augur align             --sequences results/split_sequences/post/17.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/17.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:03:31 2020]
+Finished job 30.
+28 of 58 steps (48%) done
+
+[Thu Jun 11 00:03:31 2020]
+Job 44: 
+        partitions_intermediate: Copying sequence fastas
+        10
+        
+
+cp results/split_sequences/pre/10.fasta results/split_sequences/post/10.fasta
+[Thu Jun 11 00:03:32 2020]
+Finished job 44.
+29 of 58 steps (50%) done
+
+[Thu Jun 11 00:03:32 2020]
+Job 23: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  10
+        
+
+
+        augur align             --sequences results/split_sequences/post/10.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/10.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:04:32 2020]
+Finished job 23.
+30 of 58 steps (52%) done
+
+[Thu Jun 11 00:04:32 2020]
+Job 56: 
+        partitions_intermediate: Copying sequence fastas
+        3
+        
+
+cp results/split_sequences/pre/3.fasta results/split_sequences/post/3.fasta
+[Thu Jun 11 00:04:33 2020]
+Finished job 56.
+31 of 58 steps (53%) done
+
+[Thu Jun 11 00:04:33 2020]
+Job 35: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  3
+        
+
+
+        augur align             --sequences results/split_sequences/post/3.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/3.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:05:30 2020]
+Finished job 35.
+32 of 58 steps (55%) done
+
+[Thu Jun 11 00:05:30 2020]
+Job 42: 
+        partitions_intermediate: Copying sequence fastas
+        0
+        
+
+cp results/split_sequences/pre/0.fasta results/split_sequences/post/0.fasta
+[Thu Jun 11 00:05:31 2020]
+Finished job 42.
+33 of 58 steps (57%) done
+
+[Thu Jun 11 00:05:31 2020]
+Job 21: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  0
+        
+
+
+        augur align             --sequences results/split_sequences/post/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:06:26 2020]
+Finished job 21.
+34 of 58 steps (59%) done
+
+[Thu Jun 11 00:06:26 2020]
+Job 62: 
+        partitions_intermediate: Copying sequence fastas
+        9
+        
+
+cp results/split_sequences/pre/9.fasta results/split_sequences/post/9.fasta
+[Thu Jun 11 00:06:27 2020]
+Finished job 62.
+35 of 58 steps (60%) done
+
+[Thu Jun 11 00:06:27 2020]
+Job 41: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  9
+        
+
+
+        augur align             --sequences results/split_sequences/post/9.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/9.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:07:21 2020]
+Finished job 41.
+36 of 58 steps (62%) done
+
+[Thu Jun 11 00:07:21 2020]
+Job 43: 
+        partitions_intermediate: Copying sequence fastas
+        1
+        
+
+cp results/split_sequences/pre/1.fasta results/split_sequences/post/1.fasta
+[Thu Jun 11 00:07:22 2020]
+Finished job 43.
+37 of 58 steps (64%) done
+
+[Thu Jun 11 00:07:22 2020]
+Job 22: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  1
+        
+
+
+        augur align             --sequences results/split_sequences/post/1.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/1.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:08:18 2020]
+Finished job 22.
+38 of 58 steps (66%) done
+
+[Thu Jun 11 00:08:18 2020]
+Job 53: 
+        partitions_intermediate: Copying sequence fastas
+        19
+        
+
+cp results/split_sequences/pre/19.fasta results/split_sequences/post/19.fasta
+[Thu Jun 11 00:08:19 2020]
+Finished job 53.
+39 of 58 steps (67%) done
+
+[Thu Jun 11 00:08:19 2020]
+Job 32: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  19
+        
+
+
+        augur align             --sequences results/split_sequences/post/19.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/19.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:09:04 2020]
+Finished job 32.
+40 of 58 steps (69%) done
+
+[Thu Jun 11 00:09:04 2020]
+Job 52: 
+        partitions_intermediate: Copying sequence fastas
+        18
+        
+
+cp results/split_sequences/pre/18.fasta results/split_sequences/post/18.fasta
+[Thu Jun 11 00:09:04 2020]
+Finished job 52.
+41 of 58 steps (71%) done
+
+[Thu Jun 11 00:09:04 2020]
+Job 31: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  18
+        
+
+
+        augur align             --sequences results/split_sequences/post/18.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/18.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:09:48 2020]
+Finished job 31.
+42 of 58 steps (72%) done
+
+[Thu Jun 11 00:09:48 2020]
+Job 55: 
+        partitions_intermediate: Copying sequence fastas
+        20
+        
+
+cp results/split_sequences/pre/20.fasta results/split_sequences/post/20.fasta
+[Thu Jun 11 00:09:48 2020]
+Finished job 55.
+43 of 58 steps (74%) done
+
+[Thu Jun 11 00:09:48 2020]
+Job 34: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  20
+        
+
+
+        augur align             --sequences results/split_sequences/post/20.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/20.fasta             --nthreads 1             --remove-reference             --fill-gaps
+        
+[Thu Jun 11 00:10:01 2020]
+Finished job 34.
+44 of 58 steps (76%) done
+
+[Thu Jun 11 00:10:01 2020]
+Job 20: Collecting alignments
+
+
+        cat results/split_alignments/0.fasta results/split_alignments/1.fasta results/split_alignments/10.fasta results/split_alignments/11.fasta results/split_alignments/12.fasta results/split_alignments/13.fasta results/split_alignments/14.fasta results/split_alignments/15.fasta results/split_alignments/16.fasta results/split_alignments/17.fasta results/split_alignments/18.fasta results/split_alignments/19.fasta results/split_alignments/2.fasta results/split_alignments/20.fasta results/split_alignments/3.fasta results/split_alignments/4.fasta results/split_alignments/5.fasta results/split_alignments/6.fasta results/split_alignments/7.fasta results/split_alignments/8.fasta results/split_alignments/9.fasta > results/aligned.fasta
+        
+[Thu Jun 11 00:10:12 2020]
+Finished job 20.
+45 of 58 steps (78%) done
+
+[Thu Jun 11 00:10:12 2020]
+Job 9: 
+        Mask bases in alignment
+          - masking 130 from beginning
+          - masking 50 from end
+          - masking other sites: 18529 29849 29851 29853
+        
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned.fasta             --mask-from-beginning 130             --mask-from-end 50             --mask-sites 18529 29849 29851 29853             --output results/masked.fasta
+        
+[Thu Jun 11 00:10:20 2020]
+Finished job 9.
+46 of 58 steps (79%) done
+
+[Thu Jun 11 00:10:20 2020]
+rule subsample:
+    input: results/masked.fasta
+    output: results/subsampled_alignment.fasta
+    jobid: 16
+    wildcards: region=
+
+
+        cp results/masked.fasta results/subsampled_alignment.fasta
+        
+[Thu Jun 11 00:10:30 2020]
+Finished job 16.
+47 of 58 steps (81%) done
+
+[Thu Jun 11 00:10:30 2020]
+Job 8: Building tree
+
+
+        augur tree             --alignment results/subsampled_alignment.fasta             --output results/tree_raw.nwk             --nthreads 1
+        
+[Thu Jun 11 01:56:31 2020]
+Finished job 8.
+48 of 58 steps (83%) done
+
+[Thu Jun 11 01:56:31 2020]
+Job 4: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/tree_raw.nwk             --alignment results/masked.fasta             --metadata results/metadata_adjusted.tsv             --output-tree results/tree.nwk             --output-node-data results/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4
+        
+[Thu Jun 11 03:59:56 2020]
+Finished job 4.
+49 of 58 steps (84%) done
+
+[Thu Jun 11 03:59:56 2020]
+Job 11: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+
+
+        augur ancestral             --tree results/tree.nwk             --alignment results/masked.fasta             --output-node-data results/nt_muts.json             --inference joint             --infer-ambiguous
+        
+[Thu Jun 11 04:04:17 2020]
+Finished job 11.
+50 of 58 steps (86%) done
+
+[Thu Jun 11 04:04:17 2020]
+Job 12: Translating amino acid sequences
+
+
+        augur translate             --tree results/tree.nwk             --ancestral-sequences results/nt_muts.json             --reference-sequence config/reference.gb             --output-node-data results/aa_muts.json         
+[Thu Jun 11 04:05:51 2020]
+Finished job 12.
+51 of 58 steps (88%) done
+
+[Thu Jun 11 04:05:51 2020]
+Job 14: Adding internal clade labels
+
+
+        augur clades --tree results/tree.nwk             --mutations results/nt_muts.json results/aa_muts.json             --clades config/clades.tsv             --output-node-data results/clades.json
+        
+[Thu Jun 11 04:05:55 2020]
+Finished job 14.
+52 of 58 steps (90%) done
+
+[Thu Jun 11 04:05:55 2020]
+Job 13: 
+        Inferring ancestral traits for country_exposure
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+
+
+        augur traits             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --output results/traits.json             --columns country_exposure             --confidence             --sampling-bias-correction 2.5         
+[Thu Jun 11 04:16:08 2020]
+Finished job 13.
+53 of 58 steps (91%) done
+
+[Thu Jun 11 04:16:08 2020]
+Job 6: Exporting data files for for auspice
+
+
+        augur export v2             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --node-data results/branch_lengths.json results/nt_muts.json results/aa_muts.json results/traits.json results/clades.json results/recency.json             --auspice-config config/auspice_config.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus'             --description config/description.md             --output results/ncov_with_accessions.json
+        
+[Thu Jun 11 04:16:36 2020]
+Error in rule export:
+    jobid: 6
+    output: results/ncov_with_accessions.json
+    shell:
+        
+        augur export v2             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --node-data results/branch_lengths.json results/nt_muts.json results/aa_muts.json results/traits.json results/clades.json results/recency.json             --auspice-config config/auspice_config.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus'             --description config/description.md             --output results/ncov_with_accessions.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job export since they might be corrupted:
+results/ncov_with_accessions.json
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /nextstrain/build/.snakemake/log/2020-06-10T235048.865747.snakemake.log

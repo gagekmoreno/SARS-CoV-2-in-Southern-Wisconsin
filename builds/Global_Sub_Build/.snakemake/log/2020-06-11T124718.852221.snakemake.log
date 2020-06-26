@@ -1,0 +1,52 @@
+Building DAG of jobs...
+Updating job 17 (aggregate_alignments).
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fix_colorings
+	1	incorporate_travel_history
+	1	tip_frequencies
+	4
+
+[Thu Jun 11 12:47:21 2020]
+Job 3: Adjusting main auspice JSON to take into account travel history
+
+
+        python3 ./scripts/modify-tree-according-to-exposure.py             --input results/ncov_with_accessions.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --sampling country             --exposure country_exposure             --output results/ncov_with_accessions_and_travel_branches.json
+        
+[Thu Jun 11 12:47:26 2020]
+Finished job 3.
+1 of 4 steps (25%) done
+
+[Thu Jun 11 12:47:26 2020]
+Job 1: Remove extraneous colorings for main build
+
+
+        python scripts/fix-colorings.py             --input results/ncov_with_accessions_and_travel_branches.json             --output auspice/ncov.json
+        
+[Thu Jun 11 12:47:39 2020]
+Finished job 1.
+2 of 4 steps (50%) done
+
+[Thu Jun 11 12:47:39 2020]
+Job 2: Estimating censored KDE frequencies for tips
+
+
+        augur frequencies             --method kde             --metadata results/metadata_adjusted.tsv             --tree results/tree.nwk             --min-date 2020.0             --pivot-interval 1             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output auspice/ncov_tip-frequencies.json
+        
+[Thu Jun 11 12:47:58 2020]
+Finished job 2.
+3 of 4 steps (75%) done
+
+[Thu Jun 11 12:47:58 2020]
+localrule all:
+    input: auspice/ncov.json, auspice/ncov_tip-frequencies.json
+    jobid: 0
+
+[Thu Jun 11 12:47:58 2020]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /nextstrain/build/.snakemake/log/2020-06-11T124718.852221.snakemake.log
