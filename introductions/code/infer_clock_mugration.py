@@ -125,12 +125,6 @@ def main():
 	tre = label_nodes(tre)	# labels nodes of tree
 	dates = parse_dates(args.metadata_file)	# parses tip dates
 	timetree_tre = infer_timetree(tre, args.aln_file, dates, args.outgroup, args.resolve, args.out_dir)
-	# saves clock model to file
-	clock = timetree_tre.clock_model	
-	clock = [[f'{item}: {key}'] for item, key in clock.items()]
-	with open(f'{args.out_dir}/clock_model.txt', 'w') as outfile:
-		writer = csv.writer(outfile)
-		writer.writerows(clock)
 	# infers mugration
 	tre, letter_to_state, state_to_letter = \
 		infer_mugration(timetree_tre.tree, args.aln_file, regions_dict, args.out_dir)
