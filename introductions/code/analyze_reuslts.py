@@ -202,11 +202,9 @@ def plot_results(results, tre, tre_states_dict, outname):
 				_ = sns.distplot(dat, kde=True, hist=False, ax=axs[2], 
 							 color=outer_colors[region], kde_kws={"alpha": 0.25})
 	axs[1].set_ylabel('# of introductions')
-	axs[1].set_ylim(0, 40)
-	axs[1].set_yticks([10, 20, 30, 40])
-	#axs[1].get_yaxis().set_label_coords(-0.1,0.5)
-	axs[2].set_ylabel('descendant sample\ndensity')
-	#axs[2].get_yaxis().set_label_coords(-0.1,0.5)
+	axs[1].set_ylim(0, max(results['cumsum'])+1)
+	axs[1].set_yticks([0, 10, 20, 30])
+	axs[2].set_ylabel('Descendant sample\ndensity')
 	axs[2].set_yticklabels(['' for item in axs[2].get_yticks()])
 	axs[2].tick_params(axis='y', which='both', length=0)
 	for i,ax in enumerate(axs):
@@ -221,52 +219,79 @@ def plot_results(results, tre, tre_states_dict, outname):
 		ax.set_xlabel(None)
 		if i == 0:
 			ax.spines['left'].set_visible(False)
+			ax.spines['bottom'].set_visible(False)
 		if ax == axs[-1]:
 			ax.set_xticklabels(['Jan.\n2020', 'Feb.\n2020', 'March\n2020', 'April\n2020', 'May\n2020'])
 		else:
 			ax.set_xticklabels([])
 			ax.tick_params(axis='x', which='both',length=0)
-			ax.spines['bottom'].set_visible(False)
-	fig.savefig(f'{outname}_light.pdf')
+	fig.savefig(f'{outname}.pdf')
 	plt.close()
 
 
 def print_results(results, outdir):
 	qs = (0.025, 0.5, 0.975)
 	formatted_results = []
-	regions = list(set(n_import_data['region']))
 	results.groupby('file')['source node'].count()
 	region_introductions = {}
 	# all WI includes UWHC, MHD, and unspecified WI
 	region_introductions['all_wi'] = hpd(results.groupby('file')['source node'].nunique(), qs)
+	# to do take as argument
 	regions = ('UWHC', 'MHD')
 	for region in regions: 
 		region_dat = results[results['destination region'] == region]
 		region_introductions[region] = hpd(region_dat.groupby('file')['source node'].nunique(), qs)
 	# nodes which give rise to tips from BOTH MHD and UWHC
-	both_dat = results[results['destination region'].isin(regions)]
+	# first, nodes which give rise to tips from either MHD or UWHC
+	either_dat = results[results['destination region'].isin(regions)]
+	# leave just midroot time as we're counting nodes and don't care about uncertainty in the time
+	either_dat = either_dat[either_dat['variable'] == 'midroot time']
 	# groupby file, subset to just source node, and count how many times each node appears
-	# each node appears once for each variable, so find any nodes that occur at least
-	# len(variables) * len(regions) times
-	n_variables = len(set(both_dat['variable']))
 	both_dat = \
-	both_dat.groupby('file')['source node'].value_counts()[\
-	both_dat.groupby('file')['source node'].value_counts() >= n_variables*len(regions)]
+		either_dat.groupby('file')['source node'].value_counts()[\
+		either_dat.groupby('file')['source node'].value_counts() >= len(regions)]
 	region_introductions['both'] = hpd([len(set(index[1])) for index in both_dat.index], qs)
+	# probably an easier way to do this with groupby
+	both_dat_data = either_dat[either_dat.apply(
+		lambda k: k['source node'] in both_dat_nodes[k['file']].index, axis=1)]
+	# counts how many descendant tips into each region from shared introduction events
+	shared_intro_n = {}
+	shared_intro_prop = {}
+	for region in regions:
+		print(region)
+		# how many tips are from this region total?
+		region_results = results[results['destination region'] == region]
+		region_results['n'] = region_results['descendant tips'].apply(lambda k: len(ast.literal_eval(k)))
+		region_n = region_results.groupby('file')['n'].sum()
+		region_data = both_dat_data[both_dat_data['destination region'] == region]
+		region_data['n'] = region_data['descendant tips'].apply(lambda k: len(ast.literal_eval(k)))
+		# number of samples from this region from shared introductions into Wisconsin
+		shared_intro_n[region] = hpd(region_data.groupby('file')['n'].sum(), qs)
+		# proportion of samples from this region from shared introductions into Wisconsin
+		shared_intro_prop[region] = hpd(region_data.groupby('file')['n'].sum()/region_n, qs)
+	# todo make loop
 	n_all = f'{int(region_introductions["all_wi"][1])} [{region_introductions["all_wi"][0]}, {region_introductions["all_wi"][2]}]'
 	n_dane = f'{int(region_introductions["UWHC"][1])} [{region_introductions["UWHC"][0]}, {region_introductions["UWHC"][2]}]' 
 	n_mke = f'{int(region_introductions["MHD"][1])} [{region_introductions["MHD"][0]}, {region_introductions["MHD"][2]}]' 
 	n_both = f'{int(region_introductions["both"][1])} [{region_introductions["both"][0]}, {region_introductions["both"][2]}]' 
+	shared_dane_n = f'{int(shared_intro_n["UWHC"][1])} [{int(shared_intro_n["UWHC"][0])}, {int(shared_intro_n["UWHC"][2])}]'
+	print(shared_dane_n)
+	shared_dane_prop = f'{round(shared_intro_prop["UWHC"][1], 2)} [{round(shared_intro_prop["UWHC"][0], 2)}, {round(shared_intro_prop["UWHC"][2], 2)}]'
+	shared_mke_n = f'{int(shared_intro_n["MHD"][1])} [{int(shared_intro_n["MHD"][0])}, {int(shared_intro_n["MHD"][2])}]'
+	print(shared_mke_n)
+	shared_mke_prop = f'{round(shared_intro_prop["MHD"][1], 2)} [{round(shared_intro_prop["MHD"][0], 2)}, {round(shared_intro_prop["MHD"][2], 2)}]'
 	formatted_results.append([f'We estimate {n_all} introductions into Wisconsin.'])
 	formatted_results.append([f'Of these, {n_dane} led to at least one tip from Dane County (UWHC)'])
 	formatted_results.append([f'and {n_mke} led to at least one tip from Milwaukee (MHD)'])
 	formatted_results.append([f'{n_both} led to at least one tip from Dane County and Milwaukee.'])
+	formatted_results.append([f'{shared_dane_n} ({shared_dane_prop}) of the samples from Dane County were from introductions which also led to samples from Milwaukee'])
+	formatted_results.append([f'{shared_mke_n} ({shared_mke_prop}) of the samples from Milwaukee were from introductions which also led to samples from Dane County'])
 	pd.DataFrame(formatted_results).to_csv(f'{outdir}/results.txt', index=None, header=False)
 
 
 def import_tre(tree_file, metadata_file):
 	tre = bt.loadNewick(tree_file)
-	_ = tre.traverse_tree()
+	#_ = tre.traverse_tree()
 	tre_tip_names = [item.numName for item in tre.Objects if item.branchType == 'leaf']
 	metadata_dict = parse_dates(metadata_file)
 	metadata_dict = {key: item for key, item in metadata_dict.items() if key in tre_tip_names}
@@ -294,7 +319,7 @@ def plot_rarefaction_results(rarefaction_results, outname):
 	axs.get_legend().remove()
 	axs.set_xlabel('Milwaukee and Dane County samples')
 	axs.set_ylabel('# of introductions')
-	fig.savefig(f'mm_figures/{outname}.pdf')
+	fig.savefig(f'{outname}.pdf')
 	plt.close(fig)
 
 
@@ -302,9 +327,9 @@ def main():
 set_style()
 parser = argparse.ArgumentParser()
 # input files
-parser.add_argument('--introduction_files', 
+parser.add_argument('--introduction_dir', 
 					help='estimated introductions from each bootstrap replicate',
-					nargs="+")
+					default='results/subsampled_alignment_neighbors.fasta.ufboot_tres/*/*_importations.csv')
 parser.add_argument('--outdir', default='results')
 parser.add_argument('--outname', default='introductions',
 					help='prefix of output files')
@@ -319,11 +344,11 @@ parser.add_argument('--tree_states_file', default='results/ml_refined_node_state
 					help='states of nodes/tips in tree')
 parser.add_argument('--tree_regions', default='results/ml_refined_regions.csv',
 					help='regions dictionary from treetime')
-parser.add_argument('--rarefaction_dir', default='mm_results/masked_neighbors.fasta.treefile_ML/rarefaction/*/*_rarefaction.csv',
+parser.add_argument('--rarefaction_dir', default='results/rarefaction/*/*_rarefaction.csv',
 					help='directory with rarefaction results')
 args = parser.parse_args()
 results = pd.DataFrame()
-	for file in glob.glob('results/old/subsampled_alignment_neighbors.fasta.ufboot_tres/*/*_importations.csv'):
+	for file in glob.glob(args.introduction_dir):
 	#for file in args.importation_files:
 		results = process_results(file, results)
 	results.to_csv(f'{args.outdir}/combined_results.csv', index=None)
@@ -335,12 +360,12 @@ results = pd.DataFrame()
 	tre_states['ML_state'] = \
 		tre_states['state'].apply(lambda k: regions.loc[k.index(max(k)), 'region'])
 	tre_states_dict = {item['name']: item['ML_state'] for index, item in tre_states.iterrows()}
-	plot_results(results, tre, tre_states_dict, 'tree_timeseries')
+	plot_results(results, tre, tre_states_dict, 'figures/tree_timeseries')
 	print_results(results, args.outdir)
 	rarefaction_results = pd.DataFrame()
 	for file in glob.glob(args.rarefaction_dir):
 		rarefaction_results = rarefaction_results.append(pd.read_csv(file))
-	#plot_rarefaction_results(rarefaction_results)
+	plot_rarefaction_results(rarefaction_results, f'figures/rarefaction')
 
 
 if __name__ == "__main__":
