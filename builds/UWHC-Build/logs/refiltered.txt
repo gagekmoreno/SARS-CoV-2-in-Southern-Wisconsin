@@ -1,0 +1,5 @@
+No meta data for tiger/USA/NY-040420/2020, excluding from all further analysis.
+
+1 sequences were dropped during filtering
+	0 of these were dropped because they were in results/to-exclude.txt
+124 sequences have been written out to results/aligned-filtered.fasta

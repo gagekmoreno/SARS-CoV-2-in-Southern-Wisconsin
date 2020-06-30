@@ -1,0 +1,4 @@
+
+1 sequences were dropped during filtering
+	1 of these were dropped because they were in results/to-exclude.txt
+127 sequences have been written out to results/aligned-filtered.fasta

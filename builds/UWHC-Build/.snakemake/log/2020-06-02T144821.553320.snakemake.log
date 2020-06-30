@@ -1,0 +1,4 @@
+Building DAG of jobs...
+Updating job 21 (aggregate_alignments).
+Nothing to be done.
+Complete log: /Users/gagemoreno/Documents/MadisonOutbreakPaper/data/DaneCounty/.snakemake/log/2020-06-02T144821.553320.snakemake.log

@@ -1,0 +1,110 @@
+Building DAG of jobs...
+Updating job 17 (aggregate_alignments).
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	ancestral
+	1	clades
+	1	export
+	1	fix_colorings
+	1	incorporate_travel_history
+	1	refine
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	11
+
+[Thu May 21 13:57:21 2020]
+Job 8: Building tree
+
+
+        augur tree             --alignment results/subsampled_alignment.fasta             --output results/tree_raw.nwk             --nthreads 1
+        
+[Thu May 21 15:00:09 2020]
+Finished job 8.
+1 of 11 steps (9%) done
+
+[Thu May 21 15:00:09 2020]
+Job 4: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/tree_raw.nwk             --alignment results/masked.fasta             --metadata results/metadata_adjusted.tsv             --output-tree results/tree.nwk             --output-node-data results/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4
+        
+[Thu May 21 17:37:52 2020]
+Finished job 4.
+2 of 11 steps (18%) done
+
+[Thu May 21 17:37:52 2020]
+Job 11: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+
+
+        augur ancestral             --tree results/tree.nwk             --alignment results/masked.fasta             --output-node-data results/nt_muts.json             --inference joint             --infer-ambiguous
+        
+[Thu May 21 17:41:19 2020]
+Finished job 11.
+3 of 11 steps (27%) done
+
+[Thu May 21 17:41:19 2020]
+Job 12: Translating amino acid sequences
+
+
+        augur translate             --tree results/tree.nwk             --ancestral-sequences results/nt_muts.json             --reference-sequence config/reference.gb             --output-node-data results/aa_muts.json         
+[Thu May 21 17:42:41 2020]
+Finished job 12.
+4 of 11 steps (36%) done
+
+[Thu May 21 17:42:41 2020]
+Job 14: Adding internal clade labels
+
+
+        augur clades --tree results/tree.nwk             --mutations results/nt_muts.json results/aa_muts.json             --clades config/clades.tsv             --output-node-data results/clades.json
+        
+[Thu May 21 17:42:45 2020]
+Finished job 14.
+5 of 11 steps (45%) done
+
+[Thu May 21 17:42:45 2020]
+Job 13: 
+        Inferring ancestral traits for country_exposure
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+
+
+        augur traits             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --output results/traits.json             --columns country_exposure             --confidence             --sampling-bias-correction 2.5         
+[Thu May 21 17:45:40 2020]
+Finished job 13.
+6 of 11 steps (55%) done
+
+[Thu May 21 17:45:40 2020]
+Job 6: Exporting data files for for auspice
+
+
+        augur export v2             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --node-data results/branch_lengths.json results/nt_muts.json results/aa_muts.json results/traits.json results/clades.json results/recency.json             --auspice-config config/auspice_config.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus'             --description config/description.md             --output results/ncov_with_accessions.json
+        
+[Thu May 21 17:46:07 2020]
+Error in rule export:
+    jobid: 6
+    output: results/ncov_with_accessions.json
+    shell:
+        
+        augur export v2             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --node-data results/branch_lengths.json results/nt_muts.json results/aa_muts.json results/traits.json results/clades.json results/recency.json             --auspice-config config/auspice_config.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus'             --description config/description.md             --output results/ncov_with_accessions.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job export since they might be corrupted:
+results/ncov_with_accessions.json
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /nextstrain/build/.snakemake/log/2020-05-21T135719.035508.snakemake.log

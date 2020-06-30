@@ -1,0 +1,191 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	colors
+	1	combine_samples
+	1	diagnostic
+	1	export
+	1	filter
+	1	finalize
+	1	incorporate_travel_history
+	1	legacy_clades
+	1	mask
+	1	pangolin
+	1	partition_sequences
+	1	recency
+	1	refilter
+	1	refine
+	1	rename_legacy_clades
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	24
+
+[Wed Jun 10 16:07:24 2020]
+Job 24: 
+        Filtering to
+          - excluding strains in config/exclude.txt
+        
+
+
+        augur filter             --sequences data/sequences.fasta             --metadata data/metadata.tsv             --include config/include.txt             --exclude config/exclude.txt             --exclude-where division='USA' date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-05-XX' date='2020-06-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04' date='2020-05' date='2020-06'            --min-length 27000             --output results/filtered.fasta 2>&1 | tee logs/filtered.txt
+        
+[Wed Jun 10 16:08:41 2020]
+Finished job 24.
+1 of 24 steps (4%) done
+
+[Wed Jun 10 16:08:41 2020]
+Job 5: Constructing colors file
+
+
+        /usr/bin/python3.6 scripts/assign-colors.py             --ordering config/ordering.tsv             --color-schemes config/color_schemes.tsv             --output results/global/colors.tsv             --metadata data/metadata.tsv 2>&1 | tee logs/colors_global.txt
+        
+[Wed Jun 10 16:08:43 2020]
+Finished job 5.
+2 of 24 steps (8%) done
+
+[Wed Jun 10 16:08:43 2020]
+checkpoint partition_sequences:
+    input: results/filtered.fasta
+    output: results/split_sequences/
+    log: logs/partition_sequences.txt
+    jobid: 23
+Downstream jobs will be updated after completion.
+
+
+        /usr/bin/python3.6 scripts/partition-sequences.py             --sequences results/filtered.fasta             --sequences-per-group 150             --output-dir results/split_sequences/ 2>&1 | tee logs/partition_sequences.txt
+        
+Updating job 21 (aggregate_alignments).
+[Wed Jun 10 16:08:45 2020]
+Finished job 23.
+3 of 25 steps (12%) done
+
+[Wed Jun 10 16:08:45 2020]
+Job 26: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  0
+        
+
+
+        augur align             --sequences results/split_sequences/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 1             --remove-reference 2>&1 | tee logs/align_0.txt
+        
+[Wed Jun 10 16:09:24 2020]
+Finished job 26.
+4 of 25 steps (16%) done
+
+[Wed Jun 10 16:09:24 2020]
+Job 25: Collecting alignments
+
+
+        cat results/split_alignments/0.fasta > results/aligned.fasta 2> logs/aggregate_alignments.txt
+        
+[Wed Jun 10 16:09:25 2020]
+Finished job 25.
+5 of 25 steps (20%) done
+
+[Wed Jun 10 16:09:25 2020]
+Job 22: Scanning aligned sequences results/aligned.fasta for problematic sequences
+
+
+        /usr/bin/python3.6 scripts/diagnostic.py             --alignment results/aligned.fasta             --metadata data/metadata.tsv             --reference config/reference.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences.tsv             --output-diagnostics results/sequence-diagnostics.tsv             --output-exclusion-list results/to-exclude.txt 2>&1 | tee logs/diagnostics.txt
+        
+[Wed Jun 10 16:09:27 2020]
+Finished job 22.
+6 of 25 steps (24%) done
+
+[Wed Jun 10 16:09:27 2020]
+Job 20: 
+        excluding sequences flagged in the diagnostic step in file results/to-exclude.txt
+        
+
+
+        augur filter             --sequences results/aligned.fasta             --metadata data/metadata.tsv             --exclude results/to-exclude.txt             --output results/aligned-filtered.fasta 2>&1 | tee logs/refiltered.txt
+        
+[Wed Jun 10 16:09:29 2020]
+Finished job 20.
+7 of 25 steps (28%) done
+
+[Wed Jun 10 16:09:29 2020]
+Job 19: 
+        Mask bases in alignment
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+
+
+        /usr/bin/python3.6 scripts/mask-alignment.py             --alignment results/aligned-filtered.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked.fasta 2>&1 | tee logs/mask.txt
+        
+[Wed Jun 10 16:09:30 2020]
+Finished job 19.
+8 of 25 steps (32%) done
+
+[Wed Jun 10 16:09:30 2020]
+Job 18: 
+        Subsample all sequences into a global set for build 'global' with 200 per division year month
+        
+
+
+        augur filter             --sequences results/masked.fasta             --metadata data/metadata.tsv             --include config/include.txt                                                    --group-by division year month             --sequences-per-group 200             --output results/global/sample-global.fasta 2>&1 | tee 
+        
+[Wed Jun 10 16:09:32 2020]
+Finished job 18.
+9 of 25 steps (36%) done
+
+[Wed Jun 10 16:09:32 2020]
+Job 16: 
+        Combine and deduplicate FASTAs
+        
+
+
+        /usr/bin/python3.6 scripts/combine-and-dedup-fastas.py             --input results/global/sample-global.fasta             --output results/global/subsampled_alignment.fasta 2>&1 | tee logs/subsample_regions_global.txt
+        
+[Wed Jun 10 16:09:35 2020]
+Finished job 16.
+10 of 25 steps (40%) done
+
+[Wed Jun 10 16:09:35 2020]
+Job 15: Building tree
+
+
+        augur tree             --alignment results/global/subsampled_alignment.fasta             --output results/global/tree_raw.nwk             --nthreads 1 2>&1 | tee logs/tree_global.txt
+        
+[Wed Jun 10 16:09:39 2020]
+Finished job 15.
+11 of 25 steps (44%) done
+
+[Wed Jun 10 16:09:39 2020]
+Job 6: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/global/tree_raw.nwk             --alignment results/global/subsampled_alignment.fasta             --metadata data/metadata.tsv             --output-tree results/global/tree.nwk             --output-node-data results/global/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_global.txt
+        
+[Wed Jun 10 16:09:46 2020]
+Error in rule refine:
+    jobid: 6
+    output: results/global/tree.nwk, results/global/branch_lengths.json
+    log: logs/refine_global.txt (check log file(s) for error message)
+    shell:
+        
+        augur refine             --tree results/global/tree_raw.nwk             --alignment results/global/subsampled_alignment.fasta             --metadata data/metadata.tsv             --output-tree results/global/tree.nwk             --output-node-data results/global/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_global.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /nextstrain/build/.snakemake/log/2020-06-10T160724.062198.snakemake.log

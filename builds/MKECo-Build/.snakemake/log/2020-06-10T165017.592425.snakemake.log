@@ -1,0 +1,296 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	combine_samples
+	1	diagnostic
+	1	export
+	1	filter
+	1	finalize
+	1	incorporate_travel_history
+	1	legacy_clades
+	1	mask
+	1	pangolin
+	1	partition_sequences
+	1	refilter
+	1	refine
+	1	rename_legacy_clades
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	22
+
+[Wed Jun 10 16:50:18 2020]
+Job 24: 
+        Filtering to
+          - excluding strains in config/exclude.txt
+        
+
+
+        augur filter             --sequences data/sequences.fasta             --metadata data/metadata.tsv             --include config/include.txt             --exclude config/exclude.txt             --exclude-where division='USA' date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-05-XX' date='2020-06-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04' date='2020-05' date='2020-06'            --min-length 27000             --output results/filtered.fasta 2>&1 | tee logs/filtered.txt
+        
+[Wed Jun 10 16:50:31 2020]
+Finished job 24.
+1 of 22 steps (5%) done
+
+[Wed Jun 10 16:50:31 2020]
+checkpoint partition_sequences:
+    input: results/filtered.fasta
+    output: results/split_sequences/
+    log: logs/partition_sequences.txt
+    jobid: 23
+Downstream jobs will be updated after completion.
+
+
+        /usr/bin/python3.6 scripts/partition-sequences.py             --sequences results/filtered.fasta             --sequences-per-group 150             --output-dir results/split_sequences/ 2>&1 | tee logs/partition_sequences.txt
+        
+Updating job 21 (aggregate_alignments).
+[Wed Jun 10 16:50:34 2020]
+Finished job 23.
+2 of 23 steps (9%) done
+
+[Wed Jun 10 16:50:34 2020]
+Job 26: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  0
+        
+
+
+        augur align             --sequences results/split_sequences/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 1             --remove-reference 2>&1 | tee logs/align_0.txt
+        
+[Wed Jun 10 16:51:13 2020]
+Finished job 26.
+3 of 23 steps (13%) done
+
+[Wed Jun 10 16:51:13 2020]
+Job 25: Collecting alignments
+
+
+        cat results/split_alignments/0.fasta > results/aligned.fasta 2> logs/aggregate_alignments.txt
+        
+[Wed Jun 10 16:51:14 2020]
+Finished job 25.
+4 of 23 steps (17%) done
+
+[Wed Jun 10 16:51:14 2020]
+Job 22: Scanning aligned sequences results/aligned.fasta for problematic sequences
+
+
+        /usr/bin/python3.6 scripts/diagnostic.py             --alignment results/aligned.fasta             --metadata data/metadata.tsv             --reference config/reference.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences.tsv             --output-diagnostics results/sequence-diagnostics.tsv             --output-exclusion-list results/to-exclude.txt 2>&1 | tee logs/diagnostics.txt
+        
+[Wed Jun 10 16:51:17 2020]
+Finished job 22.
+5 of 23 steps (22%) done
+
+[Wed Jun 10 16:51:17 2020]
+Job 20: 
+        excluding sequences flagged in the diagnostic step in file results/to-exclude.txt
+        
+
+
+        augur filter             --sequences results/aligned.fasta             --metadata data/metadata.tsv             --exclude results/to-exclude.txt             --output results/aligned-filtered.fasta 2>&1 | tee logs/refiltered.txt
+        
+[Wed Jun 10 16:51:19 2020]
+Finished job 20.
+6 of 23 steps (26%) done
+
+[Wed Jun 10 16:51:19 2020]
+Job 19: 
+        Mask bases in alignment
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+
+
+        /usr/bin/python3.6 scripts/mask-alignment.py             --alignment results/aligned-filtered.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked.fasta 2>&1 | tee logs/mask.txt
+        
+[Wed Jun 10 16:51:20 2020]
+Finished job 19.
+7 of 23 steps (30%) done
+
+[Wed Jun 10 16:51:20 2020]
+Job 18: 
+        Subsample all sequences into a global set for build 'global' with 200 per division year month
+        
+
+
+        augur filter             --sequences results/masked.fasta             --metadata data/metadata.tsv             --include config/include.txt                                                    --group-by division year month             --sequences-per-group 200             --output results/global/sample-global.fasta 2>&1 | tee 
+        
+[Wed Jun 10 16:51:22 2020]
+Finished job 18.
+8 of 23 steps (35%) done
+
+[Wed Jun 10 16:51:22 2020]
+Job 16: 
+        Combine and deduplicate FASTAs
+        
+
+
+        /usr/bin/python3.6 scripts/combine-and-dedup-fastas.py             --input results/global/sample-global.fasta             --output results/global/subsampled_alignment.fasta 2>&1 | tee logs/subsample_regions_global.txt
+        
+[Wed Jun 10 16:51:24 2020]
+Finished job 16.
+9 of 23 steps (39%) done
+
+[Wed Jun 10 16:51:24 2020]
+Job 15: Building tree
+
+
+        augur tree             --alignment results/global/subsampled_alignment.fasta             --output results/global/tree_raw.nwk             --nthreads 1 2>&1 | tee logs/tree_global.txt
+        
+[Wed Jun 10 16:51:29 2020]
+Finished job 15.
+10 of 23 steps (43%) done
+
+[Wed Jun 10 16:51:29 2020]
+Job 6: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/global/tree_raw.nwk             --alignment results/global/subsampled_alignment.fasta             --metadata data/metadata.tsv             --output-tree results/global/tree.nwk             --output-node-data results/global/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_global.txt
+        
+[Wed Jun 10 16:54:30 2020]
+Finished job 6.
+11 of 23 steps (48%) done
+
+[Wed Jun 10 16:54:30 2020]
+Job 8: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+
+
+        augur ancestral             --tree results/global/tree.nwk             --alignment results/global/subsampled_alignment.fasta             --output-node-data results/global/nt_muts.json             --inference joint             --infer-ambiguous 2>&1 | tee logs/ancestral_global.txt
+        
+[Wed Jun 10 16:54:40 2020]
+Finished job 8.
+12 of 23 steps (52%) done
+
+[Wed Jun 10 16:54:40 2020]
+Job 9: Translating amino acid sequences
+
+
+        augur translate             --tree results/global/tree.nwk             --ancestral-sequences results/global/nt_muts.json             --reference-sequence config/reference.gb             --output-node-data results/global/aa_muts.json 2>&1 | tee logs/translate_global.txt
+        
+[Wed Jun 10 16:54:45 2020]
+Finished job 9.
+13 of 23 steps (57%) done
+
+[Wed Jun 10 16:54:45 2020]
+Job 11: Adding internal clade labels
+
+
+        augur clades --tree results/global/tree.nwk             --mutations results/global/nt_muts.json results/global/aa_muts.json             --clades config/clades.tsv             --output-node-data results/global/clades.json 2>&1 | tee logs/clades_global.txt
+        
+[Wed Jun 10 16:54:48 2020]
+Finished job 11.
+14 of 23 steps (61%) done
+
+[Wed Jun 10 16:54:48 2020]
+Job 17: Adding internal clade labels
+
+
+        augur clades --tree results/global/tree.nwk             --mutations results/global/nt_muts.json results/global/aa_muts.json             --clades config/legacy_clades.tsv             --output-node-data results/global/temp_legacy_clades.json 2>&1 | tee logs/legacy_clades_global.txt
+        
+[Wed Jun 10 16:54:50 2020]
+Finished job 17.
+15 of 23 steps (65%) done
+
+[Wed Jun 10 16:54:50 2020]
+Job 14: 
+        Inferring ancestral traits for ['region_exposure', 'country_exposure']
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+
+
+        augur traits             --tree results/global/tree.nwk             --metadata data/metadata.tsv             --output results/global/traits.json             --columns region_exposure country_exposure             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_global.txt
+        
+[Wed Jun 10 16:54:56 2020]
+Finished job 14.
+16 of 23 steps (70%) done
+
+[Wed Jun 10 16:54:56 2020]
+Job 3: Estimating censored KDE frequencies for tips
+
+
+        augur frequencies             --method kde             --metadata data/metadata.tsv             --tree results/global/tree.nwk             --min-date 2020.0             --pivot-interval 1             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output results/global/tip-frequencies.json 2>&1 | tee logs/tip_frequencies_global.txt
+        
+[Wed Jun 10 16:54:58 2020]
+Finished job 3.
+17 of 23 steps (74%) done
+
+[Wed Jun 10 16:54:58 2020]
+rule rename_legacy_clades:
+    input: results/global/temp_legacy_clades.json
+    output: results/global/legacy_clades.json
+    jobid: 10
+    wildcards: build_name=global
+
+[Wed Jun 10 16:54:59 2020]
+Finished job 10.
+18 of 23 steps (78%) done
+
+[Wed Jun 10 16:54:59 2020]
+Job 12: Adding internal clade labels
+
+
+        /usr/bin/python3.6 scripts/add_pangolin_lineages.py             --tree results/global/tree.nwk             --output results/global/pangolin.json
+        
+[Wed Jun 10 16:55:06 2020]
+Finished job 12.
+19 of 23 steps (83%) done
+
+[Wed Jun 10 16:55:07 2020]
+Job 4: Exporting data files for for auspice
+
+
+        augur export v2             --tree results/global/tree.nwk             --metadata data/metadata.tsv             --node-data results/global/branch_lengths.json results/global/nt_muts.json results/global/aa_muts.json results/global/legacy_clades.json results/global/clades.json results/global/pangolin.json results/global/recency.json results/global/traits.json             --auspice-config config/auspice_config.json             --colors results/global/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus - Global subsampling'             --description config/description.md             --output results/global/ncov_with_accessions.json 2>&1 | tee logs/export_global.txt
+        
+[Wed Jun 10 16:55:09 2020]
+Finished job 4.
+20 of 23 steps (87%) done
+
+[Wed Jun 10 16:55:09 2020]
+Job 2: Adjusting main auspice JSON to take into account travel history
+
+
+        /usr/bin/python3.6 ./scripts/modify-tree-according-to-exposure.py             --input results/global/ncov_with_accessions.json             --colors results/global/colors.tsv             --lat-longs config/lat_longs.tsv             --sampling country             --exposure country_exposure             --output results/global/ncov_with_accessions_and_travel_branches.json 2>&1 | tee logs/incorporate_travel_history_global.txt
+        
+[Wed Jun 10 16:55:09 2020]
+Finished job 2.
+21 of 23 steps (91%) done
+
+[Wed Jun 10 16:55:09 2020]
+Job 1: Remove extraneous colorings for main build and move frequencies
+
+
+        /usr/bin/python3.6 scripts/fix-colorings.py             --input results/global/ncov_with_accessions_and_travel_branches.json             --output auspice/ncov_global.json 2>&1 | tee logs/fix_colorings_global.txt &&
+        cp results/global/tip-frequencies.json auspice/ncov_global_tip-frequencies.json
+        
+[Wed Jun 10 16:55:09 2020]
+Finished job 1.
+22 of 23 steps (96%) done
+
+[Wed Jun 10 16:55:09 2020]
+localrule all:
+    input: auspice/ncov_global.json, auspice/ncov_global_tip-frequencies.json
+    jobid: 0
+
+[Wed Jun 10 16:55:09 2020]
+Finished job 0.
+23 of 23 steps (100%) done
+Complete log: /nextstrain/build/.snakemake/log/2020-06-10T165017.592425.snakemake.log

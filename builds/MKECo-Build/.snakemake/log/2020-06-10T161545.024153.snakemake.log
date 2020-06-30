@@ -1,0 +1,54 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	colors
+	1	combine_samples
+	1	diagnostic
+	1	export
+	1	filter
+	1	finalize
+	1	incorporate_travel_history
+	1	legacy_clades
+	1	mask
+	1	pangolin
+	1	partition_sequences
+	1	recency
+	1	refilter
+	1	refine
+	1	rename_legacy_clades
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	24
+
+[Wed Jun 10 16:15:45 2020]
+Job 24: 
+        Filtering to
+          - excluding strains in config/exclude.txt
+        
+
+
+        augur filter             --sequences data/sequences.fasta             --metadata data/metadata.tsv             --include config/include.txt             --exclude config/exclude.txt             --exclude-where division='USA' date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-05-XX' date='2020-06-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04' date='2020-05' date='2020-06'            --min-length 27000             --output results/filtered.fasta 2>&1 | tee logs/filtered.txt
+        
+[Wed Jun 10 16:15:52 2020]
+Error in rule filter:
+    jobid: 24
+    output: results/filtered.fasta
+    log: logs/filtered.txt (check log file(s) for error message)
+    shell:
+        
+        augur filter             --sequences data/sequences.fasta             --metadata data/metadata.tsv             --include config/include.txt             --exclude config/exclude.txt             --exclude-where division='USA' date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-05-XX' date='2020-06-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04' date='2020-05' date='2020-06'            --min-length 27000             --output results/filtered.fasta 2>&1 | tee logs/filtered.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Terminating processes on user request, this might take some time.
+Complete log: /nextstrain/build/.snakemake/log/2020-06-10T161545.024153.snakemake.log

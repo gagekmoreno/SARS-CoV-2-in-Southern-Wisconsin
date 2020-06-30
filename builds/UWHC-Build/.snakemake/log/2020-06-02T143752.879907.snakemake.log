@@ -1,0 +1,264 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	colors
+	1	combine_samples
+	1	diagnostic
+	1	export
+	1	filter
+	1	finalize
+	1	incorporate_travel_history
+	1	legacy_clades
+	1	mask
+	1	pangolin
+	1	partition_sequences
+	1	recency
+	1	refilter
+	1	refine
+	1	rename_legacy_clades
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	24
+
+[Tue Jun  2 14:37:53 2020]
+Job 24: 
+        Filtering to
+          - excluding strains in config/exclude.txt
+        
+Reason: Missing output files: results/filtered.fasta
+
+
+        augur filter             --sequences data/sequences.fasta             --metadata data/metadata.tsv             --include config/include.txt             --exclude config/exclude.txt             --exclude-where division='USA' date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-05-XX' date='2020-06-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04' date='2020-05' date='2020-06'            --min-length 27000             --output results/filtered.fasta 2>&1 | tee logs/filtered.txt
+        
+
+[Tue Jun  2 14:37:53 2020]
+Job 5: Constructing colors file
+Reason: Missing output files: results/global/colors.tsv
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/assign-colors.py             --ordering config/ordering.tsv             --color-schemes config/color_schemes.tsv             --output results/global/colors.tsv             --metadata data/metadata.tsv 2>&1 | tee logs/colors_global.txt
+        
+[Tue Jun  2 14:37:54 2020]
+Finished job 5.
+1 of 24 steps (4%) done
+
+[Tue Jun  2 14:37:54 2020]
+Job 13: Use metadata on submission date to construct submission recency field
+Reason: Missing output files: results/global/recency.json
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/construct-recency-from-submission-date.py             --metadata data/metadata.tsv             --output results/global/recency.json 2>&1 | tee logs/recency_global.txt
+        
+[Tue Jun  2 14:37:55 2020]
+Finished job 13.
+2 of 24 steps (8%) done
+[Tue Jun  2 14:37:57 2020]
+Finished job 24.
+3 of 24 steps (12%) done
+
+[Tue Jun  2 14:37:57 2020]
+checkpoint partition_sequences:
+    input: results/filtered.fasta
+    output: results/split_sequences/
+    log: logs/partition_sequences.txt
+    jobid: 23
+    reason: Missing output files: results/split_sequences/; Input files updated by another job: results/filtered.fasta
+Downstream jobs will be updated after completion.
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/partition-sequences.py             --sequences results/filtered.fasta             --sequences-per-group 150             --output-dir results/split_sequences/ 2>&1 | tee logs/partition_sequences.txt
+        
+Updating job 21 (aggregate_alignments).
+[Tue Jun  2 14:37:58 2020]
+Finished job 23.
+4 of 25 steps (16%) done
+
+[Tue Jun  2 14:37:58 2020]
+Job 26: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  0
+        
+Reason: Missing output files: results/split_alignments/0.fasta; Updated input files: results/split_sequences/0.fasta
+
+
+        augur align             --sequences results/split_sequences/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 2             --remove-reference 2>&1 | tee logs/align_0.txt
+        
+[Tue Jun  2 14:38:29 2020]
+Finished job 26.
+5 of 25 steps (20%) done
+
+[Tue Jun  2 14:38:29 2020]
+Job 25: Collecting alignments
+Reason: Missing output files: results/aligned.fasta; Input files updated by another job: results/split_alignments/0.fasta
+
+
+        cat results/split_alignments/0.fasta > results/aligned.fasta 2> logs/aggregate_alignments.txt
+        
+[Tue Jun  2 14:38:29 2020]
+Finished job 25.
+6 of 25 steps (24%) done
+
+[Tue Jun  2 14:38:29 2020]
+Job 22: Scanning aligned sequences results/aligned.fasta for problematic sequences
+Reason: Missing output files: results/to-exclude.txt; Input files updated by another job: results/aligned.fasta
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/diagnostic.py             --alignment results/aligned.fasta             --metadata data/metadata.tsv             --reference config/reference.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences.tsv             --output-diagnostics results/sequence-diagnostics.tsv             --output-exclusion-list results/to-exclude.txt 2>&1 | tee logs/diagnostics.txt
+        
+[Tue Jun  2 14:38:30 2020]
+Finished job 22.
+7 of 25 steps (28%) done
+
+[Tue Jun  2 14:38:30 2020]
+Job 20: 
+        excluding sequences flagged in the diagnostic step in file results/to-exclude.txt
+        
+Reason: Missing output files: results/aligned-filtered.fasta; Input files updated by another job: results/to-exclude.txt, results/aligned.fasta
+
+
+        augur filter             --sequences results/aligned.fasta             --metadata data/metadata.tsv             --exclude results/to-exclude.txt             --output results/aligned-filtered.fasta 2>&1 | tee logs/refiltered.txt
+        
+[Tue Jun  2 14:38:32 2020]
+Finished job 20.
+8 of 25 steps (32%) done
+
+[Tue Jun  2 14:38:32 2020]
+Job 19: 
+        Mask bases in alignment
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Missing output files: results/masked.fasta; Input files updated by another job: results/aligned-filtered.fasta
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/mask-alignment.py             --alignment results/aligned-filtered.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked.fasta 2>&1 | tee logs/mask.txt
+        
+[Tue Jun  2 14:38:32 2020]
+Finished job 19.
+9 of 25 steps (36%) done
+
+[Tue Jun  2 14:38:32 2020]
+Job 18: 
+        Subsample all sequences into a global set for build 'global' with 10 per division year month
+        
+Reason: Missing output files: results/global/sample-global.fasta; Input files updated by another job: results/masked.fasta
+
+
+        augur filter             --sequences results/masked.fasta             --metadata data/metadata.tsv             --include config/include.txt                                                    --group-by division year month             --sequences-per-group 10             --output results/global/sample-global.fasta 2>&1 | tee 
+        
+[Tue Jun  2 14:38:33 2020]
+Finished job 18.
+10 of 25 steps (40%) done
+
+[Tue Jun  2 14:38:33 2020]
+Job 16: 
+        Combine and deduplicate FASTAs
+        
+Reason: Missing output files: results/global/subsampled_alignment.fasta; Input files updated by another job: results/global/sample-global.fasta
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/combine-and-dedup-fastas.py             --input results/global/sample-global.fasta             --output results/global/subsampled_alignment.fasta 2>&1 | tee logs/subsample_regions_global.txt
+        
+[Tue Jun  2 14:38:34 2020]
+Finished job 16.
+11 of 25 steps (44%) done
+
+[Tue Jun  2 14:38:34 2020]
+Job 15: Building tree
+Reason: Missing output files: results/global/tree_raw.nwk; Input files updated by another job: results/global/subsampled_alignment.fasta
+
+
+        augur tree             --alignment results/global/subsampled_alignment.fasta             --output results/global/tree_raw.nwk             --nthreads 2 2>&1 | tee logs/tree_global.txt
+        
+[Tue Jun  2 14:38:36 2020]
+Finished job 15.
+12 of 25 steps (48%) done
+
+[Tue Jun  2 14:38:36 2020]
+Job 6: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+Reason: Missing output files: results/global/branch_lengths.json, results/global/tree.nwk; Input files updated by another job: results/global/subsampled_alignment.fasta, results/global/tree_raw.nwk
+
+
+        augur refine             --tree results/global/tree_raw.nwk             --alignment results/global/subsampled_alignment.fasta             --metadata data/metadata.tsv             --output-tree results/global/tree.nwk             --output-node-data results/global/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_global.txt
+        
+[Tue Jun  2 14:38:54 2020]
+Finished job 6.
+13 of 25 steps (52%) done
+
+[Tue Jun  2 14:38:54 2020]
+Job 3: Estimating censored KDE frequencies for tips
+Reason: Missing output files: results/global/tip-frequencies.json; Input files updated by another job: results/global/tree.nwk
+
+
+        augur frequencies             --method kde             --metadata data/metadata.tsv             --tree results/global/tree.nwk             --min-date 2020.0             --pivot-interval 1             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output results/global/tip-frequencies.json 2>&1 | tee logs/tip_frequencies_global.txt
+        
+
+[Tue Jun  2 14:38:54 2020]
+Job 8: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+Reason: Missing output files: results/global/nt_muts.json; Input files updated by another job: results/global/subsampled_alignment.fasta, results/global/tree.nwk
+
+
+        augur ancestral             --tree results/global/tree.nwk             --alignment results/global/subsampled_alignment.fasta             --output-node-data results/global/nt_muts.json             --inference joint             --infer-ambiguous 2>&1 | tee logs/ancestral_global.txt
+        
+[Tue Jun  2 14:38:55 2020]
+Finished job 3.
+14 of 25 steps (56%) done
+
+[Tue Jun  2 14:38:55 2020]
+Job 14: 
+        Inferring ancestral traits for ['region_exposure', 'country_exposure']
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+Reason: Missing output files: results/global/traits.json; Input files updated by another job: results/global/tree.nwk
+
+
+        augur traits             --tree results/global/tree.nwk             --metadata data/metadata.tsv             --output results/global/traits.json             --columns region_exposure country_exposure             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_global.txt
+        
+[Tue Jun  2 14:38:56 2020]
+Finished job 8.
+15 of 25 steps (60%) done
+
+[Tue Jun  2 14:38:56 2020]
+Job 9: Translating amino acid sequences
+Reason: Missing output files: results/global/aa_muts.json; Input files updated by another job: results/global/tree.nwk, results/global/nt_muts.json
+
+
+        augur translate             --tree results/global/tree.nwk             --ancestral-sequences results/global/nt_muts.json             --reference-sequence config/reference.gb             --output-node-data results/global/aa_muts.json 2>&1 | tee logs/translate_global.txt
+        
+[Tue Jun  2 14:38:57 2020]
+Error in rule traits:
+    jobid: 14
+    output: results/global/traits.json
+    log: logs/traits_global.txt (check log file(s) for error message)
+    shell:
+        
+        augur traits             --tree results/global/tree.nwk             --metadata data/metadata.tsv             --output results/global/traits.json             --columns region_exposure country_exposure             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_global.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jun  2 14:38:58 2020]
+Finished job 9.
+16 of 25 steps (64%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/gagemoreno/Documents/MadisonOutbreakPaper/data/DaneCounty/.snakemake/log/2020-06-02T143752.879907.snakemake.log

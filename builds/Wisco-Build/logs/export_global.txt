@@ -1,0 +1,22 @@
+WARNING: These values for trait location were not specified in your provided color scale: cambridge, verona, oregon. Auspice will create colors for them.
+
+WARNING: location->Verona did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Oregon did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Cambridge did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+	WARNING:  "Verona", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Oregon", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Cambridge", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+Validating schema of 'results/global/aa_muts.json'...
+Validating config file config/auspice_config.json against the JSON schema
+Validating schema of 'config/auspice_config.json'...
+Validating produced JSON
+Validating schema of 'results/global/ncov_with_accessions.json'...
+Validating that the JSON is internally consistent...
+Validation of 'results/global/ncov_with_accessions.json' succeeded, but there were warnings you may want to resolve.
+

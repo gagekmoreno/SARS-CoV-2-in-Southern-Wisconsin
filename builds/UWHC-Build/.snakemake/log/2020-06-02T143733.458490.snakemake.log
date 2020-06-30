@@ -1,0 +1,50 @@
+Building DAG of jobs...
+Updating job 21 (aggregate_alignments).
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	export
+	1	finalize
+	1	incorporate_travel_history
+	1	pangolin
+	1	traits
+	6
+
+[Tue Jun  2 14:37:33 2020]
+Job 14: 
+        Inferring ancestral traits for ['region_exposure', 'country_exposure']
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+Reason: Missing output files: results/global/traits.json
+
+
+        augur traits             --tree results/global/tree.nwk             --metadata data/metadata.tsv             --output results/global/traits.json             --columns region_exposure country_exposure             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_global.txt
+        
+
+[Tue Jun  2 14:37:33 2020]
+Job 12: Adding internal clade labels
+Reason: Missing output files: results/global/pangolin.json
+
+
+        /Users/gagemoreno/opt/anaconda3/envs/nextstrain/bin/python scripts/add_pangolin_lineages.py             --tree results/global/tree.nwk             --output results/global/pangolin.json
+        
+[Tue Jun  2 14:37:35 2020]
+Error in rule traits:
+    jobid: 14
+    output: results/global/traits.json
+    log: logs/traits_global.txt (check log file(s) for error message)
+    shell:
+        
+        augur traits             --tree results/global/tree.nwk             --metadata data/metadata.tsv             --output results/global/traits.json             --columns region_exposure country_exposure             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_global.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jun  2 14:37:38 2020]
+Finished job 12.
+1 of 6 steps (17%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/gagemoreno/Documents/MadisonOutbreakPaper/data/DaneCounty/.snakemake/log/2020-06-02T143733.458490.snakemake.log

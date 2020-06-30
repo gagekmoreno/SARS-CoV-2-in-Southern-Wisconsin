@@ -1,0 +1,7 @@
+Building a tree via:
+	iqtree -ninit 2 -n 2 -me 0.05 -nt 1 -s results/global/subsampled_alignment-delim.fasta -m GTR  > results/global/subsampled_alignment-delim.iqtree.log
+	Nguyen et al: IQ-TREE: A fast and effective stochastic algorithm for estimating maximum likelihood phylogenies.
+	Mol. Biol. Evol., 32:268-274. https://doi.org/10.1093/molbev/msu300
+
+
+Building original tree took 3.3709867000579834 seconds
