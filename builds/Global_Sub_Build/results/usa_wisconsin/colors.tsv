@@ -1,0 +1,269 @@
+division	Diamond Princess	#5E1D9D
+division	Panama City	#551EA4
+division	Alajuela	#4E20AB
+division	Heredia	#4B26B1
+division	San Jose	#472CB7
+division	Mexico	#4432BD
+division	Durango	#4138C3
+division	Guerrero	#403FC6
+division	Jalisco	#3F47C9
+division	Quintana Roo	#3F4ECB
+division	Mexico City	#3F56CE
+division	Estado de Mexico	#3E5DD0
+division	Chiapas	#4064CF
+division	Chihuahua	#416BCF
+division	Puebla	#4272CE
+division	Queretaro	#4379CD
+division	USA	#457FCB
+division	Washington DC	#4784C7
+division	Maryland	#498AC4
+division	Texas	#4C8FC0
+division	Missouri	#4E95BD
+division	Florida	#5199B8
+division	Georgia	#549DB3
+division	Alabama	#57A1AD
+division	Arkansas	#5AA5A8
+division	Louisiana	#5DA8A3
+division	North Carolina	#61AB9D
+division	South Carolina	#65AD97
+division	Virginia	#69B091
+division	Rhode Island	#6CB28B
+division	Connecticut	#71B486
+division	New York	#76B680
+division	New Jersey	#7AB77B
+division	Massachusetts	#7FB975
+division	New Hampshire	#83BA70
+division	Vermont	#89BB6B
+division	Pennsylvania	#8EBC67
+division	Ohio	#93BD62
+division	Indiana	#98BD5E
+division	Illinois	#9EBE5A
+division	Wisconsin	#A3BE57
+division	Michigan	#A8BD53
+division	Minnesota	#AEBD50
+division	Iowa	#B3BD4D
+division	Nebraska	#B8BC4A
+division	Kansas	#BDBB48
+division	Nevada	#C2BA46
+division	Arizona	#C7B944
+division	Colorado	#CCB742
+division	New Mexico	#D0B441
+division	Utah	#D3B23F
+division	Wyoming	#D7AF3E
+division	Idaho	#DBAC3D
+division	Montana	#DEA83C
+division	California	#E0A33A
+division	Grand Princess	#E29E39
+division	Grand Princess 2nd cruise	#E49938
+division	Oregon	#E69437
+division	Washington	#E68D36
+division	Hawaii	#E68634
+division	Puerto Rico	#E67F33
+division	Virgin Islands	#E67832
+division	Jamaica	#E67030
+division	Alaska	#E4672E
+division	Nova Scotia	#E35E2D
+division	New Brunswick	#E1552B
+division	Quebec	#E04C29
+division	Ontario	#DF4328
+division	Manitoba	#DE3A26
+division	Newfoundland and Labrador	#DD3124
+division	British Columbia	#DB2823
+
+location	San Rafael de Alajuela	#5E1D9D
+location	San Rafael Heredia	#5B1DA0
+location	Orotina	#571EA3
+location	La Union	#541EA6
+location	Tibas	#501EA9
+location	La Crosse County	#4E20AB
+location	Stoughton	#4D22AD
+location	Beloit	#4C24B0
+location	Belleville	#4A27B2
+location	Marshall	#4929B4
+location	Muscoda	#482BB6
+location	Blanchardville	#462EB9
+location	Tomah	#4530BB
+location	Janesville	#4432BD
+location	Holy Cross	#4335C0
+location	Hillpoint	#4137C2
+location	Richland Center	#4039C4
+location	Oregon WI	#403CC5
+location	Cottage Grove	#403FC6
+location	Cross Plains	#4042C7
+location	Madison	#3F45C8
+location	Chippewa Falls	#3F48C9
+location	Monona	#3F4BCA
+location	Mount Horeb	#3F4ECB
+location	Sun Prarie	#3F51CC
+location	Fitchburg	#3F54CD
+location	Waunakee	#3E57CE
+location	Spring Green	#3E5ACF
+location	Middleton	#3E5DD0
+location	King County	#3F5FD0
+location	Whatcom County	#3F62CF
+location	Yakima County	#4065CF
+location	Thurston County	#4068CF
+location	Skagit County	#416ACF
+location	Snohomish County	#416DCE
+location	Pierce County	#4270CE
+location	Solano County	#4272CE
+location	Sonoma County	#4375CD
+location	Orange County CA	#4378CD
+location	Kirkland	#447BCD
+location	Mason County	#447DCC
+location	Asotin County	#457FCB
+location	Benton County	#4681C9
+location	Kittitas County	#4783C8
+location	Seattle	#4886C7
+location	Los Angeles	#4988C5
+location	San Francisco County	#498AC4
+location	Columbus OH	#4A8CC3
+location	Columbus WI	#4B8EC1
+location	Cincinnati	#4C90C0
+location	Fairbanks	#4D92BE
+location	Mat-Su	#4E95BD
+location	Interior Alaska	#4F96BB
+location	Southeast Alaska	#5098B9
+location	Anchorage	#5199B7
+location	San Francisco	#529BB5
+location	San Diego County	#549CB3
+location	San Diego	#559EB1
+location	San Mateo County	#569FAF
+location	Marin County	#57A1AD
+location	San Joaquin County	#58A2AB
+location	Sacramento County	#59A4A9
+location	Santa Clara County	#5BA6A7
+location	Davis	#5CA7A5
+location	Snohomish County	#5DA8A3
+location	King County	#5FA9A0
+location	Clark County	#60AA9E
+location	Umatilla County	#62AB9C
+location	Phoenix	#63AC9A
+location	Chicago	#65AD97
+location	Indianapolis	#66AE95
+location	Dane County	#68AF93
+location	Boston	#69B090
+location	Houston	#6BB18E
+location	Orange County NY	#6CB28C
+location	Manhattan	#6EB38A
+location	Nassau County	#70B487
+location	Brooklyn	#71B485
+location	Brooklyn WI	#73B583
+location	Queens	#75B581
+location	Staten Island	#77B67F
+location	Bronx	#79B77D
+location	Hudson County	#7AB77A
+location	Essex County	#7CB878
+location	Camden County	#7EB976
+location	Westchester County	#80B974
+location	Richmond County	#82BA72
+location	Franklin County NY	#84BA70
+location	Franklin County WA	#86BB6E
+location	Suffolk County	#88BB6C
+location	Onondaga County	#8ABB6A
+location	Rockland County	#8CBB69
+location	Chenango County	#8EBC67
+location	Saratoga County	#90BC65
+location	Montgomery County	#92BC63
+location	Ulster County	#94BD62
+location	Cayuga County	#96BD60
+location	Schenectady County	#98BD5E
+location	Washington County NY	#9ABE5C
+location	Washington County OR	#9CBE5B
+location	Albany County	#9EBE59
+location	Putnam County	#A0BE58
+location	New York City	#A2BE57
+location	Fairfield County	#A5BE56
+location	Bergen County	#A7BE54
+location	Clinton County	#A9BD53
+location	Broome County	#ABBD52
+location	Jefferson County WA	#ADBD50
+location	Jefferson County NY	#AFBD4F
+location	Verona WI	#B1BD4E
+location	Dutchess County	#B3BD4D
+location	Passaic County	#B5BD4C
+location	Monroe County	#B7BD4B
+location	Winona County	#B9BC4A
+location	Allamakee County	#BBBC49
+location	Winneshiek County	#BDBB48
+location	Jackson County	#BFBB47
+location	Adams County WA	#C1BA47
+location	Adams County WI	#C3BA46
+location	New Orleans	#C5B945
+location	Panola County	#C7B944
+location	Morehouse Parish	#C9B843
+location	Tensas Parish	#CBB843
+location	Rapides Parish	#CCB742
+location	Bossier Parish	#CEB641
+location	Grant Parish	#CFB541
+location	DeSoto Parish	#D1B440
+location	East Feliciana Parish	#D2B240
+location	Caddo Parish	#D4B13F
+location	Assumption Parish	#D5B03F
+location	St Tammany Parish	#D7AF3E
+location	Jefferson Parish	#D8AE3E
+location	St Bernard Parish	#DAAD3D
+location	Webster Parish	#DBAC3D
+location	Bienville Parish	#DCAB3C
+location	East Baton Rouge Parish	#DDA93C
+location	Livingston Parish	#DEA73B
+location	Iberville Parish	#DFA53B
+location	Pittsburgh	#E0A33A
+location	Colorado Springs	#E0A13A
+location	Alameda County	#E19F3A
+location	Humboldt County	#E29D39
+location	San Luis Obispo County	#E39B39
+location	Fayette County	#E49938
+location	Buchanan County	#E49838
+location	Crawford County	#E59637
+location	Fillmore County	#E69337
+location	Thiensville	#E69136
+location	Racine	#E68E36
+location	Cudahy	#E68B35
+location	Mequon	#E68835
+location	Wauwatosa	#E68534
+location	Greenfield	#E68334
+location	Milwaukee	#E68033
+location	Brown Deer	#E67D33
+location	Greater Milwaukee Area	#E67A32
+location	Slinger	#E67732
+location	River Hills	#E67531
+location	Bayside	#E67131
+location	Vernon County	#E56E30
+location	Trempealeau County	#E56A2F
+location	Juneau County	#E4672E
+location	Saukville	#E4642E
+location	Hartford	#E3602D
+location	Campbellsport	#E35D2C
+location	Jackson	#E2592C
+location	Oak Creek	#E2562B
+location	Port Washington	#E1522A
+location	Grafton	#E14F2A
+location	New Berlin	#E04B29
+location	Pewaukee	#E04828
+location	Franklin	#DF4428
+location	Whitefish Bay	#DF4127
+location	South Milwaukee	#DE3D27
+location	Brookfield	#DE3A26
+location	Elm Grove	#DD3625
+location	Glendale	#DD3325
+location	Columbia County	#DC2F24
+location	Multnomah County	#DC2C23
+location	Wasco County	#DB2823
+
+country	Panama	#416DCE
+country	Costa Rica	#59A3AA
+country	Mexico	#84BA6F
+country	Jamaica	#BBBC49
+country	USA	#E29D39
+country	Canada	#E1502A
+
+recency	Older	#416DCE
+recency	One month ago	#59A3AA
+recency	One week ago	#84BA6F
+recency	3-7 days ago	#BBBC49
+recency	1-2 days ago	#E29D39
+recency	New	#E1502A
+
+region	North America	#4C90C0
+

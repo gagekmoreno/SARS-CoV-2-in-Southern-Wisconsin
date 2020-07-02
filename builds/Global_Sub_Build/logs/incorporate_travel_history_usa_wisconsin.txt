@@ -1,0 +1,8 @@
+WARNING: Colour for country -> north america is missing & auspice will choose a shade of grey for this.
+WARNING: Colour for country -> europe is missing & auspice will choose a shade of grey for this.
+WARNING: Colour for country -> asia is missing & auspice will choose a shade of grey for this.
+WARNING: Colour for country -> oceania is missing & auspice will choose a shade of grey for this.
+WARNING: Colour for country -> europa is missing & auspice will choose a shade of grey for this.
+WARNING: Colour for country -> africa is missing & auspice will choose a shade of grey for this.
+WARNING: Colour for country -> south america is missing & auspice will choose a shade of grey for this.
+WARNING: The lat/long value for country -> Europa is missing from the lat/longs TSV. Please add it!

@@ -1,0 +1,214 @@
+{
+    "total_runtime": 5800.887601852417,
+    "rules": {
+        "refine": {
+            "mean-runtime": 5466.252765893936,
+            "min-runtime": 5466.252765893936,
+            "max-runtime": 5466.252765893936
+        },
+        "traits": {
+            "mean-runtime": 123.62236595153809,
+            "min-runtime": 123.62236595153809,
+            "max-runtime": 123.62236595153809
+        },
+        "tip_frequencies": {
+            "mean-runtime": 13.200278997421265,
+            "min-runtime": 13.200278997421265,
+            "max-runtime": 13.200278997421265
+        },
+        "pangolin": {
+            "mean-runtime": 6.010666847229004,
+            "min-runtime": 6.010666847229004,
+            "max-runtime": 6.010666847229004
+        },
+        "ancestral": {
+            "mean-runtime": 240.0285451412201,
+            "min-runtime": 240.0285451412201,
+            "max-runtime": 240.0285451412201
+        },
+        "translate": {
+            "mean-runtime": 62.39927101135254,
+            "min-runtime": 62.39927101135254,
+            "max-runtime": 62.39927101135254
+        },
+        "legacy_clades": {
+            "mean-runtime": 3.3584718704223633,
+            "min-runtime": 3.3584718704223633,
+            "max-runtime": 3.3584718704223633
+        },
+        "clades": {
+            "mean-runtime": 3.352957010269165,
+            "min-runtime": 3.352957010269165,
+            "max-runtime": 3.352957010269165
+        },
+        "rename_legacy_clades": {
+            "mean-runtime": 0.6197350025177002,
+            "min-runtime": 0.6197350025177002,
+            "max-runtime": 0.6197350025177002
+        },
+        "export": {
+            "mean-runtime": 19.286185264587402,
+            "min-runtime": 19.286185264587402,
+            "max-runtime": 19.286185264587402
+        },
+        "incorporate_travel_history": {
+            "mean-runtime": 4.4520041942596436,
+            "min-runtime": 4.4520041942596436,
+            "max-runtime": 4.4520041942596436
+        },
+        "finalize": {
+            "mean-runtime": 4.431402921676636,
+            "min-runtime": 4.431402921676636,
+            "max-runtime": 4.431402921676636
+        },
+        "all": {
+            "mean-runtime": 0.0015759468078613281,
+            "min-runtime": 0.0015759468078613281,
+            "max-runtime": 0.0015759468078613281
+        }
+    },
+    "files": {
+        "results/usa_wisconsin/tree.nwk": {
+            "start-time": "Sun Jun 21 21:06:55 2020",
+            "stop-time": "Sun Jun 21 22:38:01 2020",
+            "duration": 5466.252765893936,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1,
+                "mem_mb": 2625
+            }
+        },
+        "results/usa_wisconsin/branch_lengths.json": {
+            "start-time": "Sun Jun 21 21:06:55 2020",
+            "stop-time": "Sun Jun 21 22:38:01 2020",
+            "duration": 5466.252765893936,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1,
+                "mem_mb": 2625
+            }
+        },
+        "results/usa_wisconsin/traits.json": {
+            "start-time": "Sun Jun 21 22:38:01 2020",
+            "stop-time": "Sun Jun 21 22:40:05 2020",
+            "duration": 123.62236595153809,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/tip-frequencies.json": {
+            "start-time": "Sun Jun 21 22:38:01 2020",
+            "stop-time": "Sun Jun 21 22:38:15 2020",
+            "duration": 13.200278997421265,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/pangolin.json": {
+            "start-time": "Sun Jun 21 22:38:01 2020",
+            "stop-time": "Sun Jun 21 22:38:07 2020",
+            "duration": 6.010666847229004,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/nt_muts.json": {
+            "start-time": "Sun Jun 21 22:38:01 2020",
+            "stop-time": "Sun Jun 21 22:42:01 2020",
+            "duration": 240.0285451412201,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/aa_muts.json": {
+            "start-time": "Sun Jun 21 22:42:01 2020",
+            "stop-time": "Sun Jun 21 22:43:04 2020",
+            "duration": 62.39927101135254,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/temp_legacy_clades.json": {
+            "start-time": "Sun Jun 21 22:43:04 2020",
+            "stop-time": "Sun Jun 21 22:43:07 2020",
+            "duration": 3.3584718704223633,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/clades.json": {
+            "start-time": "Sun Jun 21 22:43:04 2020",
+            "stop-time": "Sun Jun 21 22:43:07 2020",
+            "duration": 3.352957010269165,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/legacy_clades.json": {
+            "start-time": "Sun Jun 21 22:43:07 2020",
+            "stop-time": "Sun Jun 21 22:43:08 2020",
+            "duration": 0.6197350025177002,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/ncov_with_accessions.json": {
+            "start-time": "Sun Jun 21 22:43:08 2020",
+            "stop-time": "Sun Jun 21 22:43:27 2020",
+            "duration": 19.286185264587402,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/usa_wisconsin/ncov_with_accessions_and_travel_branches.json": {
+            "start-time": "Sun Jun 21 22:43:27 2020",
+            "stop-time": "Sun Jun 21 22:43:32 2020",
+            "duration": 4.4520041942596436,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "auspice/ncov_usa_wisconsin.json": {
+            "start-time": "Sun Jun 21 22:43:32 2020",
+            "stop-time": "Sun Jun 21 22:43:36 2020",
+            "duration": 4.431402921676636,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "auspice/ncov_usa_wisconsin_tip-frequencies.json": {
+            "start-time": "Sun Jun 21 22:43:32 2020",
+            "stop-time": "Sun Jun 21 22:43:36 2020",
+            "duration": 4.431402921676636,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        }
+    }
+}

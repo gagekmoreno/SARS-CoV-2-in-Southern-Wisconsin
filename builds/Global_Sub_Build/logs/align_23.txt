@@ -1,0 +1,8 @@
+
+using mafft to align via:
+	mafft --reorder --anysymbol --nomemsave --adjustdirection --thread 2 results/split_alignments/23.fasta.to_align.fasta 1> results/split_alignments/23.fasta 2> results/split_alignments/23.fasta.log 
+
+	Katoh et al, Nucleic Acid Research, vol 30, issue 14
+	https://doi.org/10.1093%2Fnar%2Fgkf436
+
+No gaps in alignment to trim (with respect to the reference, MN908947)

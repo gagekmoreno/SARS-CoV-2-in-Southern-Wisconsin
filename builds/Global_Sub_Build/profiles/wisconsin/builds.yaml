@@ -1,0 +1,54 @@
+# Define locations for which builds should be created.
+# For each build we specify a subsampling scheme via an explicit key.
+# If the name of the focal geography differs from the build name this needs to
+# be specified explicity as geographic_name. In addition, we require the
+# geographic scale the build focuses on. Together name and scale serve a look-up
+# in the geo_hierarchy to define region, country, division, etc
+builds:
+  usa_wisconsin:
+    subsampling_scheme: division
+    geographic_scale: division
+    region: North America
+    country: USA
+    division: Wisconsin
+#  usa_wisconsin-dane-county:
+#    subsampling_scheme: location
+#    geographic_scale: location
+#    region: North America
+#    country: USA
+#    division: Wisconsin
+#    location: Dane County
+
+subsampling:
+  # Default subsampling logic for divisions
+  division:
+    # Focal samples for division
+    division:
+      group_by: "year month"
+      seq_per_group: 500
+      exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division!={division}'"
+    # Contextual samples from division's country
+    country:
+      group_by: "division year month"
+      seq_per_group: 20
+      exclude: "--exclude-where 'region!={region}' 'country!={country}' 'division={division}'"
+      priorities:
+        type: "proximity"
+        focus: "division"
+    # Contextual samples from division's region
+    region:
+      group_by: "country year month"
+      seq_per_group: 30
+      exclude: "--exclude-where 'region!={region}' 'country={country}'"
+      priorities:
+        type: "proximity"
+        focus: "division"
+    # Contextual samples from the rest of the world, excluding the current
+    # division to avoid resampling.
+    global:
+      group_by: "country year month"
+      seq_per_group: 30
+      exclude: "--exclude-where 'region={region}'"
+      priorities:
+        type: "proximity"
+        focus: "division"

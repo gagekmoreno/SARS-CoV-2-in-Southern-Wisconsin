@@ -1,0 +1,1 @@
+tree frequencies written to results/usa_wisconsin/tip-frequencies.json

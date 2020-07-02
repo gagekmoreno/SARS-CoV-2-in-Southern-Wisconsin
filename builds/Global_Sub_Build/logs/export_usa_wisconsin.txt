@@ -1,0 +1,72 @@
+WARNING: These values for trait location were not specified in your provided color scale: ventura county, new haven, grant county wi, west haven, stratford, st. louis mo, marion county, grand princess cruise ship, east haven, north haven, deforest, toronto, contra costa county. Auspice will create colors for them.
+
+WARNING: These values for trait division were not specified in your provided color scale: kentucky, tennessee, africa, europa, oceania, oklahoma, europe, south america, asia. Auspice will create colors for them.
+
+WARNING: These values for trait country were not specified in your provided color scale: europa, south america, oceania, europe, asia, africa. Auspice will create colors for them.
+
+WARNING: These values for trait region were not specified in your provided color scale: europa, asia. Auspice will create colors for them.
+
+WARNING: location->Marion County did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Ventura County did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->East Haven did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Contra Costa County did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->St. Louis MO did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Grant County WI did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Stratford did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->Toronto did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->New Haven did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->West Haven did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: location->North Haven did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: division->Europa did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: country->Europa did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+WARNING: region->Europa did not have an associated lat/long value (matching performed in lower case). Auspice won't be able to display this location.
+
+	WARNING:  "Marion County", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Ventura County", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "East Haven", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Contra Costa County", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "St. Louis MO", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Grant County WI", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Stratford", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Toronto", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "New Haven", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "West Haven", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "North Haven", a value of the geographic resolution "location", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Europa", a value of the geographic resolution "division", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Europa", a value of the geographic resolution "country", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+	WARNING:  "Europa", a value of the geographic resolution "region", appears in the tree but not in the metadata.
+		This will cause transmissions & demes involving this location not to be displayed in Auspice
+Validating schema of 'results/usa_wisconsin/aa_muts.json'...
+Validating config file config/auspice_config.json against the JSON schema
+Validating schema of 'config/auspice_config.json'...
+Validating produced JSON
+Validating schema of 'results/usa_wisconsin/ncov_with_accessions.json'...
+Validating that the JSON is internally consistent...
+Validation of 'results/usa_wisconsin/ncov_with_accessions.json' succeeded, but there were warnings you may want to resolve.
+

@@ -1,0 +1,2 @@
+Done reading the alignments.
+Done finding closest matches.

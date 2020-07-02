@@ -1,0 +1,2 @@
+Read in 15 features from reference sequence file
+amino acid mutations written to results/usa_wisconsin/aa_muts.json
