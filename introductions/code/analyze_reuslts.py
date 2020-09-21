@@ -324,48 +324,48 @@ def plot_rarefaction_results(rarefaction_results, outname):
 
 
 def main():
-set_style()
-parser = argparse.ArgumentParser()
-# input files
-parser.add_argument('--introduction_dir', 
-					help='estimated introductions from each bootstrap replicate',
-					default='results/subsampled_alignment_neighbors.fasta.ufboot_tres/*/*_importations.csv')
-parser.add_argument('--outdir', default='results')
-parser.add_argument('--outname', default='introductions',
-					help='prefix of output files')
-parser.add_argument('--metadata_file', default='data/metadata_adjusted.tsv',
-					help='metadata file with dates')
-parser.add_argument('--tree_file', default='results/ml_refined_time.newick',
-					help='newick file to plot')
-parser.add_argument('--outgroup',
-				help='Outgroup to use in tree',
-				default='Wuhan/Hu-1/2019')
-parser.add_argument('--tree_states_file', default='results/ml_refined_node_states.csv',
-					help='states of nodes/tips in tree')
-parser.add_argument('--tree_regions', default='results/ml_refined_regions.csv',
-					help='regions dictionary from treetime')
-parser.add_argument('--rarefaction_dir', default='results/rarefaction/*/*_rarefaction.csv',
-					help='directory with rarefaction results')
-args = parser.parse_args()
-results = pd.DataFrame()
-	for file in glob.glob(args.introduction_dir):
-	#for file in args.importation_files:
-		results = process_results(file, results)
-	results.to_csv(f'{args.outdir}/combined_results.csv', index=None)
-	tre = import_tre(args.tree_file, args.metadata_file)
-	regions = pd.read_csv(args.tree_regions)
-	tre_states = pd.read_csv(args.tree_states_file)
-	tre_states['state'] = \
-		tre_states['state'].apply(lambda k: ast.literal_eval(k))
-	tre_states['ML_state'] = \
-		tre_states['state'].apply(lambda k: regions.loc[k.index(max(k)), 'region'])
-	tre_states_dict = {item['name']: item['ML_state'] for index, item in tre_states.iterrows()}
-	plot_results(results, tre, tre_states_dict, 'figures/tree_timeseries')
-	print_results(results, args.outdir)
-	rarefaction_results = pd.DataFrame()
-	for file in glob.glob(args.rarefaction_dir):
-		rarefaction_results = rarefaction_results.append(pd.read_csv(file))
-	plot_rarefaction_results(rarefaction_results, f'figures/rarefaction')
+	set_style()
+	parser = argparse.ArgumentParser()
+	# input files
+	parser.add_argument('--introduction_dir', 
+						help='estimated introductions from each bootstrap replicate',
+						default='results/subsampled_alignment_neighbors.fasta.ufboot_tres/*/*_importations.csv')
+	parser.add_argument('--outdir', default='results')
+	parser.add_argument('--outname', default='introductions',
+						help='prefix of output files')
+	parser.add_argument('--metadata_file', default='data/metadata_adjusted.tsv',
+						help='metadata file with dates')
+	parser.add_argument('--tree_file', default='results/ml_refined_time.newick',
+						help='newick file to plot')
+	parser.add_argument('--outgroup',
+					help='Outgroup to use in tree',
+					default='Wuhan/Hu-1/2019')
+	parser.add_argument('--tree_states_file', default='results/ml_refined_node_states.csv',
+						help='states of nodes/tips in tree')
+	parser.add_argument('--tree_regions', default='results/ml_refined_regions.csv',
+						help='regions dictionary from treetime')
+	parser.add_argument('--rarefaction_dir', default='results/rarefaction/*/*_rarefaction.csv',
+						help='directory with rarefaction results')
+	args = parser.parse_args()
+	results = pd.DataFrame()
+		for file in glob.glob(args.introduction_dir):
+		#for file in args.importation_files:
+			results = process_results(file, results)
+		results.to_csv(f'{args.outdir}/combined_results.csv', index=None)
+		tre = import_tre(args.tree_file, args.metadata_file)
+		regions = pd.read_csv(args.tree_regions)
+		tre_states = pd.read_csv(args.tree_states_file)
+		tre_states['state'] = \
+			tre_states['state'].apply(lambda k: ast.literal_eval(k))
+		tre_states['ML_state'] = \
+			tre_states['state'].apply(lambda k: regions.loc[k.index(max(k)), 'region'])
+		tre_states_dict = {item['name']: item['ML_state'] for index, item in tre_states.iterrows()}
+		plot_results(results, tre, tre_states_dict, 'figures/tree_timeseries')
+		print_results(results, args.outdir)
+		rarefaction_results = pd.DataFrame()
+		for file in glob.glob(args.rarefaction_dir):
+			rarefaction_results = rarefaction_results.append(pd.read_csv(file))
+		plot_rarefaction_results(rarefaction_results, f'figures/rarefaction')
 
 
 if __name__ == "__main__":
