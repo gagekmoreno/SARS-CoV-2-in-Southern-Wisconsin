@@ -365,6 +365,7 @@ def main():
 		rarefaction_results = pd.DataFrame()
 		for file in glob.glob(args.rarefaction_dir):
 			rarefaction_results = rarefaction_results.append(pd.read_csv(file))
+		rarefaction_results.to_csv(f'{args.outdir}/rarefaction_results.csv', index=None)
 		plot_rarefaction_results(rarefaction_results, f'figures/rarefaction')
 
 
