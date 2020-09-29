@@ -1,0 +1,13 @@
+#Summary
+#Generated on	Tue Jul 07 14:22:26 CDT 2020
+#Version	5
+chroms	1
+bases	45903
+defined	29903
+undefined	16000
+contigs	1
+scaffolds	1
+interpad	300
+source	/Users/katbraun/Documents/research/kat_braun/projects/SARS-CoV-2/SARSCoV2_in_Wisconsin/SARS-CoV-2-in-Southern-Wisconsin/consensus_SNVs/scripts/ref.fa
+bytes	30414
+last modified	1592415441975
